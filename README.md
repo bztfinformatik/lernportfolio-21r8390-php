@@ -10,3 +10,16 @@
 ## How To:
 
 > Doku starten: `docker compose up`
+
+## Commits
+
+| Icon | Meaning       |
+| :--: | ------------- |
+|  📚  | Content       |
+|  💬  | Documentation |
+|  🦄  | Refactoring   |
+|  🤡  | Fix / Issue   |
+|  🥞  | Mixed / Merge |
+|  👷  | Automation    |
+|  📝  | Setting       |
+|  💥  | Hotfix        |
