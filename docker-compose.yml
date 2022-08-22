@@ -1,19 +1,11 @@
-version: '3'
+version: "3.8"
 services:
-  docsify:
-    build: ./docker/docsify
-    container_name: docsify
-    ports:
-      - "10000:10000"
-      - "35729:35729"
+  mkdocs:
+    build: ./docker/docs
+    container_name: mkdocs-m133
+    restart: always
     volumes:
-        - ./docs:/site
-    working_dir: /site
-    command: docsify serve . -p 10000 --livereload-port 35729
-
-  plantuml:
-    image: "plantuml/plantuml-server:jetty"
-    container_name: plantuml
+      - ./docs:/docs/docs
+      - ./docs/mkdocs.yml:/docs/mkdocs.yml
     ports:
-        - "10001:8080"
-
+      - "8000:8000"
