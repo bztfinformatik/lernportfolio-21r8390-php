@@ -85,12 +85,28 @@ plugins:
       lang:
         - de
   - tags:
-      tags_file: "Appendix/Tags.md"
+      tags_file: "Tags.md"
+  - minify:
+      minify_html: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+      css_files:
+        - "css/custom.css"
+  - redirects:
+      redirect_maps:
+        "PHP/UEbersicht.md": "PHP/Start.md"
+        "Appendix/PHP-Cheatsheet.md": "PHP/Cheatsheet.md"
+        "Appendix/Changelog.md": "Changelog.md"
+        "Appendix/Tags.md": "Tags.md"
 
 nav:
-  - Startseite: "index.md"
+  - Startseite:
+      - Startseite: "index.md"
+      - Changelog: "Changelog.md"
+      - Tags: "Tags.md"
   - Reflexion:
-      - "1. Woche": "Reflexion/01_Woche.md"
+      - "1. Woche": "Reflexion/001_Woche.md"
   - PHP:
       - Übersicht: "PHP/Start.md"
       - Installation: "PHP/Installation.md"
@@ -105,5 +121,4 @@ nav:
       - Mockup: "Projekt/Planung.md"
       - Selbstreflexion: "Projekt/Selbstreflexion.md"
   - Appendix:
-      - Changelog: "Appendix/Changelog.md"
       - PHP-Cheatsheet: "PHP/Cheatsheet.md"
