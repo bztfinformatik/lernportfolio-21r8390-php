@@ -1,5 +1,7 @@
 # PHP - Doku
 
+[![ci-mkdocs](https://github.com/bztfinformatik/lernportfolio-21r8390-php/actions/workflows/ci-mkdocs.yml/badge.svg)](https://github.com/bztfinformatik/lernportfolio-21r8390-php/actions/workflows/ci-mkdocs.yml)
+
 > Autor: Manuel Schumacher <br>
 > Modul: M133
 
