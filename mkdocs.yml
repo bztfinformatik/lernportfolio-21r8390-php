@@ -86,13 +86,6 @@ plugins:
         - de
   - tags:
       tags_file: "Tags.md"
-  - minify:
-      minify_html: true
-      minify_css: true
-      htmlmin_opts:
-        remove_comments: true
-      css_files:
-        - "css/custom.css"
   - redirects:
       redirect_maps:
         "PHP/UEbersicht.md": "PHP/Start.md"
