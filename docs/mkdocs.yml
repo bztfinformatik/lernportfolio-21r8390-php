@@ -110,7 +110,8 @@ nav:
       - Übersicht: "Docker/Start.md"
   - Projekt:
       - Ziel: "Projekt/Ziel.md"
-      - Mockup: "Projekt/Planung.md"
+      - Planung: "Projekt/Planung.md"
       - Selbstreflexion: "Projekt/Selbstreflexion.md"
   - Appendix:
       - PHP-Cheatsheet: "PHP/Cheatsheet.md"
+      - "Journal Anforderungen": "Reflexion/000_Vorlage.md"

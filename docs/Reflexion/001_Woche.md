@@ -4,6 +4,3 @@ tags:
 ---
 
 # 1. Woche
-
-- Learnings
--
