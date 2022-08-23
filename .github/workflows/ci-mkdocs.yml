@@ -12,6 +12,9 @@ jobs:
         with:
           python-version: 3.x
 
+      - name: Move Config 📝
+        run: mv mkdocs.yml ../mkdocs.yml
+
       - name: Install dependencies 📦
         run: pip install \
           mkdocs-material \
@@ -20,4 +23,3 @@ jobs:
 
       - name: Deploy documentation 🌟
         run: mkdocs gh-deploy --force
-        working-directory: docs
