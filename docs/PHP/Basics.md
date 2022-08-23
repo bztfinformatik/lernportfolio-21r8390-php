@@ -1,3 +1,9 @@
+---
+tags:
+  - PHP
+  - Beispiele
+---
+
 # PHP Basics
 
 Hier ist eine Zusammenfassung mit Beispielen aller wichtigen Methoden und Konstanten, die PHP verfügt. Zusätzlich gibt es ein sehr kompaktes [Cheatsheet](Cheatsheet.md), welches nur die wichtigsten Stichworte enthält.

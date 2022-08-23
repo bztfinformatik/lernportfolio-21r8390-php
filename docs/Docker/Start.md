@@ -1,3 +1,8 @@
+---
+tags:
+  - Docker
+---
+
 # Docker :material-docker:
 
 - Docker und Docker-Compose

@@ -1,3 +1,8 @@
+---
+tags:
+  - PHP
+---
+
 # Installation
 
 Um PHP auszuführen braucht es einen Webserver, welcher PHP versteht und verarbeiten kann. Dabei kann zwischen [Produktionsserver](#docker) und [Entwicklungsserver](#ide) unterschieden werden.

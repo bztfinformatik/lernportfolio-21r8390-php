@@ -1,3 +1,8 @@
+---
+tags:
+  - PHP
+---
+
 # PHP
 
 [PHP :fontawesome-brands-php:](https://www.php.net/manual/en/intro-whatis.php) ist ein acronym für `PHP: Hypertext Preprocessor` und ist eine Skriptsprache, welche hauptsächlich für die Webentwicklung verwendet wird, da es direkt ins HTML eingebettet werden kann. Mit über 1'000 eingebauten Funktionen hat PHP für jeden Anwendungsfall ein geeignetes Werkzeug.
