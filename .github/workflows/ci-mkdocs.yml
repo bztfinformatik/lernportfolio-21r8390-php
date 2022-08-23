@@ -13,7 +13,7 @@ jobs:
           python-version: 3.x
 
       - name: Move Config 📝
-        run: mv mkdocs.yml ../mkdocs.yml
+        run: mv /docs/mkdocs.yml ../mkdocs.yml
 
       - name: Install dependencies 📦
         run: pip install \
