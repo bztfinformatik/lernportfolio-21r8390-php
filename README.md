@@ -5,9 +5,9 @@
 > Autor: Manuel Schumacher <br>
 > Modul: M133
 
-[Live Demo 🖨](#)
+[Live Demo 🖨]()
 
-[Doku 📚](https://github.com/bztfinformatik/lernportfolio-21r8390-php)
+[Doku 📚](https://bztfinformatik.github.io/lernportfolio-21r8390-php/)
 
 ## How To:
 
