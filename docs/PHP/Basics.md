@@ -10,7 +10,7 @@ Hier ist eine Zusammenfassung mit Beispielen aller wichtigen Methoden und Konsta
 
 ## Hello World
 
-Mithilfe der Markierung `<?php` wird gekennzeichnet, dass ein PHP-Abschnitt folgt. In diesem können [PHP-Methoden](https://www.w3schools.com/php/php_ref_overview.asp) ausgeführt werden. **Wichtig** ist, dass Funktionen mit einem `;` geschlossen werden.
+Mithilfe der Markierung `<?php` wird gekennzeichnet, dass ein PHP-Abschnitt folgt. In diesem können [PHP-Methoden](https://www.w3schools.com/php/php_ref_overview.asp) ausgeführt werden. **Wichtig** ist, dass Methoden mit einem `;` geschlossen werden.
 
 === "PHP"
 
@@ -61,5 +61,3 @@ addNumbers(2, "3");
 
 1. Mithilfe der Datentypen können die Parameter und Rückgabewerte definiert werden. Dies hilft dabei, Fehler zu vermeiden, da PHP die Parameter in den richtigen Typ umwandelt.
 2. Mithilfe von `declare(strict_types=1);` kann die Datentyp-Kompatibilität aufgehoben werden. So müssen die richtigen Datentypen angegeben werden.
-
----

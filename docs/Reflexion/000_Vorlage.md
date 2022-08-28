@@ -20,7 +20,7 @@ Nach folgenden Anforderungen sollte das Journal aufgebaut werden.
     -   Zusammenfassung der behandelten Inhalte
 -   [x] 30% Folgerungen für die eigene Berufspraxis festgehalten / Eigene Reflexion ist erkennbar
     -   Learnings ist der Zusammenfassung ersichtlich
-    -   Merksätze und Folgerungen sind ersichtlich
+    -   **Merksätze** und Folgerungen sind ersichtlich
 -   [x] 10% Bezug zu den Modulinhalte erklärt
     -   Wie haben wir die Inhalte behandelt
     -   Beispiele aus dem Unterricht sind nachgeführt
