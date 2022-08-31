@@ -35,9 +35,9 @@ Mithilfe der Markierung `<?php` wird gekennzeichnet, dass ein PHP-Abschnitt folg
 
 ## Erweitertes Beispiel
 
-**Funktionen** können auch mit Parametern und Rückgabewerten erstellt werden. Die Datentypen sind optional, da PHP automatisch die richtigen Datentypen ermittelt. Mithilfe eines `$` am Anfang werden Variablen deklariert. Die Namensgebung ist nach dem CamelCase (_someAwesomeFunc_) format.
+**Funktionen** können auch mit Parametern und Rückgabewerten erstellt werden. Die Datentypen sind optional, da PHP automatisch die richtigen Datentypen ermittelt. Mithilfe eines `$` am Anfang werden **Variablen** deklariert. Die Namensgebung ist nach dem CamelCase (_someAwesomeFunc_) format.
 
-```php
+```php title="Erweitertes Beispiel"
 <?
 
 /**
