@@ -99,15 +99,19 @@ nav:
           - Tags: "Tags.md"
     - Reflexion:
           - "1. Woche": "Reflexion/001_Woche.md"
+          - "2. Woche": "Reflexion/002_Woche.md"
     - PHP:
           - Übersicht: "PHP/Start.md"
           - Installation: "PHP/Installation.md"
           - Basics: "PHP/Basics.md"
+          - Aufgaben: "PHP/Aufgaben.md"
           # - Datenbanken: "PHP/Datenbanken.md"
           # - Session:
           # - Authorization:
     - Docker:
           - Übersicht: "Docker/Start.md"
+          - Struktur: "Docker/Struktur.md"
+          - Aufgaben: "Docker/Aufgaben.md"
     - Projekt:
           - Ziel: "Projekt/Ziel.md"
           - Planung: "Projekt/Planung.md"
@@ -116,3 +120,4 @@ nav:
           - PHP-Cheatsheet: "PHP/Cheatsheet.md"
           - "Journal Anforderungen": "Reflexion/000_Vorlage.md"
           - "GitHub Pages": "Appendix/GitHubPages/Einrichten.md"
+          - Arrays: "PHP/Arrays.md"

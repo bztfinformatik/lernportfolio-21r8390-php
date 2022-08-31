@@ -22,7 +22,7 @@ Die Dokumentation richtete jeder selbst ein. Während dieser Zeit ging ich im Kl
 
 Dadurch habe ich gelernt, dass es für Anfänger einfacher ist, auf einer gegebenen **Vorlage** weiterzuarbeiten als von Grund auf etwas aufzubauen. Wenn ich nächstes Mal meinem Unterstift eine Aufgabe geben muss, dann werde ich ihm Beispiele oder eine Vorlage beilegen, damit er ein **Grundgerüst** hat. Da ich das Einrichten der GitHub Seite schon sehr oft gemacht hatte, konnte ich das ohne Schwierigkeiten erledigen. Zusätzlich hatte ich von der [letzten Projektarbeit](https://bztfinformatik.github.io/lb1_doku-21r8390/) bereits eine Vorlage für MkDocs.
 
-!!! info "Merksatz:"
+!!! example "Merksatz:"
 
     - Anleitungen zu schreiben hilft, das Thema zu vertiefen und genauer zu verstehen.
     - Vorlagen sind für Anfänger einfacher zu verstehen als von Grund auf etwas aufzubauen.
@@ -37,7 +37,7 @@ Da ich Docker bereits kenne, konnte ich mir die Dokumentation durchlesen und mir
 
 Gelernt habe ich, dass Docker für das Beheben von **Sicherheitslücken** unheimlich nützlich ist. Da Docker Container **isoliert** sind, können sie nicht auf andere Container zugreifen. Wenn ein Container gehackt wird, dann kann er nur auf die Daten des Containers zugreifen, nicht aber auf die Daten der anderen Container. Für das Lösen einer Sicherheitslücke im Programm, das im Container läuft, muss nur der Container mit einem Patch neu gestartet werden.
 
-!!! info "Merksatz:"
+!!! example "Merksatz:"
 
     - Mithilfe Docker kann eine einheitliche Umgebung erstellt werden.
     - Docker und virtuelle Maschinen sollte man nicht mischen.
@@ -50,7 +50,7 @@ In diesem Modul verwenden wir PHP, was natürlich auch eine [Installation](../PH
 
 Für die Installation von PHP mit Docker bekamen wir eine [Vorlage](../PHP/Beispiele/DockerPHP.zip) von Herrn Inauen. Diese Vorlage beinhaltet bereits eine `docker-compose.yml` Datei, welche die Container erstellt. Aufsetzen machte jeder selbst, da man eigentlich nur den Container ausführen musste.
 
-!!! info "Merksatz:"
+!!! example "Merksatz:"
 
     - Docker sollte über All-In-One Installationen ([XAMPP](https://www.apachefriends.org/index.html)) bevorzugt werden.
     - Eine einheitliche Verwaltung von Entwicklungstools vereinfacht das Fehler finden.
@@ -67,7 +67,7 @@ Im Unterricht verwenden wir die [PHP Einfach](https://www.php-einfach.de) Seite.
 
 Den **Unterschied** zwischen Funktion und Methode habe ich gelernt. Bisher habe ich einfach akzeptiert, dass etwas mit Name und danach zwei Klammern `name()` eine Methode ist. Dies ist jedoch nur der Fall, wenn die Methode in einer Klasse oder einem Objekt definiert ist. Eine Funktion ist eine Methode, die nicht in einer Klasse oder einem Objekt definiert ist. Da PHP auch ausserhalb von Klassen verwendet werden kann, ist es wichtig zu wissen, wie man dies fachbegrifflich nennt.
 
-!!! info "Merksatz:"
+!!! example "Merksatz:"
 
     - Eine Methode ist eigentlich eine Funktion, die im Kontext einer Klasse oder eines Objekts verwendet wird.
     > ~ [StackOverflow](https://stackoverflow.com/questions/4841605/what-is-a-difference-between-a-method-and-a-function)
