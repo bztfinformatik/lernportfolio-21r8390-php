@@ -49,11 +49,11 @@ Bemerkt habe ich, dass Programmiersprachen grundsätzlich alle dieselben Recheno
 
 ## PHP Arrays
 
-Sehr oft arbeitet man nicht nur mit einer Variable alleine sondern braucht eine **Sammlung** von Werten. Dazu werden in PHP Arrays verwendet, welche etwas Komplexer sind als man sich gewöhnt ist. Dabei wird zwischen Nummerisch und Assoziativ unterschieden. Die wichtigsten [Funktionen](../PHP/Arrays.md), welche für die Arbeit mit Arrays benötigt werden schrieb ich mir auf. Als Zusatzaufgabe habe ich einen eigenen Sortieralgorithmus anhand von [Quicksort](../PHP/Beispiele/Sortierung.php) implementiert.
+Sehr oft arbeitet man nicht nur mit einer Variable alleine sondern braucht eine **Sammlung** von Werten. Dazu werden in PHP Arrays verwendet, welche etwas Komplexer sind als man sich gewöhnt ist. Dabei wird zwischen Numerisch und Assoziativ unterschieden. Die wichtigsten [Funktionen](../PHP/Arrays.md), welche für die Arbeit mit Arrays benötigt werden schrieb ich mir auf. Als Zusatzaufgabe habe ich einen eigenen Sortieralgorithmus anhand von [Quicksort](../PHP/Beispiele/Sortierung.php) implementiert.
 
 !!! example "Merksatz:"
 
-    - Nummerisch und Assoziativ sind die zwei verschieden Arten von Arrays die PHP unterstützt.
+    - Numerisch und Assoziativ sind die zwei verschieden Arten von Arrays die PHP unterstützt.
     - In PHP muss jede Methode einen anderen Namen besitzend, da es keine Methodenüberschreibung gibt.
 
 ## HTTP Parameter

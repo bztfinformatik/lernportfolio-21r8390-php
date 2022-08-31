@@ -1,6 +1,6 @@
 <h1>Arrays</h1>
 
-<h3>Nummerisches Array</h3>
+<h3>Numerisches Array</h3>
 <?php
 $array = array(1, 2, 3, 4, 5);
 

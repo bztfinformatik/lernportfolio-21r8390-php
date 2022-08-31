@@ -65,7 +65,7 @@ Dies ist ein grosses Problem bei losen **Typisierung**, da nie klar ist was gena
 
 Arrays sind eine **Sammlung von Werten**. Sie können numerisch oder assoziativ sein. Numerische Arrays haben eine **Nummer** als Schlüssel. Assoziative Arrays haben einen **Text** als Schlüssel. Arrays können auch **mehrdimensional** sein. Das heisst, dass ein Array in einem Array enthalten sein kann. Arrays können auch **Objekte** enthalten.
 
-=== "Numerisches Array"
+=== "Numerisch"
 
     ```php
     <?php
@@ -82,7 +82,7 @@ Arrays sind eine **Sammlung von Werten**. Sie können numerisch oder assoziativ 
     echo $array[4]; //5
     ```
 
-=== "Assoziatives Array"
+=== "Assoziativ"
 
     ```php
     <?php
@@ -93,7 +93,7 @@ Arrays sind eine **Sammlung von Werten**. Sie können numerisch oder assoziativ 
     echo $array["alter"]; //18
     ```
 
-=== "Mehrdimensionales Array"
+=== "Mehrdimensional"
 
     ```php
     <?php
@@ -115,7 +115,7 @@ Arrays sind eine **Sammlung von Werten**. Sie können numerisch oder assoziativ 
 
 Mithilfe des Zeichens `[]` können Werte zu einem Array **hinzugefügt** werden. Dabei wird der Schlüssel automatisch generiert, wenn dies möglich ist. Ansonsten muss er in den Klammern angegeben werden.
 
-=== "Numerisches Array"
+=== "Numerisch"
 
     ```php
     <?
@@ -126,7 +126,7 @@ Mithilfe des Zeichens `[]` können Werte zu einem Array **hinzugefügt** werden.
     echo $array[0]; //Manuel
     ```
 
-=== "Assoziatives Array"
+=== "Assoziativ"
 
     ```php
     <?
@@ -141,7 +141,7 @@ Mithilfe des Zeichens `[]` können Werte zu einem Array **hinzugefügt** werden.
 
 PHP kann auch **Tabellen** ausgeben. Dazu wird die Funktion `echo` mit dem Parameter `table` verwendet. Die Tabelle wird mit dem Tag `<table>` ausgegeben. Die Tabellenzeilen werden mit dem Tag `<tr>` ausgegeben. Die Tabellenzellen werden mit dem Tag `<td>` ausgegeben.
 
-=== "Lösung - Numerisch"
+=== "Numerisch"
 
     ```php
     <?php
@@ -155,7 +155,11 @@ PHP kann auch **Tabellen** ausgeben. Dazu wird die Funktion `echo` mit dem Param
     echo "</table>";
     ```
 
-=== "Lösung - Assoziativ"
+    ??? done "Ausgabe"
+
+        <table border="1"><tbody><tr><th>Index</th><th>Wert</th></tr><tr><td>0</td><td>3</td></tr><tr><td>1</td><td>7</td></tr><tr><td>2</td><td>5</td></tr><tr><td>3</td><td>1</td></tr><tr><td>4</td><td>8</td></tr><tr><td>5</td><td>13</td></tr><tr><td>6</td><td>2</td></tr></tbody></table>
+
+=== "Assoziativ"
 
     ```php
     <?php
@@ -169,6 +173,10 @@ PHP kann auch **Tabellen** ausgeben. Dazu wird die Funktion `echo` mit dem Param
     echo "</table>";
     ```
 
+    ??? done "Ausgabe"
+
+        <table border="1"><tbody><tr><th>Index</th><th>Wert</th></tr><tr><td>name</td><td>Manuel</td></tr><tr><td>alter</td><td>18</td></tr><tr><td>klasse</td><td>IN20/24c</td></tr></tbody></table>
+
 ### Weitere Funktionen
 
 PHP verfügt über eine Reihe von Funktionen, welche mit Arrays arbeiten. Die wichtigsten sind `count()`, `array_push()`, `in_array()` und `sort()`. Da Arrays sehr ausführlich sind und nicht nur einfach hinzufügen, sortieren und entfernen können, ist dieser Abschnitt im [Appendix](Arrays.md) genauer ausgeführt.
@@ -181,13 +189,15 @@ HTTP Parameter werden in der URL übergeben. Sie werden mit einem `?` getrennt v
 
 === "GET"
 
-    ```php
+    ```html
     <form method="get">
         Name: <input type="text" name="name" /><br />
         Alter: <input type="number" name="alter" /><br />
         <input type="Submit" value="Absenden" />
     </form>
+    ```
 
+    ```php
     <?php
     //http://localhost:3000/?name=Manuel&alter=18
 
@@ -202,7 +212,7 @@ HTTP Parameter werden in der URL übergeben. Sie werden mit einem `?` getrennt v
     }
     ```
 
-=== "POST - Formular"
+=== "POST"
 
     ```html
     <form action="seite2.php" method="post">
@@ -211,8 +221,6 @@ HTTP Parameter werden in der URL übergeben. Sie werden mit einem `?` getrennt v
         <input type="Submit" value="Absenden" />
     </form>
     ```
-
-=== "POST - PHP"
 
     ```php
     <?php
