@@ -34,11 +34,11 @@ Mir ist aufgefallen, dass wir **Applikationsentwickler** Docker gar nie als rich
 
 ## PHP Rechnen
 
-In jeder Programmiersprache ist es notwendig, dass man die grundlegenden **Rechnungsoperatoren** kennt. Wie man mit Variablen rechnet schauten wir deshalb in dieser Woche genauer an. Dazu erstellte ich eine Dokumentation über die bekannten [Operatoren](../PHP/Aufgaben.md#rechnen-mit-variablen). In der Dokumentation war es mir wichtig, dass es Beispiele hat, da diese schneller überflogen werden können.
+In jeder Programmiersprache ist es notwendig, dass man die grundlegenden **Rechnungsoperatoren** kennt. Wie man mit Variablen rechnet schauten wir deshalb in dieser Woche genauer an. Dazu erstellte ich eine Dokumentation über die bekannten [Operatoren](../PHP/Aufgaben/Rechnen.md). In der Dokumentation war es mir wichtig, dass es Beispiele hat, da diese schneller überflogen werden können.
 
 Als Vorlage verwendete ich [PHP Einfach](https://www.php-einfach.de/php-tutorial/rechnen-mit-variablen/), was bereits Beispiele enthielt. Diese Beispiele schrieb ich mit meinen Präferenzen ab. Mithilfe meines eigenen Wissens erweiterte ich diese, damit sie vollständiger sind. **Bitwise** [Operatoren](https://www.educba.com/bitwise-operators-in-php/) habe ich jedoch weggelassen, da sie selten verwendet werden.
 
-Bei diesen Aufgaben habe ich gelernt wie man Strings verknüpft. Alle anderen Operatoren verhalten sich gleich wie in anderen mir bekannten Programmiersprachen. Ich kann nun mit Variablen umgehen und sie nach belieben anwenden. Für mich war bisher nicht klar wieso **Strings** mit einem Punkt zusammengefügt werden. Nun weiss ich den [Grund](../PHP/Aufgaben.md#strings) dafür und finde es sogar Sinnvoll.
+Bei diesen Aufgaben habe ich gelernt wie man Strings verknüpft. Alle anderen Operatoren verhalten sich gleich wie in anderen mir bekannten Programmiersprachen. Ich kann nun mit Variablen umgehen und sie nach belieben anwenden. Für mich war bisher nicht klar wieso **Strings** mit einem Punkt zusammengefügt werden. Nun weiss ich den [Grund](../PHP/Aufgaben/Rechnen.md#strings) dafür und finde es sogar Sinnvoll.
 
 !!! example "Merksatz:"
 
@@ -49,12 +49,13 @@ Bemerkt habe ich, dass Programmiersprachen grundsätzlich alle dieselben Recheno
 
 ## PHP Arrays
 
-Sehr oft arbeitet man nicht nur mit einer Variable alleine sondern braucht eine **Sammlung** von Werten. Dazu werden in PHP Arrays verwendet, welche etwas Komplexer sind als man sich gewöhnt ist. Dabei wird zwischen Numerisch und Assoziativ unterschieden. Die wichtigsten [Funktionen](../PHP/Arrays.md), welche für die Arbeit mit Arrays benötigt werden schrieb ich mir auf. Als Zusatzaufgabe habe ich einen eigenen Sortieralgorithmus anhand von [Quicksort](../PHP/Beispiele/Sortierung.php) implementiert.
+Sehr oft arbeitet man nicht nur mit einer Variable alleine sondern braucht eine **Sammlung** von Werten. Dazu werden in PHP Arrays verwendet, welche etwas Komplexer sind als man sich gewöhnt ist. Dabei wird zwischen Numerisch und Assoziativ unterschieden. Die wichtigsten [Funktionen](../PHP/Appendix/ArrayFunktionen.md), welche für die Arbeit mit Arrays benötigt werden schrieb ich mir auf. Als Zusatzaufgabe habe ich einen eigenen Sortieralgorithmus anhand von [Quicksort](../PHP/Appendix/Sortieren.md) implementiert.
 
 !!! example "Merksatz:"
 
     - Numerisch und Assoziativ sind die zwei verschieden Arten von Arrays die PHP unterstützt.
     - In PHP muss jede Methode einen anderen Namen besitzend, da es keine Methodenüberschreibung gibt.
+    - In PHP muss `&` verwendet werden um Parameter als Call-By-Reference zu übergeben. Ansonsten werden sie als Call-By-Value übergeben.
 
 ## HTTP Parameter
 

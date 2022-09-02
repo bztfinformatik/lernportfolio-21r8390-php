@@ -8,7 +8,9 @@ tags:
 
 # Arrays
 
-Arrays sind eine **Sammlung von Werten**. Sie können numerisch oder assoziativ sein. Numerische Arrays haben eine **Nummer** als Schlüssel. Assoziative Arrays haben einen **Text** als Schlüssel. Arrays können auch **mehrdimensional** sein. Das heisst, dass ein Array in einem Array enthalten sein kann. Arrays können auch **Objekte** enthalten. Einen eigenen Quicksort in PHP implementiert kann [hier](Beispiele/Sortierung.php) gefunden werden.
+Arrays sind eine **Sammlung von Werten**. Sie können numerisch oder assoziativ sein. Numerische Arrays haben eine **Nummer** als Schlüssel. Assoziative Arrays haben einen **Text** als Schlüssel. Arrays können auch **mehrdimensional** sein. Das heisst, dass ein Array in einem Array enthalten sein kann. Arrays können auch **Objekte** enthalten. Einen eigenen Quicksort in PHP implementiert kann [hier](Sortieren.md) gefunden werden.
+
+Mithilfe von [`print_r`](https://www.php.net/manual/en/function.print-r.php) kann ein Array in lesbarer Form ausgegeben werden. Um doch mehr Informationen zu bekommen kann [`var_dump`](https://www.php.net/manual/en/function.var-dump.php) verwendet werden. Dort wird der Typ und weitere Debugging Informationen ausgegeben.
 
 ---
 

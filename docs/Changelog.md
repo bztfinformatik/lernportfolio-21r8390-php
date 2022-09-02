@@ -11,4 +11,10 @@
 
 ## 2. Woche
 
--   Mockup
+-   [PHP Rechnen](PHP/Aufgaben/Rechnen.md)
+-   [PHP Arrays](PHP/Aufgaben/Arrays.md)
+-   [PHP Array Funktionen](PHP/Appendix/ArrayFunktionen.md)
+-   [PHP HTTP Parameter](PHP/Aufgaben/HTTP-Parameter.md)
+-   [Quicksort](PHP/Appendix/Sortieren.md#quicksort)
+-   [Docker Whalesay & MySQL](Docker/Aufgaben.md)
+-   [2. Woche in Journal](Reflexion/001_Woche.md)

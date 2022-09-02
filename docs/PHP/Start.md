@@ -15,4 +15,4 @@ Da PHP schon etwas älter ist, gibt es nicht wie bei anderen Programmiersprachen
 
 ## Basics
 
-PHP verfügt über unzählige Methoden und [Design Patterns](https://medium.com/codex/top-9-design-patterns-every-developer-should-know-about-c76df8d5643f). Alle diese im Überblick zu behalten ist sehr schwierig. Aus diesem Grund gibt es unter [Basics](Basics.md) eine Zusammenfassung der wichtigsten Methoden und Konstanten. Zusätzlich gibt es ein sehr kompaktes [Cheatsheet](Cheatsheet.md), welches perfekt für Prüfungen oder schnelles Nachschlagen geeignet ist.
+PHP verfügt über unzählige Methoden und [Design Patterns](https://medium.com/codex/top-9-design-patterns-every-developer-should-know-about-c76df8d5643f). Alle diese im Überblick zu behalten ist sehr schwierig. Aus diesem Grund gibt es unter [Basics](Basics.md) eine Zusammenfassung der wichtigsten Methoden und Konstanten. Zusätzlich gibt es ein sehr kompaktes [Cheatsheet](Appendix/Cheatsheet.md), welches perfekt für Prüfungen oder schnelles Nachschlagen geeignet ist.

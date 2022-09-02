@@ -29,6 +29,7 @@ theme:
         - search.share
         - content.code.annotate
         - content.tabs.link
+        - navigation.sections
 
 extra_css:
     - css/custom.css
@@ -87,10 +88,14 @@ plugins:
           tags_file: "Tags.md"
     - redirects:
           redirect_maps:
+              "PHP.md": "PHP/Start.md"
               "PHP/UEbersicht.md": "PHP/Start.md"
-              "Appendix/PHP-Cheatsheet.md": "PHP/Cheatsheet.md"
+              "Docker.md": "Docker/Start.md"
+              "Appendix/PHP-Cheatsheet.md": "PHP/Appendix/Cheatsheet.md"
               "Appendix/Changelog.md": "Changelog.md"
               "Appendix/Tags.md": "Tags.md"
+              "Inhalt.md": "Tags.md"
+              "Journal.md": "Reflexion/001_Woche.md"
 
 nav:
     - Startseite:
@@ -104,7 +109,10 @@ nav:
           - Übersicht: "PHP/Start.md"
           - Installation: "PHP/Installation.md"
           - Basics: "PHP/Basics.md"
-          - Aufgaben: "PHP/Aufgaben.md"
+          - Aufgaben:
+                - "Rechnen mit Variablen": "PHP/Aufgaben/Rechnen.md"
+                - Arrays: "PHP/Aufgaben/Arrays.md"
+                - "HTTP-Parameter": "PHP/Aufgaben/HTTP-Parameter.md"
           # - Datenbanken: "PHP/Datenbanken.md"
           # - Session:
           # - Authorization:
@@ -117,7 +125,9 @@ nav:
           - Planung: "Projekt/Planung.md"
           - Selbstreflexion: "Projekt/Selbstreflexion.md"
     - Appendix:
-          - PHP-Cheatsheet: "PHP/Cheatsheet.md"
           - "Journal Anforderungen": "Reflexion/000_Vorlage.md"
           - "GitHub Pages": "Appendix/GitHubPages/Einrichten.md"
-          - Arrays: "PHP/Arrays.md"
+          - PHP:
+                - "PHP-Cheatsheet": "PHP/Appendix/Cheatsheet.md"
+                - "Array Funktionen": "PHP/Appendix/ArrayFunktionen.md"
+                - Sortieren: "PHP/Appendix/Sortieren.md"
