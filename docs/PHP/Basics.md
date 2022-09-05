@@ -35,10 +35,10 @@ Mithilfe der Markierung `<?php` wird gekennzeichnet, dass ein PHP-Abschnitt folg
 
 ## Erweitertes Beispiel
 
-**Funktionen** können auch mit Parametern und Rückgabewerten erstellt werden. Die Datentypen sind optional, da PHP automatisch die richtigen Datentypen ermittelt. Mithilfe eines `$` am Anfang werden **Variablen** deklariert. Die Namensgebung ist nach dem CamelCase (_someAwesomeFunc_) format. Funktionen können in PHP nicht **überladen** werden. Es muss somit immer ein anderer Name gegeben werden. Parameter in Funktionen sind Call-By-Value, d.h. dass die Werte nicht verändert werden können. Um die Werte zu verändern, muss ein **Referenz-Operator** (`&`) verwendet werden.
+**Funktionen** können auch mit Parametern und Rückgabewerten erstellt werden. Die [Datentypen](Appendix/Datentypen.md) sind optional, da PHP automatisch die richtigen Datentypen ermittelt. Mithilfe eines `$` am Anfang werden **Variablen** deklariert. Die Namensgebung ist nach dem CamelCase (_someAwesomeFunc_) format. Funktionen können in PHP nicht **überladen** werden. Es muss somit immer ein anderer Name gegeben werden. Parameter in Funktionen sind Call-By-Value, d.h. dass die Werte nicht verändert werden können. Um die Werte zu verändern, muss ein **Referenz-Operator** (`&`) verwendet werden.
 
 ```php title="Erweitertes Beispiel"
-<?
+<?php
 
 /**
  * Funktion zum Addieren von zwei Zahlen (1)
