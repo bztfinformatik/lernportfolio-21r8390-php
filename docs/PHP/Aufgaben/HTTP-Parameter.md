@@ -58,9 +58,10 @@ HTTP Parameter werden in der URL übergeben. Sie werden mit einem `?` getrennt v
 
 | Aufgabe                             | GET                                       | GET                                                             |
 | ----------------------------------- | ----------------------------------------- | --------------------------------------------------------------- |
-| :material-cached: Cacheable         | :material-check-all:                      | :material-close:                                                |
+| :material-cached: Cacheable         | :material-check-all: Browser & Server     | :material-close:                                                |
 | :material-book: Wiederaufrufbar     | :material-check-all:                      | :material-close:                                                |
 | :material-eye-outline: Sichtbarkeit | :material-check: Sichtbar in URL          | :material-check: Nicht sichtbar                                 |
 | :material-security: Sicherheit      | :material-check: Sensitive Daten sichtbar | :material-check: Sensitive Daten versteckt                      |
 | :material-chart-line: Zeichenlimit  | :material-close: 2048                     | :material-check-all: Unbegrenzt (Limit bei Server)              |
 | :octicons-typography-24: Zeichenart | :material-close: Nur ASCII                | :material-check-all: Alles erlaubt (Bilder, Audio, Binary, ...) |
+| :material-table: Abfrage            | :material-table-question: Daten anfordern | :material-table-edit: Daten modifizieren                        |

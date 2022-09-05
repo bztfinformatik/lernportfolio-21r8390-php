@@ -5,7 +5,7 @@ tags:
 
 # PHP
 
-[PHP :fontawesome-brands-php:](https://www.php.net/manual/en/intro-whatis.php) ist ein Acronym für `PHP: Hypertext Preprocessor` und ist eine Skriptsprache, welche hauptsächlich für die Webentwicklung verwendet wird, da es direkt ins HTML eingebettet werden kann. Mit über 1'000 eingebauten Methoden hat PHP für jeden Anwendungsfall ein geeignetes Werkzeug.
+[PHP :fontawesome-brands-php:](https://www.php.net/manual/en/intro-whatis.php) ist ein Acronym für `PHP: Hypertext Preprocessor` oder `Personal Home Page`. Die Skriptsprache, welche hauptsächlich für die Webentwicklung verwendet wird, kann direkt ins HTML eingebettet werden. Mit über 1'000 eingebauten Methoden hat PHP für jeden Anwendungsfall ein geeignetes Werkzeug.
 
 Traditionell wird PHP für **Server-Side Scripting** verwendet. Das heisst, dass der Server das Script ausführt und auswertet. Das Ergebnis (_gerendertes HTML_) wird dann zurückgesendet und beim Client dargestellt. Meist wird dies in Kombination mit [:material-wordpress: WordPress](https://wordpress.com/) gemacht.
 

@@ -9,7 +9,7 @@ tags:
 
 > Source: [medium.com](https://medium.com/the-protean-journal/the-quicksort-algorithm-implemented-in-php-692798f91aee)
 
-```php
+```php linenums="1"
 <?php
 class Sorting
 {

@@ -49,7 +49,11 @@ Bemerkt habe ich, dass Programmiersprachen grundsätzlich alle dieselben Recheno
 
 ## PHP Arrays
 
-Sehr oft arbeitet man nicht nur mit einer Variable alleine sondern braucht eine **Sammlung** von Werten. Dazu werden in PHP Arrays verwendet, welche etwas Komplexer sind als man sich gewöhnt ist. Dabei wird zwischen Numerisch und Assoziativ unterschieden. Die wichtigsten [Funktionen](../PHP/Appendix/ArrayFunktionen.md), welche für die Arbeit mit Arrays benötigt werden schrieb ich mir auf. Als Zusatzaufgabe habe ich einen eigenen Sortieralgorithmus anhand von [Quicksort](../PHP/Appendix/Sortieren.md) implementiert.
+Sehr oft arbeitet man nicht nur mit einer Variable alleine sondern braucht eine **Sammlung** von Werten. Dazu werden in PHP Arrays verwendet, welche etwas Komplexer sind als man sich gewöhnt ist. Dabei wird zwischen Numerisch und Assoziativ unterschieden. Die wichtigsten [Funktionen](../PHP/Aufgaben/Arrays.md), welche für die Arbeit mit Arrays benötigt werden schrieb ich mir auf. Als Zusatzaufgabe habe ich einen eigenen Sortieralgorithmus anhand von [Quicksort](../PHP/Appendix/Sortieren.md) implementiert.
+
+Als Lehrmittel verwendeten wir [PHP Einfach](https://www.php-einfach.de/php-tutorial/php-array/) um die Aufgaben herauszusuchen. Von dort schrieb ich die einfachen **Anwendungen** heraus. Für die [Sammlung](../PHP/Appendix/ArrayFunktionen.md) aller Funktionen war mit [GitHub Copilot](https://github.com/features/copilot/) sehr behilflich. Dieser Schlug mir gleich eine Auflistung der Funktionen vor, anhand welchen ich dann die Beispiele machen konnte.
+
+Ich habe gelernt, dass Arrays in PHP **nicht vergleichbar** mit Arrays aus anderen Sprachen sind. Sie sind eher eine ArrayList anstatt ein Array mit einer fixen Länge. Beim schreiben des Sortieralgorithmus lernte ich, dass PHP standardmässig alle Attribute als **Call-By-Value** übergeben werden. Zusätzlich ist das **Überladen** von Methoden nicht möglich.
 
 !!! example "Merksatz:"
 
@@ -57,9 +61,19 @@ Sehr oft arbeitet man nicht nur mit einer Variable alleine sondern braucht eine 
     - In PHP muss jede Methode einen anderen Namen besitzend, da es keine Methodenüberschreibung gibt.
     - In PHP muss `&` verwendet werden um Parameter als Call-By-Reference zu übergeben. Ansonsten werden sie als Call-By-Value übergeben.
 
+Mir ist aufgefallen, dass PHP sich als OOP-Sprache ausgibt, jedoch in Wirklichkeit gar keine ist. Sie hat zwar Klassen, welche vererbt werden können, jedoch keine der wichtigen Eigenschaften von Methoden.
+
 ## HTTP Parameter
+
+Was [HTTP-Parameter](../PHP/Aufgaben/HTTP-Parameter.md) sind und wie diese verwendet werden können, lernten wir in dieser Woche. Beim verwenden muss man beachten, dass man nicht vorhandene Schlüssel nicht abfragt. Die zwei Parameter GET und POST haben unterschiedliche **Charakteristiken** mit Vor- und Nachteilen. Für eine schnelle Übersicht erstellte ich eine [Tabelle](../PHP/Aufgaben/HTTP-Parameter.md#anwendungsfälle). Je nach Anforderungen kann dann abgeglichen werden was für ein Parameter verwendet werden sollte.
+
+Das Anwenden lernten wir anhand von **Beispielen**, in welchen wir ein Formular erstellen mussten. Die Werte des Formulars werden beim Absenden ausgegeben. Mit **Learning-By-Doing** erlebten wir Hindernisse und wie diese behoben werden können. Die Eigenschaften der Parameter stammen aus dem Internet und von der Präsentation aus dem Unterricht.
+
+Ein Verständnis über HTTP-Parameter hatte ich bereits aus dem **PHP-ÜK**, in welchem wir diese verwendet haben. Die Unterschiede zwischen GET und POST habe ich nun besser verstanden. Die **Unterschiede** zwischen den beiden Parameter sind, dass GET die Parameter in der URL anzeigt und POST die Parameter im Body der HTTP-Anfrage. Beim GET-Parameter ist die Länge der Parameter begrenzt, da diese in der URL angezeigt werden. Beim POST-Parameter ist die Länge der Parameter nicht begrenzt, da diese im Body der HTTP-Anfrage angezeigt werden.
 
 !!! example "Merksatz:"
 
     - Vor dem Zugreifen auf einen Parameter muss überprüft werden, ob dieser überhaupt gesetzt wurde.
     - GET und POST sind die zwei HTTP-Methoden, die in PHP verwendet werden können.
+
+Herausgestochen ist mir, dass nur zwei HTTP-Methoden unterstützt werden. Es gibt noch viele **weitere Methoden**, welche aber nicht unterstützt werden. Die HTTP-Methoden sind GET, POST, PUT, DELETE, HEAD, OPTIONS, CONNECT und TRACE. Sie können zwar über die `$_SERVER` Variable [abgefragt](https://stackoverflow.com/questions/27941207/http-protocols-put-and-delete-and-their-usage-in-php) werden, jedoch nicht über SuperGlobals.

@@ -21,9 +21,9 @@ echo $zahl1 * $zahl2; //multiplizieren
 
 echo $zahl1 / $zahl2; //dividieren
 
-echo pow($zahl1,$zahl2); //Zahl1 hoch Zahl2 (10^5)
+echo $zahl1 % $zahl2; //modulo (Rest der Division)
 
-echo sqrt(64); // Wurzel von √64
+echo $zahl1 ** $zahl2; //potenzieren
 
 echo 2*$zahl1 + 5*$zahl2 - 3; //Berechnet (2*10) + (5*5) - 3
 ```
@@ -38,9 +38,34 @@ echo ++$zahl1; //Inkrementieren
 
 echo $zahl1 += 5; //Addieren
 
-echo --$zahl1; //Dekrementieren
+echo $zahl1--; //Dekrementieren
 
 echo $zahl1 -= 5; //Subtrahieren
+```
+
+## Mathematische Funktionen
+
+Für das Rechnen mit Variablen gibt es auch **Mathematische Funktionen**. Diese können mit `Math::` vorangestellt werden. Die Funktionen sind `abs()`, `ceil()`, `floor()`, `round()`, `max()`, `min()`, `pow()`, `sqrt()` und `rand()`. Die Funktion `abs()` gibt den positiven Wert einer Zahl zurück. `ceil()` rundet eine Zahl auf und gibt die nächste ganze Zahl zurück. Mithilfe von `floor()` rundet man eine Zahl ab und gibt die nächste ganze Zahl zurück. Die Funktion `round()` rundet eine Zahl auf die Anzahl Kommastellen. Die höchste Zahl bekommt man mit `max()`, wobei `min()` die niedrigste Zahl zurück gibt. Die Potenz einer Zahl kann mit `pow()` Berechnet werden. Wurzel zieht man mit `sqrt()`. Eine zufällige Zahl, zwischen zwei Bereichen, erhält man mit `rand()`.
+
+```php title="Mathematische Funktionen"
+<?
+echo abs(-5); // 5 (Positive Zahl)
+
+echo ceil(3.1415); // 4 (Rundet auf)
+
+echo floor(3.1415); // 3 (Rundet ab)
+
+echo round(3.1415, 2); // 3.14 (2 Nachkommastellen)
+
+echo max(5, 10, 15); // 15 (die höchste Zahl)
+
+echo min(5, 10, 15); // 5 (kleinstes Argument)
+
+echo pow(2, 3); // 8 (Hoch: 2^3)
+
+echo sqrt(64); // 8 (Wurzel von √64)
+
+echo rand(1, 10); // Zufallszahl zwischen 1 und 10
 ```
 
 ## Strings
