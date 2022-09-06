@@ -12,7 +12,7 @@ Nach folgenden Anforderungen sollte das Journal aufgebaut werden.
     -   Was würde ich anders machen?
     -   Wobei kann es behilflich sein? (Anwendungszweck)
     -   Was war neu / bereits bekannt?
--   [x] Was ist mir aufgefallen?
+-   [x] Was ist mir aufgefallen? (Fazit)
 
 ## Zusammenfassung der Inhalte
 

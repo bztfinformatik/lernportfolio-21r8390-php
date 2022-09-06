@@ -66,3 +66,23 @@ do {
     $i++;
 } while ($i <= 10);
 ```
+
+## Abbrechen & Überspringen
+
+Es gibt zwei Möglichkeiten, eine Schleife zu beenden:
+
+-   `break` beendet die Schleife
+-   `continue` überspringt den aktuellen Durchlauf
+
+Dies kann behilflich sein, wenn Werte ausgelassen werden sollen oder die Schleife abgebrochen werden soll, wenn eine Bedingung erfüllt ist. Üblicherweise wird `return` eher als `break` verwendet, da der Code schwer nachzufolgen ist.
+
+```php title="Ausgabe 0 bis 10, aber 5 wird übersprungen"
+<?
+for ($i = 0; $i <= 10; $i++) {
+    if ($i == 5) {
+        continue;
+    }
+
+    echo $i;
+}
+```

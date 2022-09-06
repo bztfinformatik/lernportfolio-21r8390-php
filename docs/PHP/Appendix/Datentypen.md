@@ -52,6 +52,4 @@ PHP kann Datentypen automatisch **konvertieren**. Das heisst, dass eine Variable
 
 ## Call By ?
 
--   &
--   Reference
--   Value
+Bei der Übergabe von Parametern an eine Funktion wird zwischen **Call-By-Value** und **Call-By-Reference** unterschieden. Bei Call-By-Value wird der Wert oder eine Kopie des Parameters an die Funktion übergeben. Bei Call-By-Reference wird die originale Variable an die Funktion übergeben. Das heisst, dass Änderungen an der Variable in der Funktion auch in der ursprünglichen Variable sichtbar sind. In PHP wird immer Call-By-Value verwendet. Um eine Variable als **Referenz** zu übergeben, muss sie mit `&` vorangestellt werden.
