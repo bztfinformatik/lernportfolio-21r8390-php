@@ -105,14 +105,18 @@ nav:
     - Reflexion:
           - "1. Woche": "Reflexion/001_Woche.md"
           - "2. Woche": "Reflexion/002_Woche.md"
+          - "3. Woche": "Reflexion/003_Woche.md"
     - PHP:
           - Übersicht: "PHP/Start.md"
           - Installation: "PHP/Installation.md"
           - Basics: "PHP/Basics.md"
           - Aufgaben:
                 - "Rechnen mit Variablen": "PHP/Aufgaben/Rechnen.md"
+                - Vergleiche: "PHP/Aufgaben/Vergleiche.md"
+                - Schleifen: "PHP/Aufgaben/Schleifen.md"
                 - Arrays: "PHP/Aufgaben/Arrays.md"
                 - "HTTP-Parameter": "PHP/Aufgaben/HTTP-Parameter.md"
+                - Formular: "PHP/Aufgaben/Formular.md"
           # - Datenbanken: "PHP/Datenbanken.md"
           # - Session:
           # - Authorization:
@@ -129,5 +133,7 @@ nav:
           - "GitHub Pages": "Appendix/GitHubPages/Einrichten.md"
           - PHP:
                 - "PHP-Cheatsheet": "PHP/Appendix/Cheatsheet.md"
+                - Datentypen: "PHP/Appendix/Datentypen.md"
                 - "Array Funktionen": "PHP/Appendix/ArrayFunktionen.md"
                 - Sortieren: "PHP/Appendix/Sortieren.md"
+                - Sicherheit: "PHP/Appendix/Sicherheit.md"

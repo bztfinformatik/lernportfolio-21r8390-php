@@ -18,3 +18,11 @@
 -   [Quicksort](PHP/Appendix/Sortieren.md#quicksort)
 -   [Docker Whalesay & MySQL](Docker/Aufgaben.md)
 -   [2. Woche in Journal](Reflexion/001_Woche.md)
+
+## 3. Woche
+
+-   Doku Strukturiert
+-   [Datentypen](PHP/Appendix/Datentypen.md)
+-   [Vergleiche](PHP/Aufgaben/Vergleiche.md)
+-   [Schleifen](PHP/Aufgaben/Schleifen.md)
+-   [Formular](PHP/Aufgaben/Formular.md)
