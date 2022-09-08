@@ -6,6 +6,10 @@ tags:
 
 # Formular
 
+-   Externer- / Selbstverweise
+-   GET VS POST
+-   edu.flimtix.dev
+
 ```php
 <!DOCTYPE html>
 <html lang="de">
@@ -17,27 +21,27 @@ tags:
    <!-- <meta http-equiv="refresh" content="3"> -->
    <meta name="author" content="Manuel Schumacher">
    <title>M133 - Formular</title>
-   <link rel="icon" type="image/x-icon" href="donut.png">
+   <link rel="icon" type="image/x-icon" href="assets/donut.png">
    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 
 <body>
    <main class="container p-5">
-      <img class="d-block mx-auto mb-4" src="donut.png" alt="Donut Icon" width="260" height="190">
+      <img class="d-block mx-auto mb-4" src="assets/donut.png" alt="Donut Icon" width="260" height="190">
       <h1 class="display-5 fw-bold text-center">Donut Bestellung</h1>
       <hr class="pb-3" />
 
       <div class="shadow-lg p-4 mt-3 bg-body rounded">
-         <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="GET" class="row g-3">
+         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'], ENT_QUOTES, 'utf-8'); ?>" method="GET" class="row g-3">
             <!-- Firma / Privatperson -->
             <div class="row col-12 mt-2 mx-2">
                <div class="form-check col-6">
-                  <input class="form-check-input" type="radio" name="privatperson" id="privatperson" checked>
+                  <input class="form-check-input" type="radio" name="art" value="privatperson" id="privatperson" checked>
                   <label class="form-check-label" for="privatperson">Privatperson</label>
                </div>
                <div class="form-check col-6">
-                  <input class="form-check-input" type="radio" name="firma" id="firma">
+                  <input class="form-check-input" type="radio" name="art" value="firma" id="firma">
                   <label class="form-check-label" for="firma">Firma</label>
                </div>
             </div>
@@ -83,7 +87,7 @@ tags:
 
             <!-- Anzahl -->
             <div class="form-floating col-12">
-               <input type="number" class="form-control" id="anzahl" name="anzahl" placeholder="Anzahl" required>
+               <input type="number" class="form-control" id="anzahl" name="anzahl" min="1" max="500" placeholder="Anzahl" required>
                <label for="anzahl">Anzahl</label>
             </div>
 
@@ -132,11 +136,11 @@ tags:
    <!-- Auswertung -->
    <div class="offcanvas offcanvas-bottom <?php echo empty($_POST) && empty($_GET) ? '' : 'show'; ?>" tabindex="-1" id="uebersichtBestellung" aria-labelledby="offcanvasTopLabel">
       <div class="offcanvas-header">
-         <h3 class="offcanvas-title" id="offcanvasTopLabel">Bestellung</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+         <h2 class="offcanvas-title" id="offcanvasTopLabel">Bestellung</h2>
+         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-         <table class="table">
+         <table class="table mb-5">
             <thead>
                <tr>
                   <th scope="col">Besteller</th>
@@ -155,15 +159,15 @@ tags:
                $bestellung = empty($_POST) ? $_GET : $_POST;
                if (!empty($bestellung)) {
                   echo "<tr>";
-                  echo "<td>" . (isset($bestellung['firma']) ? 'Firma' : 'Privatperson') . "</td>";
-                  echo "<td>" . $bestellung['anrede'] . "</td>";
-                  echo "<td>" . $bestellung['vorname'] . "</td>";
-                  echo "<td>" . $bestellung['nachname'] . "</td>";
-                  echo "<td>" . $bestellung['email'] . "</td>";
-                  echo "<td>" . $bestellung['sorte'] . "</td>";
-                  echo "<td>" . $bestellung['anzahl'] . "</td>";
-                  echo "<td>" . $bestellung['lieferdatum'] . "</td>";
-                  echo "<td>" . $bestellung['freitext'] . "</td>";
+                  echo "<td>" . (isset($bestellung['art']) && $bestellung['art'] == 'firma' ? 'Firma' : 'Privatperson')                 . "</td>";
+                  echo "<td>" . htmlspecialchars($bestellung['anrede'] ?? '', ENT_QUOTES, "utf-8")       . "</td>";
+                  echo "<td>" . htmlspecialchars($bestellung['vorname'] ?? '', ENT_QUOTES, "utf-8")      . "</td>";
+                  echo "<td>" . htmlspecialchars($bestellung['nachname'] ?? '', ENT_QUOTES, "utf-8")     . "</td>";
+                  echo "<td>" . htmlspecialchars($bestellung['email'] ?? '', ENT_QUOTES, "utf-8")        . "</td>";
+                  echo "<td>" . htmlspecialchars($bestellung['sorte'] ?? '', ENT_QUOTES, "utf-8")        . "</td>";
+                  echo "<td>" . htmlspecialchars($bestellung['anzahl'] ?? '', ENT_QUOTES, "utf-8")       . "</td>";
+                  echo "<td>" . htmlspecialchars($bestellung['lieferdatum'] ?? '', ENT_QUOTES, "utf-8")  . "</td>";
+                  echo "<td>" . htmlspecialchars($bestellung['freitext'] ?? '', ENT_QUOTES, "utf-8")     . "</td>";
                   echo "</tr>";
                }
                ?>
@@ -172,7 +176,7 @@ tags:
 
          <hr />
 
-         <table class="table">
+         <table class=" table">
             <thead>
                <tr>
                   <th scope="col">Adresszusatz</th>
@@ -187,11 +191,11 @@ tags:
                $bestellung = empty($_POST) ? $_GET : $_POST;
                if (!empty($bestellung)) {
                   echo "<tr>";
-                  echo "<td>" . $bestellung['zusatz'] . "</td>";
-                  echo "<td>" . $bestellung['strasse'] . "</td>";
-                  echo "<td>" . $bestellung['hausnummer'] . "</td>";
-                  echo "<td>" . $bestellung['plz'] . "</td>";
-                  echo "<td>" . $bestellung['ort'] . "</td>";
+                  echo "<td>" . htmlspecialchars($bestellung['zusatz'] ?? '', ENT_QUOTES, "utf-8")       . "</td>";
+                  echo "<td>" . htmlspecialchars($bestellung['strasse'] ?? '', ENT_QUOTES, "utf-8")      . "</td>";
+                  echo "<td>" . htmlspecialchars($bestellung['hausnummer'] ?? '', ENT_QUOTES, "utf-8")   . "</td>";
+                  echo "<td>" . htmlspecialchars($bestellung['plz'] ?? '', ENT_QUOTES, "utf-8")          . "</td>";
+                  echo "<td>" . htmlspecialchars($bestellung['ort'] ?? '', ENT_QUOTES, "utf-8")          . "</td>";
                   echo "</tr>";
                }
                ?>
@@ -216,7 +220,7 @@ tags:
       </div>
    </div>
 
-   <script src="assets/js/bootstrap.bundle.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 
 </html>
