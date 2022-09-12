@@ -9,7 +9,7 @@ Um PHP auszuführen, braucht es einen Webserver, welcher PHP versteht und verarb
 
 ## Docker
 
-Der Trend der [Containerisierung](https://www.redhat.com/de/topics/cloud-native-apps/what-is-containerization) hat sich auch auf PHP geschlagen. Über ein einfaches Dockerfile werden alle Abhängigkeiten installiert und aufgesetzt. Wenn mehr Leistung gebraucht wird, dann wird einfach ein neuer Container gestartet. Zudem wird einzig eine Installation von Docker benötigt. Eine Vorlage kann [hier :material-download:](Beispiele/DockerPHP.zip) heruntergeladen werden. Es ist PHP, [Adminier](https://www.adminer.org/), MySQL und Composer vorinstalliert.
+Der Trend der [Containerisierung](https://www.redhat.com/de/topics/cloud-native-apps/what-is-containerization) hat sich auch auf PHP geschlagen. Über ein einfaches Dockerfile werden alle Abhängigkeiten installiert und aufgesetzt. Wenn mehr Leistung gebraucht wird, dann wird einfach ein neuer Container gestartet. Zudem wird einzig eine Installation von Docker benötigt. Eine Vorlage kann [hier :material-download:](../Appendix/Struktur/DockerPHP.zip) heruntergeladen werden. Es ist PHP, [Adminier](https://www.adminer.org/), MySQL und Composer vorinstalliert.
 (_Vorlage von: Herr Inauen_)
 
 ## XAMPP

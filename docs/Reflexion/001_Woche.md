@@ -48,7 +48,7 @@ In meinem Unternehmen wird Docker nicht verwendet, da alle dieselbe Installation
 
 In diesem Modul verwenden wir PHP, was natürlich auch eine [Installation](../PHP/Installation.md) von PHP benötigt. Wie bereits erwähnt, haben wir PHP über Docker **installiert**. Zusätzlich zu PHP ist auch eine Datenbank hinterlegt. Diese Datenbank wird von [Adminer](https://www.adminer.org/) verwaltet. Es ist eine **Alternative**, welche sich leichter bedienen lässt als phpMyAdmin.
 
-Für die Installation von PHP mit Docker bekamen wir eine [Vorlage](../PHP/Beispiele/DockerPHP.zip) von Herrn Inauen. Diese Vorlage beinhaltet bereits eine `docker-compose.yml` Datei, welche die Container erstellt. Aufsetzen machte jeder selbst, da man eigentlich nur den Container ausführen musste.
+Für die Installation von PHP mit Docker bekamen wir eine [Vorlage](../Appendix/Struktur/DockerPHP.zip) von Herrn Inauen. Diese Vorlage beinhaltet bereits eine `docker-compose.yml` Datei, welche die Container erstellt. Aufsetzen machte jeder selbst, da man eigentlich nur den Container ausführen musste.
 
 !!! example "Merksatz:"
 

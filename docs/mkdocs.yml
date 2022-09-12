@@ -106,6 +106,7 @@ nav:
           - "1. Woche": "Reflexion/001_Woche.md"
           - "2. Woche": "Reflexion/002_Woche.md"
           - "3. Woche": "Reflexion/003_Woche.md"
+          - "4. Woche": "Reflexion/004_Woche.md"
     - PHP:
           - Übersicht: "PHP/Start.md"
           - Installation: "PHP/Installation.md"
@@ -117,12 +118,12 @@ nav:
                 - Arrays: "PHP/Aufgaben/Arrays.md"
                 - "HTTP-Parameter": "PHP/Aufgaben/HTTP-Parameter.md"
                 - Formular: "PHP/Aufgaben/Formular.md"
+                - Dateien: "PHP/Aufgaben/Dateien.md"
           # - Datenbanken: "PHP/Datenbanken.md"
           # - Session:
           # - Authorization:
     - Docker:
           - Übersicht: "Docker/Start.md"
-          - Struktur: "Docker/Struktur.md"
           - Aufgaben: "Docker/Aufgaben.md"
     - Projekt:
           - Ziel: "Projekt/Ziel.md"
@@ -131,6 +132,8 @@ nav:
     - Appendix:
           - "Journal Anforderungen": "Reflexion/000_Vorlage.md"
           - "GitHub Pages": "Appendix/GitHubPages/Einrichten.md"
+          - Struktur: "Appendix/Struktur/Struktur.md"
+          - Rendering: "Appendix/Rendering/Rendering.md"
           - PHP:
                 - "PHP-Cheatsheet": "PHP/Appendix/Cheatsheet.md"
                 - Datentypen: "PHP/Appendix/Datentypen.md"

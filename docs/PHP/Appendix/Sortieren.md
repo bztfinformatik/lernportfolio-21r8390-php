@@ -7,7 +7,7 @@ tags:
 
 ## Quicksort
 
-> Source: [medium.com](https://medium.com/the-protean-journal/the-quicksort-algorithm-implemented-in-php-692798f91aee)
+> Hilfestellung: [medium.com](https://medium.com/the-protean-journal/the-quicksort-algorithm-implemented-in-php-692798f91aee)
 
 ```php linenums="1"
 <?php

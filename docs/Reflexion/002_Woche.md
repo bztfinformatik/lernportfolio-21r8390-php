@@ -13,15 +13,16 @@ hide:
         -   Was ist YAML
         -   Images anzeigen
         -   MySQL
+        -   Struktur
     - PHP Rechnen
     - PHP Arrays
     - PHP HTTP Parameter
 
 ## Docker Aufträge
 
-Unser **Wissen** über Docker haben wir anhand von unterschiedlichen Aufgaben aufgefrischt. Zuerst dokumentierte ich die wichtigsten [Befehle](../Docker/Start.md#befehle) und was der Sinn und Zweck einer [YAML-Datei](../Docker/Start.md#yaml) ist. Danach habe ich **Whalesay** und Hello-World Images auf meinem Rechner installiert, ausgeführt und dokumentiert. Zum Schluss habe ich einen **MySQL**-Container aufgesetzt und mich damit über die Konsole verbunden.
+Unser **Wissen** über Docker haben wir anhand von unterschiedlichen Aufgaben aufgefrischt. Zuerst dokumentierte ich die wichtigsten [Befehle](../Docker/Start.md#befehle) und was der Sinn und Zweck einer [YAML-Datei](../Docker/Start.md#yaml) ist. Den [Aufbau](../Appendix/Struktur/Struktur.md) des Basisprojektes schauten wir im Unterricht an. Dort starteten wir alle Containers und öffneten die Webinterface. Als nächstes habe ich **Whalesay** und Hello-World Images auf meinem Rechner installiert, ausgeführt und dokumentiert. Zum Schluss habe ich einen **MySQL**-Container aufgesetzt und mich damit über die Konsole verbunden.
 
-Für die Dokumentationen habe ich die offizielle [Docker](https://www.docker.com/) und [RedHat](https://www.redhat.com/en) Seiten verwendet. Diese haben meist ausführliche und verständliche Beschreibungen mit funktionstüchtigen Beispielen. Die **Aufträge** waren aus einem PDF, welche wir im Unterricht erhalten haben. Die [Aufträge](../Docker/Aufgaben.md) waren sehr gut strukturiert und haben mir geholfen, mein bestehendes Wissen zu vertiefen.
+Für die Dokumentationen habe ich die offizielle [Docker](https://www.docker.com/) und [RedHat](https://www.redhat.com/en) Seiten verwendet. Diese haben meist ausführliche und verständliche Beschreibungen mit funktionstüchtigen Beispielen. Die **Aufträge** waren aus einem PDF, welche wir im Unterricht erhalten haben. Die [Aufträge](../Docker/Aufgaben.md) waren sehr gut strukturiert und haben mir geholfen, mein bestehendes Wissen zu vertiefen. Wie die **Struktur** des Projektes ist, besprachen wir in der Klasse gemeinsam.
 
 Durch die Aufgaben habe ich gelernt, wie man Container im **Hintergrund** ausführt und damit interagiert. Dazu waren die Befehle ausserordentlich hilfreich, da ich so sehen konnte was ausgeführt wird und wie der Container heisst. Das Verbinden zu einem Container war für mich komplett neu und lernte somit sehr vile über das **Networking** von Docker. Den Auftrag habe ich über die Konsole gemacht, was auf Zeit sehr aufwändig war. Nächstes Mal würde ich ein Compose File erstellen, um die Container zu starten, da so die **Umgebungsvariablen** sofort ersichtlich sind. Whalesay kannte ich zuvor schon von Linuxdistributionen ([Cowsay](https://cowsay.morecode.org/)), jedoch nicht in dieser modifizierten Form.
 
