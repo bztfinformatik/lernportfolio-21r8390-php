@@ -5,7 +5,6 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- <meta http-equiv="refresh" content="3"> -->
    <meta name="author" content="Manuel Schumacher">
    <meta name="description" content="Ein einfaches Formular mit PHP und Bootstrap">
    <title>M133 - Formular</title>

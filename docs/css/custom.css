@@ -20,6 +20,26 @@
 	border: 0;
 }
 
+.profile-image {
+  border-radius: 50%;
+}
+
+@keyframes heart {
+	0%,
+	40%,
+	80%,
+	100% {
+		transform: scale(1);
+	}
+	20%,
+	60% {
+		transform: scale(1.15);
+	}
+}
+.heart {
+	animation: heart 1000ms infinite;
+}
+
 @media only screen {
 	html {
 		scroll-behavior: smooth;
