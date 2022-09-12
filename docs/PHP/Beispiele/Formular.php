@@ -146,15 +146,17 @@
                     $bestellung = empty($_POST) ? $_GET : $_POST;
                     if (!empty($bestellung)) {
                         echo "<tr>";
-                        echo "<td>" . (isset($bestellung['art']) && $bestellung['art'] == 'firma' ? 'Firma' : 'Privatperson')                 . "</td>";
-                        echo "<td>" . htmlspecialchars($bestellung['anrede'] ?? '', ENT_QUOTES, "utf-8")       . "</td>";
-                        echo "<td>" . htmlspecialchars($bestellung['vorname'] ?? '', ENT_QUOTES, "utf-8")      . "</td>";
-                        echo "<td>" . htmlspecialchars($bestellung['nachname'] ?? '', ENT_QUOTES, "utf-8")     . "</td>";
-                        echo "<td>" . htmlspecialchars($bestellung['email'] ?? '', ENT_QUOTES, "utf-8")        . "</td>";
-                        echo "<td>" . htmlspecialchars($bestellung['sorte'] ?? '', ENT_QUOTES, "utf-8")        . "</td>";
-                        echo "<td>" . htmlspecialchars($bestellung['anzahl'] ?? '', ENT_QUOTES, "utf-8")       . "</td>";
-                        echo "<td>" . htmlspecialchars($bestellung['lieferdatum'] ?? '', ENT_QUOTES, "utf-8")  . "</td>";
-                        echo "<td>" . htmlspecialchars($bestellung['freitext'] ?? '', ENT_QUOTES, "utf-8")     . "</td>";
+                        $start = "<td>";
+                        $end = "</td>";
+                        echo $start . (isset($bestellung['art']) && $bestellung['art'] == 'firma' ? 'Firma' : 'Privatperson')                 . $end;
+                        echo $start . htmlspecialchars($bestellung['anrede'] ?? '', ENT_QUOTES, "utf-8")       . $end;
+                        echo $start . htmlspecialchars($bestellung['vorname'] ?? '', ENT_QUOTES, "utf-8")      . $end;
+                        echo $start . htmlspecialchars($bestellung['nachname'] ?? '', ENT_QUOTES, "utf-8")     . $end;
+                        echo $start . htmlspecialchars($bestellung['email'] ?? '', ENT_QUOTES, "utf-8")        . $end;
+                        echo $start . htmlspecialchars($bestellung['sorte'] ?? '', ENT_QUOTES, "utf-8")        . $end;
+                        echo $start . htmlspecialchars($bestellung['anzahl'] ?? '', ENT_QUOTES, "utf-8")       . $end;
+                        echo $start . htmlspecialchars($bestellung['lieferdatum'] ?? '', ENT_QUOTES, "utf-8")  . $end;
+                        echo $start . htmlspecialchars($bestellung['freitext'] ?? '', ENT_QUOTES, "utf-8")     . $end;
                         echo "</tr>";
                     }
                     ?>
@@ -179,11 +181,13 @@
                     $bestellung = empty($_POST) ? $_GET : $_POST;
                     if (!empty($bestellung)) {
                         echo "<tr>";
-                        echo "<td>" . htmlspecialchars($bestellung['zusatz'] ?? '', ENT_QUOTES, "utf-8")       . "</td>";
-                        echo "<td>" . htmlspecialchars($bestellung['strasse'] ?? '', ENT_QUOTES, "utf-8")      . "</td>";
-                        echo "<td>" . htmlspecialchars($bestellung['hausnummer'] ?? '', ENT_QUOTES, "utf-8")   . "</td>";
-                        echo "<td>" . htmlspecialchars($bestellung['plz'] ?? '', ENT_QUOTES, "utf-8")          . "</td>";
-                        echo "<td>" . htmlspecialchars($bestellung['ort'] ?? '', ENT_QUOTES, "utf-8")          . "</td>";
+                        $start = "<td>";
+                        $end = "</td>";
+                        echo $start . htmlspecialchars($bestellung['zusatz'] ?? '', ENT_QUOTES, "utf-8")       . $end;
+                        echo $start . htmlspecialchars($bestellung['strasse'] ?? '', ENT_QUOTES, "utf-8")      . $end;
+                        echo $start . htmlspecialchars($bestellung['hausnummer'] ?? '', ENT_QUOTES, "utf-8")   . $end;
+                        echo $start . htmlspecialchars($bestellung['plz'] ?? '', ENT_QUOTES, "utf-8")          . $end;
+                        echo $start . htmlspecialchars($bestellung['ort'] ?? '', ENT_QUOTES, "utf-8")          . $end;
                         echo "</tr>";
                     }
                     ?>
