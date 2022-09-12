@@ -62,7 +62,7 @@ Bemerkt habe ich, dass Schleifen grundsätzlich in allen Programmiersprachen gle
 
 ## Formular
 
-Letzte Woche schauten wir und die **HTTP-Parameter** an. Um den Umgang damit zu üben, schrieb ich mir ein [Formular](../PHP/Aufgaben/Formular.md) auf. Dabei verwendete ich die [GET- und POST-Parameter](../PHP/Aufgaben/HTTP-Parameter.md). Da bei Formularen auf Sicherheit geachtet werden muss erstellte ich eine Zusammenfassung von **Sicherheitslücken**. Diese sind jedoch noch in Arbeit und werden in den nächsten Wochen fertiggestellt. Wichtig war mir jedoch, dass `Cross-Site-Scripting` und `Injections` nicht über mein Formular möglich sind.
+Letzte Woche schauten wir und die **HTTP-Parameter** an. Um den Umgang damit zu üben, schrieb ich mir ein [Formular](../PHP/Aufgaben/Formular.md) auf. Dabei verwendete ich die [GET- und POST-Parameter](../PHP/Aufgaben/HTTP-Parameter.md). Da bei Formularen auf Sicherheit geachtet werden muss erstellte ich eine Zusammenfassung von **Sicherheitslücken**. Diese sind jedoch noch in Arbeit und werden in den nächsten Wochen fertiggestellt. Wichtig war mir jedoch, dass `Cross-Site-Scripting` nicht über mein Formular möglich ist, was ich auch erfolgreich umsetzte.
 
 Bevor ich mit dem **Auftrag** begann, habe ich mir mögliche [Sicherheitsprobleme](../PHP/Appendix/Sicherheit.md) aufgeschrieben und mich darüber informiert. Sobald ich wusste auf was ich achten muss wendete ich mich dem Formular. Von Herr Inauen hatten wir ein **Beispiel** bekommen, welches man umsetzen kann. Ich entschied mich jedoch ein etwas ausführlicheres zu machen, welche die gleichen Eingabefelder verwendet.
 
@@ -71,7 +71,7 @@ Letzte Woche habe ich bereits HTTP-Parameter angeschaut und gelernt wie man mit 
 !!! example "Merksatz:"
 
     - Das HTML und PHP von Formularen kann unterteilt oder zusammengenommen werden.
-    - Formulare sollten immer mit einem `CSRF` Token geschützt werden.
+    - Formulare sollten mit einem `CSRF` Token geschützt werden, um sicherzustellen, dass der Benutzer die Anfrage gesendet hat.
     - Eingaben sollten in HTML Charakter umgewandelt werden, um `XSS` zu verhindern.
 
 Als **Fazit** würde ich sagen, dass ich das Thema Formulare bereits gut beherrschte. Um es für mich selbst spannender zu machen vordere ich mich heraus, wie mit den Sicherheitsfeatures. Diese zu verstehen und auch zu implementieren ist für mich ein **neues** Thema. Ich bin gespannt wie es weitergeht.

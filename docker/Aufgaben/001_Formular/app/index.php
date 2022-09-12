@@ -7,10 +7,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- <meta http-equiv="refresh" content="3"> -->
    <meta name="author" content="Manuel Schumacher">
+   <meta name="description" content="Ein einfaches Formular mit PHP und Bootstrap">
    <title>M133 - Formular</title>
    <link rel="icon" type="image/x-icon" href="assets/donut.png">
-   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="assets/css/bootstrap.css" />
 </head>
 
 <body>
@@ -45,11 +45,11 @@
             </div>
 
             <!-- Vorname & Nachname -->
-            <div class="form-floating col-6">
+            <div class="form-floating col-12 col-md-6">
                <input type="text" class="form-control" id="vorname" name="vorname" placeholder="Vorname" required>
                <label for="vorname">Vorname</label>
             </div>
-            <div class="form-floating col-6">
+            <div class="form-floating col-12 col-md-6">
                <input type="text" class="form-control" id="nachname" name="nachname" placeholder="Nachname" required>
                <label for="nachname">Nachname</label>
             </div>
@@ -84,19 +84,19 @@
                <input type="text" class="form-control" id="zusatz" name="zusatz" placeholder="Adresszusatz">
                <label for="zusatz">Adresszusatz</label>
             </div>
-            <div class="form-floating col-9">
+            <div class="form-floating col-9 col-md-8">
                <input type="text" class="form-control" id="strasse" name="strasse" placeholder="Strasse" required>
                <label for="strasse">Strasse</label>
             </div>
-            <div class="form-floating col-3">
+            <div class="form-floating col-3 col-md-4">
                <input type="text" class="form-control" id="hausnummer" name="hausnummer" placeholder="Hausnummer">
                <label for="hausnummer">Hausnummer</label>
             </div>
-            <div class="form-floating col-3">
+            <div class="form-floating col-3 col-md-4">
                <input type="text" class="form-control" id="plz" name="plz" placeholder="PLZ" required>
                <label for="plz">PLZ</label>
             </div>
-            <div class="form-floating col-9">
+            <div class="form-floating col-9 col-md-8">
                <input type="text" class="form-control" id="ort" name="ort" placeholder="Ort" required>
                <label for="ort">Ort</label>
             </div>
@@ -128,6 +128,7 @@
       </div>
       <div class="offcanvas-body">
          <table class="table mb-5">
+            <caption>Bestellinformationen</caption>
             <thead>
                <tr>
                   <th scope="col">Besteller</th>
@@ -164,6 +165,7 @@
          <hr />
 
          <table class=" table">
+            <caption>Adresse</caption>
             <thead>
                <tr>
                   <th scope="col">Adresszusatz</th>
@@ -206,8 +208,6 @@
          </div>
       </div>
    </div>
-
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 
 </html>
