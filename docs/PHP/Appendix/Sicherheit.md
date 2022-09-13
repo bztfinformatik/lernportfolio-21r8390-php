@@ -19,9 +19,7 @@ Besonders hilfreich waren folgende zwei **YouTuber**, welche verständliche und 
 
 ## CSRF
 
-**Cross-Site-Request-Forgery** ist das Verfahren
-
-Wenn `CSRF` verhindert werden möchte, dann muss ein **One-Time-Token** generiert werden. Nur wenn dieser korrekt ist, darf die Abfrage betätigt werden.
+**Cross-Site-Request-Forgery** ist das Verfahren um eine **unbefugte** Aktion auf einer **anderen** Seite auszuführen. Dabei wird die aktive Session eines Benutzers ausgenutzt um ungewollte Aktionen auszuführen. Wenn `CSRF` verhindert werden möchte, dann muss ein **One-Time-Token** generiert werden. Nur wenn dieser korrekt ist, darf die Abfrage betätigt werden.
 
 Siehe Moodle:
 
