@@ -79,6 +79,11 @@ markdown_extensions:
           alternate_style: true
     - pymdownx.tasklist:
           custom_checkbox: true
+    - pymdownx.superfences:
+          custom_fences:
+              - name: mermaid
+                class: mermaid
+                format: !!python/name:pymdownx.superfences.fence_code_format
 
 plugins:
     - search:
@@ -136,6 +141,7 @@ nav:
           - Rendering: "Appendix/Rendering/Rendering.md"
           - PHP:
                 - "PHP-Cheatsheet": "PHP/Appendix/Cheatsheet.md"
+                - "Do and Dont's": "PHP/Appendix/DoAndDonts.md"
                 - Datentypen: "PHP/Appendix/Datentypen.md"
                 - "Array Funktionen": "PHP/Appendix/ArrayFunktionen.md"
                 - Sortieren: "PHP/Appendix/Sortieren.md"
