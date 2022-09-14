@@ -1,0 +1,12 @@
+version: "3"
+
+volumes:
+    app:
+
+services:
+    php:
+        build: ./php
+        ports:
+            - 8008:80
+        volumes:
+            - ./app:/var/www/html
