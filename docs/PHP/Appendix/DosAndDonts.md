@@ -4,9 +4,9 @@ tags:
     - Cheatsheet
 ---
 
-# PHP - Do and Dont's
+# PHP - Do's and Don'ts
 
-Das hier ist eine **Zusammenfassung** von Do and Dont's rund um das Thema PHP. Die Liste ist aus dem Unterricht und wurde hier übernommen.
+Das hier ist eine **Zusammenfassung** von Do's and Don'ts rund um das Thema PHP. Die Liste ist aus dem Unterricht und wurde hier übernommen.
 
 ## Variablennamen
 
