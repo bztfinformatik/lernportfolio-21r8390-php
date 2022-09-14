@@ -21,7 +21,7 @@
 }
 
 .profile-image {
-  border-radius: 50%;
+	border-radius: 50%;
 }
 
 @keyframes heart {
@@ -37,7 +37,7 @@
 	}
 }
 .heart {
-	animation: heart 1000ms infinite;
+	animation: heart 7000ms infinite;
 }
 
 @media only screen {

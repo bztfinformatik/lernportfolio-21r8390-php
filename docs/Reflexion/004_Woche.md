@@ -70,3 +70,5 @@ Als ich heute lernte, dass PHP bei Zugreifen auf einen **nicht belegten Platz** 
 
     - Variablen dürfen nur **ASCII-Zeichen**, **Zahlen am Ende** und keine **reservierten Wörter** enthalten.
     - Doppelte Anführungszeichen (:material-format-quote-close:) ermöglichen [String Interpolation](https://stackoverflow.com/a/43437427/16632604).
+
+Durch das Zusammenfassen des Syntaxes stellte ich fest, dass es immer noch Dinge in PHP gibt, welche mich **verwundern**. Ich werde mich nun darum bemühen, dass ich die Syntax besser beherrsche. Die meisten Möglichkeiten waren mir durch die seltene Benutzung von PHP nicht bekannt. Sobald ich aber **intensiver** damit arbeite werde ich sie automatisch verwenden.
