@@ -16,3 +16,7 @@ Da PHP schon etwas älter ist, gibt es nicht wie bei anderen Programmiersprachen
 ## Basics
 
 PHP verfügt über unzählige Methoden und [Design Patterns](https://medium.com/codex/top-9-design-patterns-every-developer-should-know-about-c76df8d5643f). Alle diese im Überblick zu behalten ist sehr schwierig. Aus diesem Grund gibt es unter [Basics](Basics.md) eine Zusammenfassung der wichtigsten Methoden und Konstanten. Zusätzlich gibt es ein sehr kompaktes [Cheatsheet](Appendix/Cheatsheet.md), welches perfekt für Prüfungen oder schnelles Nachschlagen geeignet ist.
+
+## Appendix
+
+Dateien, welche nicht direkt mit dem Unterricht oder PHP zu tun haben aber trotzdem nützlich sein können, sind unter [Appendix](../Appendix/../PHP/Appendix/DosAndDonts.md) zu finden. Dazu gehört zum Beispiel die Struktur des Basisprojektes oder das Thema rendering.
