@@ -9,10 +9,10 @@ hide:
 
 ???+ tldr "Zusammenfassung"
 
-    -   Datentypen
-    -   Vergleiche
-    -   Schleifen
-    -   Formular
+    -   [Datentypen](#datentypen)
+    -   [Vergleiche](#vergleiche)
+    -   [Schleifen](#schleifen)
+    -   [Formular](#formular)
 
 ## Datentypen
 

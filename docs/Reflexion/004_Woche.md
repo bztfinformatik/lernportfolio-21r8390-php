@@ -9,10 +9,10 @@ hide:
 
 ???+ tldr "Zusammenfassung"
 
-    -   SSR vs CSR
-    -   CSR Projekt
-    -   Dateien
-    -   Do's and Don'ts (PHP)
+    -   [SSR vs CSR](#ssr-vs-csr)
+    -   [CSR Projekt](#csr-erweiterung)
+    -   [Dateien](#dateien)
+    -   [Do's and Don'ts (PHP)](#php-dos-and-donts)
 
 ## SSR vs CSR
 

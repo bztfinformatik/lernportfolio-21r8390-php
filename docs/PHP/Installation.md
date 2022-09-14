@@ -1,6 +1,7 @@
 ---
 tags:
     - PHP
+    - Anleitung
 ---
 
 # Installation

@@ -9,10 +9,10 @@ hide:
 
 ???+ tldr "Zusammenfassung"
 
-    -   Dokumentation eingerichtet
-    -   Docker angeschaut
-    -   PHP aufgesetzt
-    -   PHP Basics
+    -   [Dokumentation eingerichtet](#dokumentation-eingerichtet)
+    -   [Docker angeschaut](#docker-angeschaut)
+    -   [PHP aufgesetzt](#php-aufgesetzt)
+    -   [PHP Basics](#php-basics)
 
 ## Dokumentation eingerichtet
 

@@ -30,7 +30,7 @@
 
 ## 4. Woche
 
--   1. Abgabe der Doku
+-   1\. Abgabe der Doku
 -   [SSR vs CSR](Appendix/Rendering/Rendering.md)
 -   [Dateien](PHP/Aufgaben/Dateien.md)
 -   [Do and Donts](PHP/Appendix/DosAndDonts.md)
