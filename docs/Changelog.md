@@ -30,8 +30,10 @@
 
 ## 4. Woche
 
+-   1. Abgabe der Doku
 -   [SSR vs CSR](Appendix/Rendering/Rendering.md)
 -   [Dateien](PHP/Aufgaben/Dateien.md)
 -   [Do and Donts](PHP/Appendix/DosAndDonts.md)
 -   [CSR Projekt + Erweiterung](Appendix/Rendering/Rendering.md#beispielprojekt)
+-   [CSR Projekt mit Dateien](Appendix/Rendering/Rendering.md#beispielprojekt)
 -   [4. Woche in Journal](Reflexion/004_Woche.md)

@@ -11,8 +11,8 @@ Mithilfe dieser Anleitung kann [GitHub Page](https://pages.github.com/) eingeric
 
 GitHub Pages ist ein Hosting-Service für **statische** Webseiten, der HTML-, CSS- und JavaScript-Dateien direkt aus einem Repository auf GitHub übernimmt, die Dateien optional durch einen Build-Prozess führt und eine Website veröffentlicht.
 
-![GitHub Settings](GitHubSettingsLight.png#only-light){ loading=lazy }
-![GitHub Settings](GitHubSettingsDark.png#only-dark){ loading=lazy }
+![GitHub Settings](GitHubSettingsLight.png#only-light){ loading=lazy title="Bild ist abhängig vom Theme" }
+![GitHub Settings](GitHubSettingsDark.png#only-dark){ loading=lazy title="Bild ist abhängig vom Theme" }
 
 Um GitHub Pages zu aktivieren, muss man _Administratorrechte_ besitzen. Wenn diese vorhanden sind, dann sollte in der Taskleiste als letzte Option **:octicons-gear-16: Settings** zu sehen sein. Nach dem Öffnen der Einstellungen sollte unter dem linken Menüpunkt _Code and automation_ die Option **:octicons-browser-16: Pages** auffindbar sein.
 

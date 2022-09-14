@@ -7,12 +7,12 @@ theme:
           scheme: default
           toggle:
               icon: material/weather-sunny
-              name: Switch to dark mode
+              name: Schone deine Augen! Schalte auf dunkel
         - media: "(prefers-color-scheme: dark)"
           scheme: slate
           toggle:
               icon: material/weather-night
-              name: Switch to light mode
+              name: Zu dunkel? Schalte auf hell!
     language: de
     logo: favicon.svg
     favicon: favicon.svg
