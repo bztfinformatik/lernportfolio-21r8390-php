@@ -35,3 +35,7 @@ Eine Webseite direkt auf dem Server mit **benutzerdefinierten** Daten auszufüll
 -   SEO ist bei SSR besser, da der HTML Code bereits vorher geladen wurde und somit auch von **Suchmaschinen** gescannt werden kann. Bei CSR wird der HTML Code erst nachgeladen und somit nicht von Suchmaschinen gescannt.
 -   Das clientseitige Rendering verwaltet das Routing dynamisch, ohne die Seite jedes Mal zu aktualisieren, wenn ein Benutzer eine andere Route anfordert.
 -   Das serverseitige Rendering ist in der Lage, beim ersten Laden einer beliebigen Route der Website eine **vollständig** ausgefüllte Seite anzuzeigen, während beim clientseitigen Rendering zunächst eine **leere Seite** angezeigt wird.
+
+## Beispielprojekt
+
+Zur **Veranschaulichung** einer CSR-Webseite mittels PHP wurde ein Projekt erstellt. Als Vorlage galt der ÜK 307, in welchem bereits eine Grundstruktur dafür erstellt wurde. Aus dem neu gelernten Wissen aus diesem Modul wurde diese Struktur erweitert. Die Webseite stellt eine Liste von Kunden dar. Über einen **Hinzufügen**-Knopf kann ein neuer Kunde in die **SQLite** Datenbank geladen werden. Falls die Werte nicht gültig sind, wird eine Fehlermeldung ausgegeben. Das Projekt kann unter [GitHub](https://github.com/bztfinformatik/lernportfolio-21r8390-php/tree/main/docker/Aufgaben/002_ClientSide/) eingesehen werden. Eine Live-Demo ist unter meiner [eigenen Webseite](https://edu.flimtix.dev/M133-Aufgaben/CSR/) verfügbar.

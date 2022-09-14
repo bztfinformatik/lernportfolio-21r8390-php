@@ -57,19 +57,19 @@ $(function () {
 	$("#speichern").click(function () {
 		console.log("Formular speichern");
 		// Formulardaten auslesen
-		var kunde_firma = $("#kunde_firma").val().trim();
-		var kunde_email = $("#kunde_email").val().trim();
-		var kunde_kategorie = $("#kunde_kategorie").val().trim();
-		var kunde_rechnung = $('input[name="kunde_rechnung"]:checked')
+		let kunde_firma = $("#kunde_firma").val().trim();
+		let kunde_email = $("#kunde_email").val().trim();
+		let kunde_kategorie = $("#kunde_kategorie").val().trim();
+		let kunde_rechnung = $('input[name="kunde_rechnung"]:checked')
 			.val()
 			.trim();
-		var kunde_kontaktperson = $("#kunde_kontaktperson").val().trim();
+		let kunde_kontaktperson = $("#kunde_kontaktperson").val().trim();
 
 		//kunde_id - Feld wird benutz für Update bei insert ist die kunde_id 0
-		var kunde_id = $("#kunde_id").val();
+		let kunde_id = $("#kunde_id").val();
 
 		// Validierung der Daten
-		var send = true;
+		let send = true;
 
 		// Längen überprüfen
 		if (kunde_firma.length < 3) {
@@ -148,10 +148,10 @@ $(function () {
 					// Wenn error - Meldungen existieren, anzeigen
 					if (response["error"].length > 0) {
 						console.info("Daten erhalten");
-						for (var i = 0; i < response["error"].length; i++) {
+						for (const element of response["error"]) {
 							M.toast({
-								html: response["error"][i].meldung,
-								classes: "rounded green",
+								html: element.meldung,
+								classes: "rounded red",
 							});
 						}
 					}
@@ -172,7 +172,7 @@ $(function () {
 	// Suche in Tabelle
 	// ----------------------------------------------
 	$("#searchBarText").on("keyup", function () {
-		var value = $(this).val().toLowerCase();
+		let value = $(this).val().toLowerCase();
 		$("#kundenTabelle tbody tr").filter(function () {
 			$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
 		});
@@ -203,7 +203,7 @@ function loadform(kunde_id) {
 					);
 
 					// Rechnungsstatus setzen
-					var rechnung = response["data"][0]["kunde_rechnung"];
+					let rechnung = response["data"][0]["kunde_rechnung"];
 					$(
 						"input[name=kunde_rechnung][value='" + rechnung + "']"
 					).prop("checked", true);
@@ -224,8 +224,7 @@ function loadform(kunde_id) {
 	});
 
 	// Modal öffnen
-	var mymodal = M.Modal.getInstance($(".modal"));
-	mymodal.open();
+	M.Modal.getInstance($(".modal")).open();
 }
 // ----------------------------------------------
 // Holen und Anzeigen der Daten
@@ -234,7 +233,7 @@ function getData() {
 	// leeren der Kundenliste
 	$("tbody").html("");
 	// template in Variable laden für späteres anzeigen mit Mustache
-	var mtpl = $("template").html();
+	let mtpl = $("template").html();
 	// JSON laden mittels AJAX
 	$.ajax({
 		// welche Datei wird aufgerufen
@@ -250,9 +249,9 @@ function getData() {
 			// Wenn error - Meldungen existieren, anzeigen
 			if (response["error"].length > 0) {
 				console.info("Daten erhalten");
-				for (var i = 0; i < response["error"].length; i++) {
+				for (const element of response["error"]) {
 					M.toast({
-						html: response["error"][i].meldung,
+						html: element.meldung,
 						classes: "rounded red",
 					});
 				}
@@ -260,7 +259,7 @@ function getData() {
 			// Datensätze anzeigen
 			if (response["data"].length > 0) {
 				for (i = 0; i < response["data"].length; i++) {
-					var html = Mustache.to_html(mtpl, response["data"][i]);
+					let html = Mustache.to_html(mtpl, response["data"][i]);
 					$("tbody").append(html);
 				}
 			}
@@ -270,7 +269,7 @@ function getData() {
 			// Liste Button löschen eines Kunden
 			// ----------------------------------------------
 			$(".delete").click(function () {
-				var kunde_id = $(this).parent().attr("data-id");
+				let kunde_id = $(this).parent().attr("data-id");
 				console.log("delete von : " + kunde_id);
 				if (confirm("Wollen Sie den Datensatz wirklich löschen?")) {
 					$.ajax({
@@ -280,13 +279,9 @@ function getData() {
 							// Wenn error - Meldungen existieren, anzeigen
 							if (response["error"].length > 0) {
 								console.info("Daten erhalten");
-								for (
-									var i = 0;
-									i < response["error"].length;
-									i++
-								) {
+								for (const element of response["error"]) {
 									M.toast({
-										html: response["error"][i].meldung,
+										html: element.meldung,
 										classes: "rounded red",
 									});
 								}
@@ -300,7 +295,7 @@ function getData() {
 			// Liste Button editieren eines Kunden
 			// ----------------------------------------------
 			$(".edit").click(function () {
-				var kunde_id = $(this).parent().attr("data-id");
+				let kunde_id = $(this).parent().attr("data-id");
 				console.log("edit von : " + kunde_id);
 				$("#modat_titel").html("Kunde editieren von : " + kunde_id);
 				loadform(kunde_id);

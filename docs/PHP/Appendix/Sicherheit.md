@@ -33,7 +33,7 @@ Siehe Moodle:
 
 ## XSS
 
-**Cross-Site-Scripting** ist das Verfahren um **JavaScript** in eine Webseite einzubinden. Dies kann zum Beispiel dazu verwendet werden, um einen **Cookie** zu stehlen. Da JavaScript auf dem Client ausgeführt wird, kann der Angriff bei alleinigem Betrachten der Webseite erfolgen.
+**Cross-Site-Scripting** ist das Verfahren um **JavaScript** in eine Webseite einzubinden. Dies kann zum Beispiel dazu verwendet werden, um einen **Cookie** zu stehlen. Da JavaScript auf dem Client ausgeführt wird, kann der Angriff bei alleinigem Betrachten der Webseite erfolgen. Um dies zu verhindern, muss der **HTML-Code** **escaped** werden, was mit `htmlspecialchars()` möglich ist.
 
 ```html
 <script>

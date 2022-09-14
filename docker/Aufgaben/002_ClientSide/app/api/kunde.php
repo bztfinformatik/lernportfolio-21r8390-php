@@ -20,18 +20,18 @@ class kunde
     {
         // action oder id im GET vorhanden?
         if (isset($_GET['action'])) {
-            $this->action = $_GET['action'];
+            $this->action = htmlspecialchars($_GET['action'], ENT_QUOTES, "utf-8");
         }
         if (isset($_GET['id'])) {
-            $this->id = $_GET['id'];
-
-            if (!ctype_digit(strval($this->id))) {
+            if (!ctype_digit(strval($_GET['id']))) {
                 $kunde = array();
                 $kunde['data'] = array();
                 $kunde['error'] = array();
                 $kunde['error'][0]['meldung'] = "Fehler, die ID muss eine Zahl sein!";
                 echo json_encode($kunde);
                 return;
+            } else {
+                $this->id = intval($_GET['id']);
             }
         }
         // existiert die Datenbank?
@@ -65,11 +65,11 @@ class kunde
     function insert()
     {
         // Daten vom JS auslesen die per POST gesendet wurden
-        $kunde_firma = $_POST['kunde_firma'];
-        $kunde_email = $_POST['kunde_email'];
-        $kunde_kategorie = $_POST['kunde_kategorie'];
-        $kunde_rechnung = $_POST['kunde_rechnung'];
-        $kunde_kontaktperson = $_POST['kunde_kontaktperson'];
+        $kunde_firma = htmlspecialchars($_POST['kunde_firma'] ?? '', ENT_QUOTES, "utf-8");
+        $kunde_email = htmlspecialchars($_POST['kunde_email'] ?? '', ENT_QUOTES, "utf-8");
+        $kunde_kategorie = htmlspecialchars($_POST['kunde_kategorie'] ?? '', ENT_QUOTES, "utf-8");
+        $kunde_rechnung = htmlspecialchars($_POST['kunde_rechnung'] ?? '', ENT_QUOTES, "utf-8");
+        $kunde_kontaktperson = htmlspecialchars($_POST['kunde_kontaktperson'] ?? '', ENT_QUOTES, "utf-8");
 
         // Validation der Daten
         $speichern = true;
