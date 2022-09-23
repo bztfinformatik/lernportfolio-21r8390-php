@@ -1,0 +1,1 @@
+Das Resultat ist  <?=$data['result']?>
