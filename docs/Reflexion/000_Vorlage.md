@@ -1,6 +1,6 @@
 # Anforderungen
 
-Nach folgenden Anforderungen sollte das Journal aufgebaut werden.
+Nach folgenden **Anforderungen** sollte das Journal aufgebaut werden.
 
 ## Checkliste
 

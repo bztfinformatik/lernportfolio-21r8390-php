@@ -54,7 +54,7 @@ Sehr oft arbeitet man nicht nur mit einer Variable alleine sondern braucht eine 
 
 Als Lehrmittel verwendeten wir [PHP Einfach](https://www.php-einfach.de/php-tutorial/php-array/) um die Aufgaben herauszusuchen. Von dort schrieb ich die einfachen **Anwendungen** heraus. Für die [Sammlung](../PHP/Appendix/ArrayFunktionen.md) aller Funktionen war mit [GitHub Copilot](https://github.com/features/copilot/) sehr behilflich. Dieser Schlug mir gleich eine Auflistung der Funktionen vor, anhand welchen ich dann die Beispiele machen konnte.
 
-Ich habe gelernt, dass Arrays in PHP **nicht vergleichbar** mit Arrays aus anderen Sprachen sind. Sie sind eher eine ArrayList anstatt ein Array mit einer fixen Länge. Beim schreiben des Sortieralgorithmus lernte ich, dass PHP standardmässig alle Attribute als **Call-By-Value** übergeben werden. Zusätzlich ist das **Überladen** von Methoden nicht möglich.
+Ich habe gelernt, dass Arrays in PHP **nicht vergleichbar** mit Arrays aus anderen Sprachen sind. Sie sind eher eine ArrayList anstatt ein Array mit einer fixen Länge. Beim schreiben des Sortieralgorithmus lernte ich, dass PHP standardmässig alle Attribute als **Call-By-Value** übergeben werden. Zusätzlich ist das [Überladen](../PHP/OOP.md#uberladen) von Methoden nicht möglich.
 
 !!! example "Merksatz:"
 

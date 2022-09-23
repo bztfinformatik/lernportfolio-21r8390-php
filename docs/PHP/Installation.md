@@ -8,6 +8,12 @@ tags:
 
 Um PHP auszuführen, braucht es einen Webserver, welcher PHP versteht und verarbeiten kann. Dabei kann zwischen [Produktionsserver](#docker) und [Entwicklungsserver](#ide) unterschieden werden.
 
+```powershell title="Development vs Production - Konfigurationen"
+# PHP-Configuration stellen wir auf Development
+RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
+# RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+```
+
 ## Docker
 
 Der Trend der [Containerisierung](https://www.redhat.com/de/topics/cloud-native-apps/what-is-containerization) hat sich auch auf PHP geschlagen. Über ein einfaches Dockerfile werden alle Abhängigkeiten installiert und aufgesetzt. Wenn mehr Leistung gebraucht wird, dann wird einfach ein neuer Container gestartet. Zudem wird einzig eine Installation von Docker benötigt. Eine Vorlage kann [hier :material-download:](../Appendix/Struktur/DockerPHP.zip) heruntergeladen werden. Es ist PHP, [Adminier](https://www.adminer.org/), MySQL und Composer vorinstalliert.
