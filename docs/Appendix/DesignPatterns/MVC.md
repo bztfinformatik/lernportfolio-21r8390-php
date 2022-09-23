@@ -5,7 +5,7 @@ tags:
 
 # M133 - Model-View-Controller
 
-MVC ist ein **Design-Pattern**, welches die Strukturierung von Anwendungen erleichtert. Es ist ein Ansatz, um die verschiedenen Komponenten einer Anwendung zu trennen. Das Ziel von MVC ist es, die einzelnen Komponenten des Programms voneinander zu **trennen**. Dadurch ist es möglich, dass die einzelnen Komponenten **unabhängig** voneinander entwickelt werden können. Es ist möglich, dass die View von einem anderen Programm verwendet wird, ohne dass das Model oder der Controller verwendet werden. Das Model kann auch von einem anderen Programm verwendet werden, ohne dass die View oder der Controller verwendet werden.
+MVC ist ein **Design-Pattern**, welches die Strukturierung von Anwendungen erleichtert. Es ist ein Ansatz, um die verschiedenen Komponenten einer Anwendung zu trennen. Das Ziel von [MVC](https://www.php-einfach.de/experte/objektorientierte-programmierung-oop/php-design-patterns/model-view-controller-in-php/) ist es, die einzelnen Komponenten des Programms voneinander zu **trennen**. Dadurch ist es möglich, dass die einzelnen Komponenten **unabhängig** voneinander entwickelt werden können. Es ist möglich, dass die View von einem anderen Programm verwendet wird, ohne dass das Model oder der Controller verwendet werden. Das Model kann auch von einem anderen Programm verwendet werden, ohne dass die View oder der Controller verwendet werden.
 
 ## Aufbau von MVC
 
