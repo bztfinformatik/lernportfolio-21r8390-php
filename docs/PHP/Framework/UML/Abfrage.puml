@@ -1,0 +1,28 @@
+@startuml "Ablauf"
+title "Ablauf"
+
+participant App
+participant Controller
+participant Model
+participant View
+
+App -> App : __construct
+
+App -> App ++ : parseUrl
+return Array mit Parametern
+
+App -> App ++ : loadController
+    App -> Controller : Controller erstellen
+    activate Controller
+return Lädt den Controller
+
+App -> App ++ : loadMethod
+return Lädt die Methode
+
+App -> Controller ++ : Methode aufrufen
+    Controller -> Model ++ : Model erstellen
+    return Model
+    Controller -> View ++ : View erstellen & befüllen
+    return View
+
+@enduml

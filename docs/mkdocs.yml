@@ -113,6 +113,7 @@ nav:
           - "3. Woche": "Reflexion/003_Woche.md"
           - "4. Woche": "Reflexion/004_Woche.md"
           - "5. Woche": "Reflexion/005_Woche.md"
+          - "6. Woche": "Reflexion/006_Woche.md"
     - PHP:
           - Übersicht: "PHP/Start.md"
           - Installation: "PHP/Installation.md"
@@ -126,6 +127,8 @@ nav:
                 - "HTTP-Parameter": "PHP/Aufgaben/HTTP-Parameter.md"
                 - Formular: "PHP/Aufgaben/Formular.md"
                 - Dateien: "PHP/Aufgaben/Dateien.md"
+          - Framework:
+                - Aufbau: "PHP/Framework/Aufbau.md"
           # - Datenbanken: "PHP/Datenbanken.md"
           # - Session:
           # - Authorization:
