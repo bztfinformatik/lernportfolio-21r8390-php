@@ -2,5 +2,5 @@
 
 class User
 {
-    public $name;
+    public string $name;
 }
