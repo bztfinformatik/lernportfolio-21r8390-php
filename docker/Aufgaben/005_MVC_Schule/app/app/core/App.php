@@ -22,8 +22,8 @@ class App
         // Loads the method
         $this->loadMethod($url);
 
-        // Loads the parameters
-        $this->params = $url ? array_values($url) : [];
+        // Gets all parameters which are not null to be passed to the method
+        $this->params = isset($url) ? array_values($url) : [];
 
         // Call the method with the parameters of the controller
         call_user_func_array([$this->controller, $this->method], $this->params);
@@ -40,10 +40,10 @@ class App
         // Gets the controller name from the URL
         $controllerName = isset($url[0]) ? $url[0] : '404';
 
-        // Prüfen ob Controller existiert
+        // Checks if the controller exists and sets the controller
         if (file_exists('../app/controllers/' . $controllerName . '.php')) {
             $this->controller = $controllerName;
-            unset($controllerName);
+            unset($url[0]);
         }
 
         // Controller laden

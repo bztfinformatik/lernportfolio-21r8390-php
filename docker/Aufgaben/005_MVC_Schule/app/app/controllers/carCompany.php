@@ -9,8 +9,10 @@ class CarCompany extends Controller
 
     public function test()
     {
+        // Model laden
         $car = $this->loadModel('Car');
 
+        // Werte initialisieren
         $car->brand = 'BMW';
         $car->model = 'M3';
         $car->color = 'schwarz';
@@ -18,6 +20,7 @@ class CarCompany extends Controller
         $car->year = '2018';
         $car->price = '100000';
 
+        // View erstellen
         $this->loadView('home/car-company', ['car' => $car]);
     }
 }
