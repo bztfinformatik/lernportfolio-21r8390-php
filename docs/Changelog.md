@@ -45,3 +45,12 @@
 -   [Entwicklung vs Produktion](PHP/Installation.md)
 -   [Projekt](https://github.com/bztfinformatik/lernportfolio-21r8390-php/tree/main/docker/Aufgaben/004_MVC-Example)
 -   [5. Woche in Journal](Reflexion/005_Woche.md)
+
+## 6. Woche
+
+-   [Framework](https://github.com/bztfinformatik/lernportfolio-21r8390-php/tree/main/docker/Aufgaben/005_MVC_Schule)
+-   [Aufbau](PHP/Framework/Aufbau.md)
+-   [Hinzufügen](PHP/Framework/Hinzufügen.md)
+-   [Klassendiagramm](PHP/Framework/UML/Klassen.puml)
+-   [Sequenzdiagramm](PHP/Framework/UML/Abfrage.puml)
+-   [6. Woche in Journal](Reflexion/006_Woche.md)
