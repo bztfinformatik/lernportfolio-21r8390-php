@@ -1,6 +1,7 @@
 @startuml "Klassendiagramm"
 title Klassendiagramm
 hide empty members
+skinparam monochrome true
 
 package "Core" {
     class App {
@@ -32,7 +33,7 @@ package "Controllers" {
     }
 }
 
-package "Models" {
+package "Models" <<Database>> {
     class Car {
         + brand : string
         + model : string

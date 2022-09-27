@@ -129,6 +129,7 @@ nav:
                 - Dateien: "PHP/Aufgaben/Dateien.md"
           - Framework:
                 - Aufbau: "PHP/Framework/Aufbau.md"
+                - Hinzufügen: "PHP/Framework/Hinzufügen.md"
           # - Datenbanken: "PHP/Datenbanken.md"
           # - Session:
           # - Authorization:

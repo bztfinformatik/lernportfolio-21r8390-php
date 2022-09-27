@@ -7,14 +7,15 @@ participant Model
 participant View
 
 App -> App : __construct
+activate App
 
 App -> App ++ : parseUrl
 return Array mit Parametern
 
 App -> App ++ : loadController
-    App -> Controller : Controller erstellen
-    activate Controller
-return Lädt den Controller
+    App -> Controller ++ : Controller erstellen
+    return Lädt den Controller
+return Controller
 
 App -> App ++ : loadMethod
 return Lädt die Methode
@@ -24,5 +25,6 @@ App -> Controller ++ : Methode aufrufen
     return Model
     Controller -> View ++ : View erstellen & befüllen
     return View
+return 
 
 @enduml
