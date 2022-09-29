@@ -1,0 +1,30 @@
+{% extends "base/layout.twig.html" %}
+
+{% block content %}
+<!-- Wir überschreiben den Content-Block -->
+
+
+<h1 class="mt-5">Liste aller Autos</h1>
+<p class="lead">Liste aller Autos</p>
+
+<table border="1" style="width: 80%;">
+    <thead>
+        <tr>
+            <td>Marke</td>
+            <td>Typ</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for auto in autos %}
+        <tr>
+            <td>{{ auto.marke }}</td>
+            <td>{{ auto.type }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<!---
+{{ dump(autos) }}
+--->
+{% endblock %}
