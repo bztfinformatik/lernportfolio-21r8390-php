@@ -4,7 +4,7 @@ class CarCompany extends Controller
 {
     public function index()
     {
-        echo 'contact/index';
+        echo 'carCompany/index';
     }
 
     public function test()

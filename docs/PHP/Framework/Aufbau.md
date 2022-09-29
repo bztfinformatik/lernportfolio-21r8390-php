@@ -32,7 +32,7 @@ Die URL ist nach einem ganz bestimmten Schema aufgebaut, welche aus drei Teilen 
 http://localhost:8080/controller/method/parameter
 ```
 
-Die URL wird durch den Router als Parameter `url` an das `index.php` weitergeleitet:
+Die URL wird durch den Router (_.htaccess_) als Parameter `url` an das `index.php` weitergeleitet:
 
 ```powershell
 http://localhost:8080/index.php?url=/controller/method/parameter

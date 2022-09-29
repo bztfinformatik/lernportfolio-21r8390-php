@@ -20,22 +20,23 @@ Die Controller werden in der Regel in der Ordnerstruktur `app/Controller` abgele
     {
         public function index()
         {
-            echo 'contact/index';
+            echo 'carCompany/index';
         }
 
         public function test()
         {
-            // Methode von Controller geerbt
+            // Model laden
             $car = $this->loadModel('Car');
 
-            // Werte setzten
+            // Werte initialisieren
             $car->brand = 'BMW';
             $car->model = 'M3';
-            $car->color = 'black';
+            $car->color = 'schwarz';
             $car->description = 'This is a BMW M3';
             $car->year = '2018';
             $car->price = '100000';
 
+            // View erstellen
             $this->loadView('home/car-company', ['car' => $car]);
         }
     }
@@ -70,7 +71,7 @@ Die Controller werden in der Regel in der Ordnerstruktur `app/Controller` abgele
 
 ## Model
 
-Die Models sind Entitäten, welche in der Datenbank gespeichert werden oder eine andere Businesslogik besitzen. Die Models werden unter `app/Model` abgelegt.
+Die Models sind Entitäten, welche in der Datenbank gespeichert werden oder eine andere Businesslogik besitzen. Die Models werden unter `app/Model` abgelegt. Es wäre sinnvoll, wenn die Entität **Getter/Setter** besitzt, um die [Zugriffe](../OOP.md#zugriffsmodifizierer) zu limitieren.
 
 ```php
 <?php
