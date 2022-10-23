@@ -122,4 +122,4 @@ PHP kann auch **Tabellen** ausgeben. Dazu wird die Funktion `echo` mit dem Param
 
 ## Weitere Funktionen
 
-PHP verfügt über eine Reihe von Funktionen, welche mit Arrays arbeiten. Die wichtigsten sind `count()`, `array_push()`, `in_array()` und `sort()`. Da Arrays sehr ausführlich sind und nicht nur einfach hinzufügen, sortieren und entfernen können, ist dieser Abschnitt im [Appendix](Arrays.md) genauer ausgeführt.
+PHP verfügt über eine Reihe von Funktionen, welche mit Arrays arbeiten. Die wichtigsten sind `count()`, `array_push()`, `in_array()` und `sort()`. Da Arrays sehr ausführlich sind und nicht nur einfach hinzufügen, sortieren und entfernen können, ist dieser Abschnitt im [Appendix](../Appendix/ArrayFunktionen.md) genauer ausgeführt.
