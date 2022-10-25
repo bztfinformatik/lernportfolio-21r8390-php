@@ -30,13 +30,13 @@ Wie bereits angemerkt ist es nicht möglich, dass man im HTML dynamische Inhalte
 
 ### Sicherheit
 
-Wenn man von [Sicherheit](../../Appendix/Sicherheit.md) spricht, dann ist es wichtig zu wissen, dass Twig **automatisch** alle Variablen **escaped**. Das bedeutet, dass alle Variablen, die in HTML-Code eingefügt werden, automatisch validiert und in eine nicht gefährliche Version gebracht werden. Das bedeutet, dass alle HTML-Code, der in den Variablen enthalten ist, nicht ausgeführt wird. So wird beispielsweise der JavaScript Code:
+Wenn man von [Sicherheit](../../Appendix/Sicherheit.md) spricht, dann ist es wichtig zu wissen, dass Twig **automatisch** alle Variablen mit Leichtigkeit **escapen** kann. Das bedeutet, dass Variablen, die in HTML-Code eingefügt werden, automatisch validiert und in eine nicht gefährliche Version gebracht werden. Genauer beschrieben wird dieses verhalten im [Design](Design.md#escape). So kann beispielsweise der JavaScript Code:
 
 ```javascript
 <script>alert('Hello World');</script>
 ```
 
-in folgendes ungefährliches HTML umgewandelt, was **reiner Text** ist:
+In folgendes ungefährliches HTML umgewandelt, was **reiner Text** ist:
 
 ```html
 &lt;script&gt;alert(&#039;Hello World&#039;);&lt;/script&gt;

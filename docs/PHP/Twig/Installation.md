@@ -3,6 +3,8 @@ tags:
     - PHP
     - Anleitung
     - Twig
+hide:
+    - toc
 ---
 
 # Installation
@@ -36,3 +38,34 @@ RUN cd /var/composer/ && composer install
 ```
 
 Wenn alles richtig gemacht wurde, dann sollte **Twig** mit der Version 2.0 installiert sein.
+
+## Twig laden
+
+Twig wird nicht direkt vom Webserver verarbeitet, sondern muss über PHP geladen werden. Dies kann zum Beispiel in einer Basisklasse für den Controller gemacht werden.
+
+```php title="Twig laden"
+<?php
+class BaseController {
+    protected $twig;
+
+    public function __construct()
+    {
+        $this->loadTwig(); //(1)
+    }
+
+    private function loadTwig() {
+        // Load our autoloader
+        require_once '/var/composer/vendor/autoload.php';
+
+        // Specify our Twig templates location
+        $loader = new Twig_Loader_Filesystem(__DIR__.'/../views');
+
+        $this->twig = new Twig_Environment($loader, array('debug' => true)); //(2)
+        $this->twig->addExtension(new Twig_Extension_Debug()); //(3)
+    }
+}
+```
+
+1. Die Methode wird bei jeder Vererbung aufgerufen und instanziiert. Dadurch ist Twig immer verfügbar.
+2. Twig wird instanziiert und die Templates werden aus dem Ordner `views` geladen. Zusätzlich wird der Debug-Modus aktiviert.
+3. Die Debugging-Extension ist nur für die Entwicklung notwendig, sollte aber nicht in der Produktivumgebung aktiviert sein. Dort kann das Array weggelassen werden.
