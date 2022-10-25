@@ -25,7 +25,7 @@ Die Controller werden in der Regel in der Ordnerstruktur `app/Controller` abgele
 
         public function test()
         {
-            // Model laden
+            // Model laden (1)
             $car = $this->loadModel('Car');
 
             // Werte initialisieren
@@ -36,11 +36,14 @@ Die Controller werden in der Regel in der Ordnerstruktur `app/Controller` abgele
             $car->year = '2018';
             $car->price = '100000';
 
-            // View erstellen
+            // View erstellen (2)
             $this->loadView('home/car-company', ['car' => $car]);
         }
     }
     ```
+
+    1. Das [Model](#model) wird aus dem Ordner `app/models` geladen und instanziiert.
+    2. Aus dem Ordner `app/views` wird die Datei `home/car-company.php` geladen. Parameter, welche übergeben werden sollten, können am Ende als [assoziatives Array](../Aufgaben/Arrays.md#arrays) hinterlegt werden.
 
 === "Base Controller"
 
@@ -71,7 +74,7 @@ Die Controller werden in der Regel in der Ordnerstruktur `app/Controller` abgele
 
 ## Model
 
-Die Models sind Entitäten, welche in der Datenbank gespeichert werden oder eine andere Businesslogik besitzen. Die Models werden unter `app/Model` abgelegt. Es wäre sinnvoll, wenn die Entität **Getter/Setter** besitzt, um die [Zugriffe](../OOP.md#zugriffsmodifizierer) zu limitieren.
+Die Models sind **Entitäten**, welche in der Datenbank gespeichert werden oder eine andere Businesslogik besitzen. Die Models werden unter `app/Model` abgelegt. Es wäre sinnvoll, wenn die Entität **Getter/Setter** besitzt, um die [Zugriffe](../OOP.md#zugriffsmodifizierer) zu limitieren.
 
 ```php
 <?php
@@ -88,7 +91,7 @@ class Car
 
 ## View
 
-Die Views sind die Darstellung der Daten zuständig. Sie werden mit PHP geschrieben und nehmen aus einem [assoziativen Array](../Aufgaben/Arrays.md) die Daten entgegen. So könnte jeder Controller die View benutzen. Die Views werden unter `app/View` gespeichert.
+Die Views sind die **Darstellung** der Daten zuständig. Sie werden mit PHP geschrieben und nehmen aus einem [assoziativen Array](../Aufgaben/Arrays.md) die Daten entgegen. So könnte jeder Controller die View benutzen. Die Views werden unter `app/View` gespeichert.
 
 === "Ausgabe"
 
