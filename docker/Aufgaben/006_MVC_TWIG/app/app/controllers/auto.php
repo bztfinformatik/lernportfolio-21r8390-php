@@ -12,8 +12,8 @@ class Auto extends Controller
         $this->addAuto("Irgendwas", "Ferrari");
 
         //var_dump($this->autoArray);
-    
-        echo $this->twig->render('auto/index.twig.html', ['title' => "Auto / Index", 'autos' => $this->autoArray] );                
+
+        echo $this->twig->render('auto/index.twig.html', ['title' => "Auto / Index", 'autos' => $this->autoArray]);
     }
 
     public function add($marke = 'dummyMarke', $typ = 'dummyType')

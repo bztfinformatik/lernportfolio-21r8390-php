@@ -1,0 +1,7 @@
+{% macro dropdown(name, values, selected) %}
+<select>
+    {% for key, value in values %}
+    <option value="{{ key }}" name="{{ name }}" {% if(key==selected) %} selected {% endif %}>{{ value }}</option>
+    {% endfor %}
+</select>
+{% endmacro %}

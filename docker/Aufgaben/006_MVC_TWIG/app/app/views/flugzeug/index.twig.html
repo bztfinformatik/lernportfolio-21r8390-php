@@ -1,0 +1,28 @@
+{% import "helpers/dropdown.twig.html" as dHelper %}
+{% extends "base/layout.twig.html" %}
+
+{% block content %}
+<!-- Wir überschreiben den Content-Block -->
+
+<h1 class="mt-5">{{ title }}</h1>
+
+<form>
+    <div class="form-group">
+        <label for="id">Flugzeug ID</label>
+        <input type="text" class="form-control" id="id" name="id" value="{{ flugzeug.id }}">
+    </div>
+    <div class="form-group">
+        <label for="name">Flugzeug Name</label>
+        <input type="text" class="form-control" id="name" name="name" value="{{ flugzeug.name }}">
+    </div>
+    <div class="form-group">
+        <label for="typ">Flugzeug Typ</label>
+        {{ dHelper.dropdown('typ', typen, flugzeug.typ) }}
+    </div>
+    <div class="form-group">
+        <label for="speed">Geschwindigkeit</label>
+        <input type="number" class="form-control" id="speed" name="speed" value="{{ flugzeug.speed }}">
+    </div>
+</form>
+
+{% endblock %}
