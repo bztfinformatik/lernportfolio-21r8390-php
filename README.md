@@ -12,6 +12,8 @@
 
 [Doku 📚](https://bztfinformatik.github.io/lernportfolio-21r8390-php/)
 
+[Source Code 📂](https://github.com/bztfinformatik/lb1-21r8390)
+
 ## How To:
 
 > Doku starten: `docker compose up`
