@@ -19,7 +19,7 @@ Um PHP besser kennen zu lernen und zu verstehen wie [Frameworks](../PHP/Framewor
 
 Von Herr Inauen haben wir ein bereits **konfiguriertes Projekt** erhalten, welches den groben Aufbau bereits enthält. Wir mussten lediglich verstehen wofür die einzelnen Dateien und Ordner sind und wie sie funktionieren. Das bei half es eigene Endpunkte zu erstellen und mit diesen zu **experimentieren**.
 
-Ich habe gelernt, dass Frameworks sehr oft ähnlich aufgebaut sind. Sobald man ein Framework versteht sollte es nicht allzu schwer sein ein anderes zu verstehen. Aus dem eigenen Framework habe ich zudem verstanden wie die URL aufrufe in Klasseninstanzen resultieren können. Mir war zuvor nicht bewusst, dass aus einem String eine Klasse erstellt werden kann.
+Ich habe gelernt, dass Frameworks sehr oft ähnlich aufgebaut sind. Sobald man ein Framework versteht sollte es nicht allzu schwer sein ein anderes zu verstehen. Aus dem eigenen Framework habe ich zudem verstanden wie die URL aufrufe in **Klasseninstanzen** resultieren können. Mir war zuvor nicht bewusst, dass aus einem String eine Klasse erstellt werden kann.
 
 !!! example "Merksatz:"
 
@@ -32,7 +32,7 @@ Besonders fasziniert hat mich, die Einfachheit der Frameworks. Es ist erstaunlic
 
 Sich in ein komplett neues Projekt **einzuarbeiten** ist nicht ganz einfach. Deswegen schauten wir uns den [Aufbau](../PHP/Framework/Aufbau.md) der Ordner und Dateien genauer an. Es gibt Router (_.htaccess_), Controller und Views. Die Controller werden automatisch instanziiert und die Views werden automatisch geladen. Die Views können mit den Daten der Controller befüllt werden. Die Daten werden in der URL übergeben.
 
-Den Aufbau des Frameworks haben wir mit einem [UML-Diagramm](../PHP/Framework/UML/Klassen.puml) dargestellt. Dieses Diagramm zeigt die Beziehungen zwischen den einzelnen Klassen. Es ist sehr hilfreich um den Aufbau zu verstehen und zu visualisieren. Auch nicht Informatiker können so die Verbindungen verstehen.
+Den Aufbau des Frameworks haben wir mit einem [UML-Diagramm](../PHP/Framework/UML/Klassen.puml) dargestellt. Dieses **Diagramm** zeigt die Beziehungen zwischen den einzelnen Klassen. Es ist sehr hilfreich um den Aufbau zu verstehen und zu visualisieren. Auch nicht **Informatiker** können so die Verbindungen verstehen.
 
 Neu waren für mich die [.htaccess](https://httpd.apache.org/docs/current/howto/htaccess.html) Dateien. Diese informieren den Server wie er die URL auflösen soll. Dort können Endungen entfernt werden oder die URL umgeleitet werden. Die .htaccess Dateien sind sehr nützlich um die URL aufzuräumen. So können zum Beispiel die Dateiendungen entfernt oder die URL als Parameter übergeben werden.
 

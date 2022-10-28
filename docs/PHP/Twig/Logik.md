@@ -6,9 +6,6 @@ tags:
 
 # Logik
 
--   Dropdown erklären
-    -   Macros
-
 Das **Hinzufügen** von neuen Dateien funktioniert genau gleich wie ohne Twig. Dieser Vorgang wurde bereits in einem [vorherigen Kapitel](../Framework/Hinzufügen.md) erläutert. Die Dateien werden in den entsprechenden Ordnern abgelegt und können über den Controller geladen werden. Im **Gegensatz** zum Framework muss Twig über eine [render Methode](https://twig.symfony.com/doc/3.x/api.html#rendering-templates) geladen werden. Der Aufruf davon sieht wie folgt aus:
 
 === "Render Methode"
@@ -51,6 +48,31 @@ Das **Hinzufügen** von neuen Dateien funktioniert genau gleich wie ohne Twig. D
     ```
 
     1. Die Typen sind ein [Enum](https://stitcher.io/blog/php-enums) vom Typ `string`. Sie werden in ein [assoziatives Array](../Aufgaben/Arrays.md) umgewandelt, damit der Text und die Nummer getrennt sind.
+
+=== "Model"
+
+    ```php
+    <?php
+    class Flugi
+    {
+        public int $id;
+        public string $name;
+        public FlugiTypen $typ;
+        public float $speed;
+    }
+    ```
+
+    ```php title="Flugzeug Typen Enum"
+    <?php
+    enum FlugiTypen: string
+    {
+        case Ballon = 'Ballon 🎈';
+        case Flugzeug = 'Flugzeug 🛩';
+        case Hubschrauber = 'Hubschrauber 🚁';
+        case Rakete = 'Rakete 🚀';
+        case Ufo = 'Ufo 🛸';
+    }
+    ```
 
 ## Formular
 

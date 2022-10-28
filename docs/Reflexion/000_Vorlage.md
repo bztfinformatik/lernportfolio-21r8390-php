@@ -12,6 +12,9 @@ Nach folgenden **Anforderungen** sollte das Journal aufgebaut werden.
     -   Was würde ich anders machen?
     -   Wobei kann es behilflich sein? (Anwendungszweck)
     -   Was war neu / bereits bekannt?
+-   [x] Merksatz
+    -   Kurze Zusammenfassung
+    -   Min 2 Sätze
 -   [x] Was ist mir aufgefallen? (Fazit)
 
 ## Zusammenfassung der Inhalte
