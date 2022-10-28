@@ -33,7 +33,7 @@ Andere Programmiersprachen wie Java oder C# haben auh unterschiedliche **Umgebun
 
 [Model View Component](../Appendix/DesignPatterns/MVC.md) ist ein **Design Pattern** was die Benutzeroberfläche und die Businesslogik unabhängig machen sollte. Es hilft bei der Wartbarkeit und wird sehr oft in der Webentwicklung verwendet. Im Unterricht schauten wir uns das Pattern an, um es später in unserem eigenen Projekt anzuwenden.
 
-Wir Applikationsentwickler haben bereits Grundkenntnisse über MVC. Aus diesem Grund mussten wir einen **Vortrag** mit [Demo](https://github.com/bztfinformatik/lernportfolio-21r8390-php/tree/main/docker/Aufgaben/004_MVC-Example) erstellen, mit welcher wir den Betriebsinformatikern das Design Pattern erklären. Meine Aufgabe war die Demo, da ich bereits einen Entwurf hatte.
+Wir Applikationsentwickler haben bereits Grundkenntnisse über MVC. Aus diesem Grund mussten wir einen **Vortrag** mit [Demo](https://github.com/bztfinformatik/lernportfolio-21r8390-php/tree/main/Aufgaben/004_MVC-Example) erstellen, mit welcher wir den Betriebsinformatikern das Design Pattern erklären. Meine Aufgabe war die Demo, da ich bereits einen Entwurf hatte.
 
 Wie das Pattern konzipiert ist lernten wir im **Selbststudium** auf YouTube. Wir bekamen Zeit, um **Videos** zu schauen und uns Notizen dazu zu machen. In der Lektion schrieben wir die einzelnen Folien der Präsentation auf und teilten diese zu. Im Verlauf der Woche sprachen wir uns genauer ab und schusterten eine Präsentation zusammen.
 

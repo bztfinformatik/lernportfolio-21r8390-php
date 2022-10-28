@@ -35,4 +35,4 @@ Der Controller ist die Verbindung zwischen Model und View. Er verarbeitet die **
 
 ## Beispiel
 
-Das [Beispiel](https://github.com/bztfinformatik/lernportfolio-21r8390-php/tree/main/docker/Aufgaben/004_MVC-Example) zeigt, wie ein einfaches **MVC-Programm** aufgebaut ist. Personen werden aus der Datenbank geholt und in einer Tabelle angezeigt. Über ein Suchfeld kann nach Personen gesucht werden. Das Projekt beinhaltet auch ein Beispiel wie der Code nicht aufgebaut sein sollte. Dieses Beispiel zeigt, wie die einzelnen Komponenten miteinander verknüpft sind.
+Das [Beispiel](https://github.com/bztfinformatik/lernportfolio-21r8390-php/tree/main/Aufgaben/004_MVC-Example) zeigt, wie ein einfaches **MVC-Programm** aufgebaut ist. Personen werden aus der Datenbank geholt und in einer Tabelle angezeigt. Über ein Suchfeld kann nach Personen gesucht werden. Das Projekt beinhaltet auch ein Beispiel wie der Code nicht aufgebaut sein sollte. Dieses Beispiel zeigt, wie die einzelnen Komponenten miteinander verknüpft sind.

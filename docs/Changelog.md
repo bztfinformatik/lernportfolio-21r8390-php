@@ -43,12 +43,12 @@
 -   [OOP](PHP/OOP.md)
 -   [MVC](Appendix/DesignPatterns/MVC.md)
 -   [Entwicklung vs Produktion](PHP/Installation.md)
--   [Projekt](https://github.com/bztfinformatik/lernportfolio-21r8390-php/tree/main/docker/Aufgaben/004_MVC-Example)
+-   [Projekt](https://github.com/bztfinformatik/lernportfolio-21r8390-php/tree/main/Aufgaben/004_MVC-Example)
 -   [5. Woche in Journal](Reflexion/005_Woche.md)
 
 ## 6. Woche
 
--   [Framework](https://github.com/bztfinformatik/lernportfolio-21r8390-php/tree/main/docker/Aufgaben/005_MVC_Schule)
+-   [Framework](https://github.com/bztfinformatik/lernportfolio-21r8390-php/tree/main/Aufgaben/005_MVC_Schule)
 -   [Aufbau](PHP/Framework/Aufbau.md)
 -   [Hinzufügen](PHP/Framework/Hinzufügen.md)
 -   [Klassendiagramm](PHP/Framework/Aufbau.md#klassendiagramm)
