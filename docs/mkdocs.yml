@@ -139,10 +139,15 @@ nav:
     - Docker:
           - Übersicht: "Docker/Start.md"
           - Aufgaben: "Docker/Aufgaben.md"
-    - Projekt:
-          - Ziel: "Projekt/Ziel.md"
-          - Planung: "Projekt/Planung.md"
-          - Selbstreflexion: "Projekt/Selbstreflexion.md"
+    - LB1:
+          - Übersicht: "LB1/Uebersicht.md"
+          - "Concept Map": "LB1/ConceptMap.md"
+          - Architekturkonzept:
+                - Konzept: "LB1/Architekturkonzept/Konzept.md"
+          - Anforderungen:
+                - Anforderungen: "LB1/Anforderungen/Anforderungen.md"
+                - "Use Cases": "LB1/Anforderungen/UseCases.md"
+                - Funktionale: "LB1/Anforderungen/Funktionale.md"
     - Appendix:
           - "Journal Anforderungen": "Reflexion/000_Vorlage.md"
           - "GitHub Pages": "Appendix/GitHubPages/Einrichten.md"

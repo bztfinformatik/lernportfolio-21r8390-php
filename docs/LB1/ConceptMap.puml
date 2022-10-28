@@ -1,0 +1,13 @@
+@startuml
+title "Concept Map"
+
+' SSR / CSR
+' MVC
+' Template-Engine
+' Aktoren
+' Funktionale Anforderung
+' Testszenario
+' Testfall
+
+
+@enduml
