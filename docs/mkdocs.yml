@@ -114,6 +114,7 @@ nav:
           - "4. Woche": "Reflexion/004_Woche.md"
           - "5. Woche": "Reflexion/005_Woche.md"
           - "6. Woche": "Reflexion/006_Woche.md"
+          - "7. Woche": "Reflexion/007_Woche.md"
     - PHP:
           - Übersicht: "PHP/Start.md"
           - Installation: "PHP/Installation.md"
@@ -130,9 +131,11 @@ nav:
           - Framework:
                 - Aufbau: "PHP/Framework/Aufbau.md"
                 - Hinzufügen: "PHP/Framework/Hinzufügen.md"
-          # - Datenbanken: "PHP/Datenbanken.md"
-          # - Session:
-          # - Authorization:
+          - Tiwg:
+                - Übersicht: "PHP/Twig/Übersicht.md"
+                - Installation: "PHP/Twig/Installation.md"
+                - Design: "PHP/Twig/Design.md"
+                - Logik: "PHP/Twig/Logik.md"
     - Docker:
           - Übersicht: "Docker/Start.md"
           - Aufgaben: "Docker/Aufgaben.md"

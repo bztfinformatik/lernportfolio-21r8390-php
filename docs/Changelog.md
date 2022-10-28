@@ -51,6 +51,14 @@
 -   [Framework](https://github.com/bztfinformatik/lernportfolio-21r8390-php/tree/main/docker/Aufgaben/005_MVC_Schule)
 -   [Aufbau](PHP/Framework/Aufbau.md)
 -   [Hinzufügen](PHP/Framework/Hinzufügen.md)
--   [Klassendiagramm](PHP/Framework/UML/Klassen.puml)
--   [Sequenzdiagramm](PHP/Framework/UML/Abfrage.puml)
+-   [Klassendiagramm](PHP/Framework/Aufbau.md#klassendiagramm)
+-   [Sequenzdiagramm](PHP/Framework/Aufbau.md#ablaufe)
 -   [6. Woche in Journal](Reflexion/006_Woche.md)
+
+## 7. Woche
+
+-   [Twig Übersicht](PHP/Twig/Übersicht.md)
+-   [Twig Installation](PHP/Twig/Installation.md)
+-   [Twig Design](PHP/Twig/Design.md)
+-   [Twig Logik](PHP/Twig/Logik.md)
+-   [7. Woche in Journal](Reflexion/007_Woche.md)
