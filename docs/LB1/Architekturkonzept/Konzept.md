@@ -1,3 +1,10 @@
+---
+tags:
+    - Reflexion
+hide:
+    - toc
+---
+
 # Architekturkonzept
 
 ## Allgemein

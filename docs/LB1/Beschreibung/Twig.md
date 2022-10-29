@@ -1,5 +1,6 @@
 ---
 tags:
+    - LB1
     - PHP
     - Twig
 ---

@@ -1,3 +1,10 @@
+---
+tags:
+    - LB1
+hide:
+    - toc
+---
+
 # Übersicht
 
 Zielsetzung:
@@ -7,9 +14,7 @@ Das Formular soll eine genügend grosse Anzahl (5) verschiedene Eingabefelder ha
 
 ## Motivation
 
-Auf die Idee, bin ich gekommen, da
-
-Diese Webseite sollte somit das Problem lösen, dass
+Auf die Idee, bin ich gekommen, da ich öfters neuer Projekte anfangen muss und das aufsetzen der Dokumentation meistens einen Tag benötigt. Dieses Projekt soll dieser Prozess beschleunigen und vereinfachen werden, damit ich mehr Zeit für die eigentliche Arbeit habe.
 
 ## Idee
 
@@ -30,6 +35,7 @@ Diese Webseite sollte somit das Problem lösen, dass
 -   Backend
     -   ELK-Stack
     -   Cypress
+        -   https://bztfinformatik.github.io/lb1_doku-21r8390/Erkl%C3%A4rungen/Testing/
     -   XSS / SQL-Injection sicher
     -   Sendgrid für Mails / Benachrichtigungen
 -   Frontend

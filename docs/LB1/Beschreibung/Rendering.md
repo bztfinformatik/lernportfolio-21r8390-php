@@ -1,6 +1,6 @@
 ---
 tags:
-    - "Nicht zugeteilt"
+    - LB1
 ---
 
 # Rendering

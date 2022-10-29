@@ -1,3 +1,9 @@
+---
+tags:
+    - LB1
+    - Anforderung
+---
+
 # Funktionale Anforderungen
 
 -   Beschreibung der Anforderungen

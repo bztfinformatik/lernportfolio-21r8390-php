@@ -1,3 +1,9 @@
+---
+tags:
+    - LB1
+    - Anforderung
+---
+
 # Testszenario
 
 -   Beschreibt die Testumgebung und die Aktion die überprüft werden soll
