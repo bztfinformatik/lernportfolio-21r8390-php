@@ -1,13 +1,91 @@
 @startuml
 title "Concept Map"
+skinparam backgroundcolor transparent
 
-' SSR / CSR
-' MVC
-' Template-Engine
-' Aktoren
-' Funktionale Anforderung
-' Testszenario
-' Testfall
+' Begriffe
+([[https://bztfinformatik.github.io/lernportfolio-21r8390-php/LB1/Beschreibung/Rendering/ SSR / CSR]]) as (Rendering)
+([[https://bztfinformatik.github.io/lernportfolio-21r8390-php/LB1/Beschreibung/MVC/ MVC]]) as (MVC)
+([[https://bztfinformatik.github.io/lernportfolio-21r8390-php/LB1/Beschreibung/Twig/ Template-Engine]]) as (TemplateEngine)
+([[https://bztfinformatik.github.io/lernportfolio-21r8390-php/LB1/Anforderung/UseCases/ Use-Case]]) as (UseCase)
+([[https://bztfinformatik.github.io/lernportfolio-21r8390-php/LB1/Anforderung/Akteure/ Aktoren]]) as (Aktoren)
+([[https://bztfinformatik.github.io/lernportfolio-21r8390-php/LB1/Anforderung/Funktionale/ Funktionale Anforderung]]) as (FunktionaleAnforderung)
+([[https://bztfinformatik.github.io/lernportfolio-21r8390-php/LB1/Anforderung/Testszenario/ Testszenario]]) as (Testszenario)
+([[https://bztfinformatik.github.io/lernportfolio-21r8390-php/LB1/Anforderung/Testszenario/#testfalle Testfall]]) as (Testfall)
 
+' Beziehungen
+note top of Rendering
+    Ort wo der Code ausgeführt wird
+end note
+
+note bottom of (MVC)
+    Design Pattern zur Aufteilung des Codes
+    in Model, View und Controller
+end note
+
+note top of (TemplateEngine)
+    Engine zur Erstellung von wiederverwendbaren
+    Komponenten (//z.B. Header, Footer//)
+end note
+
+note bottom of (UseCase)
+    Was das System leisten soll
+    * Nummeriert
+    * Auslöser
+    * Vor- & Nachbedingungen
+    * Schritte
+end note
+
+note top of (Aktoren)
+    Wer das System nutzt (//Zielgruppe//)
+end note
+
+note top of (FunktionaleAnforderung)
+    Anforderung zur Zweckbestimmung
+    * Nummeriert
+end note
+
+note right of (Testszenario)
+    Beschreibung der Testumgebung & Aktion
+    * Nummeriert
+end note
+
+note top of (Testfall)
+    Beschreibt wie, wann & was ausgeführt wird
+end note
+
+' Zusammenhänge
+note as Architektur
+    [[https://bztfinformatik.github.io/lernportfolio-21r8390-php/LB1/Architekturkonzept/Konzept/ Architekturkonzept]]: 
+    Aufbau & Struktur des Systems
+end note
+
+note as Anwendungsfälle
+    [[https://bztfinformatik.github.io/lernportfolio-21r8390-php/LB1/Anforderung/Anforderungen/ Anwendungsfälle]]: 
+    Tätigkeiten, die der Benutzer ausführen kann
+end note
+
+' Gruppierungen
+(Rendering) .. Architektur
+(MVC) .. Architektur
+(TemplateEngine) .. Architektur
+
+(UseCase) .. Anwendungsfälle
+(Testszenario) .. Anwendungsfälle
+
+' Zusammenhänge
+(Rendering) <--> (MVC) : "Führt Code aus"
+(TemplateEngine) --> (MVC) : "Benutzt Komponenten"
+
+(UseCase) <--> (UseCase) : "Verweist auf"
+(Aktoren) --> (UseCase) : "Löst aus"
+(Aktoren) --> (Testszenario) : "Löst aus"
+
+(FunktionaleAnforderung) --> (UseCase) : "Bezieht sich auf"
+(Testszenario) <--> (FunktionaleAnforderung) : "Entsteht aus"
+
+(Testfall) --> (Testszenario) : "Subform von"
+
+(MVC) --> (UseCase) : "Setzt um"
+(MVC) --> (FunktionaleAnforderung) : "Setzt um"
 
 @enduml
