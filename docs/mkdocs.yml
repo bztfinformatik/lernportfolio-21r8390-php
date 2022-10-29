@@ -101,6 +101,11 @@ plugins:
               "Appendix/Tags.md": "Tags.md"
               "Inhalt.md": "Tags.md"
               "Journal.md": "Reflexion/001_Woche.md"
+              "LB1.md": "LB1/Uebersicht.md"
+              "ConceptMap.md": "LB1/ConceptMap.md"
+              "PHP/Twig/Uebersicht.md": "LB1/Beschreibung/Twig.md"
+              "LB1/Beschreibung/SSR.md": "LB1/Beschreibung/Rendering.md"
+              "LB1/Beschreibung/CSR.md": "LB1/Beschreibung/Rendering.md"
 
 nav:
     - Startseite:
