@@ -6,7 +6,7 @@ tags:
 
 # Design
 
-Der HTML-Code kann in **Komponente** untergebracht werden, damit er wiederverwendbar ist. Dazu muss nur eine Datei mit der Endung `.twig.html` erstellt werden. Twig hat unglaublich viele Funktionen, die es ermöglichen, den HTML-Code zu vereinfachen. Die gesamte Liste ist [hier](https://twig.symfony.com/doc/3.x/) zu finden. Hier werden die wichtigsten Anwendungen vorgestellt und erklärt.
+Der HTML-Code kann in **Komponente** untergebracht werden, damit er wiederverwendbar ist. Dazu muss nur eine Datei mit der Endung `.twig.html` erstellt werden. Twig hat unglaublich viele Funktionen, die es ermöglichen, den HTML-Code zu vereinfachen. Die gesamte Liste ist [hier](https://twig.symfony.com/doc/3.x/) zu finden. Hier werden die wichtigsten Anwendungen vorgestellt und erklärt. Wie die Komponenten eingesetzt werden, wird im [Logik Kapitel](Logik.md) erklärt.
 
 ## Einbinden
 
@@ -92,7 +92,7 @@ Häufig werden **Eingaben** von Kunden an einem anderen Ort angezeigt. Diese Ein
 {% endautoescape %}
 ```
 
-So kann [XSS](../Appendix/Sicherheit.md#xss) verhindert werden, da JavaScript nicht ausgeführt wird. Twig bietet auch die Möglichkeit dies nur auf eine Variable anzuwenden. Dies kann mit `|e('Sprache')` gemacht werden.
+So kann [XSS](../../Appendix/Sicherheit.md#xss) verhindert werden, da JavaScript nicht ausgeführt wird. Twig bietet auch die Möglichkeit dies nur auf eine Variable anzuwenden. Dies kann mit `|e('Sprache')` gemacht werden.
 
 ```twig
 {{ '<script>alert("XSS")</script>'|e('js') }}

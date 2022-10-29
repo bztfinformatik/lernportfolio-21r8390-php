@@ -15,7 +15,7 @@ hide:
 
 ## Twig Allgemein
 
-Unser selbst programmiertes Framework sollte mithilfe einer **Template Engine** ausgestattet werden. Diese sollte Repetitive Aufgaben ablösen und das Bauen von Komponenten erlauben. Wir haben uns für [Twig](../PHP/Twig/%C3%9Cbersicht.md) entschieden, da es eine sehr gute Dokumentation hat und es sehr einfach ist, eigene Funktionen zu erstellen. Wir schauten und den Nutzen und [Anwendungsfälle](../PHP/Twig/%C3%9Cbersicht.md#Problemlösung) an. Um Twig überhaupt benutzen zu können schauten wir und auch den [Installationsprozess](../PHP/Twig/Installation.md) an, welcher mithilfe von **Composer** und Docker sehr einfach ist.
+Unser selbst programmiertes Framework sollte mithilfe einer **Template Engine** ausgestattet werden. Diese sollte Repetitive Aufgaben ablösen und das Bauen von Komponenten erlauben. Wir haben uns für [Twig](../LB1/Beschreibung/Twig.md) entschieden, da es eine sehr gute Dokumentation hat und es sehr einfach ist, eigene Funktionen zu erstellen. Wir schauten und den Nutzen und [Anwendungsfälle](../LB1/Beschreibung/Twig.md#Problemlösung) an. Um Twig überhaupt benutzen zu können schauten wir und auch den [Installationsprozess](../PHP/Twig/Installation.md) an, welcher mithilfe von **Composer** und Docker sehr einfach ist.
 
 Im Unterricht schauten wir uns anhand eines [Beispiels](https://github.com/bztfinformatik/lernportfolio-21r8390-php/tree/main/Aufgaben/006_MVC_TWIG) an, wie Twig angewendet wird. In diesem wurde der **Umgang** mit Komponenten und einzelne Funktionen gezeigt. Mir persönlich war dies nicht genügend ausführlich, weswegen ich zu Hause die [Twig Dokumentation](https://twig.symfony.com/doc/3.x/) durchgegangen bin. Dabei habe ich alle wichtigen Funktionen und **Konzepte** verstanden und konnte diese auch anwenden. Meine gewonnenen Erkenntnisse hielt ich in der [Dokumentation](../PHP/Twig/Design.md) fest.
 
@@ -49,7 +49,7 @@ Der zweite Auftrag war es, die Logik von Twig zu verstehen. Dazu mussten wir das
 
 In der Twig Dokumentation suchte ich nach einer Funktion, welche **Dropdown** erstellt. Leider war ich dabei erfolglos. Dafür fand ich aber [Makros](https://twig.symfony.com/doc/3.x/tags/macro.html), welche meine Erwartungen erfüllten. Mit diesen konnte ich ein [Dropdown](../PHP/Twig/Logik.md#dropdown) erstellen, welches die Daten aus dem Controller bezieht. Das Dropdown ist wiederverwendbar und kann in jedem **Template** verwendet werden. Das Dropdown selbst ist sehr einfach gehalten. Es enthält nur die Logik, welche für ein Dropdown benötigt wird. Die Logik für die Daten, welche in das Dropdown geladen werden, ist in einem separaten Controller. Ein Dropdown alleine ist nicht sehr nützlich, weswegen ich es mit einem [Formular](../PHP/Twig/Logik.md#formular) kombinierte.
 
-Im **Formular** habe ich gelernt wie Daten in Twig dargestellt und **Escaped** werden, damit [XSS](../PHP/Appendix/Sicherheit.md) verhindert wird. Das Gespür für den Umgang mit Twig habe ich sehr schnell bekommen. Ich kann nun Komponenten einbinden und selbst Funktionen mithilfe von Makros programmieren. Das Dropdown ist ein Beispiel dafür.
+Im **Formular** habe ich gelernt wie Daten in Twig dargestellt und **Escaped** werden, damit [XSS](../Appendix/Sicherheit.md) verhindert wird. Das Gespür für den Umgang mit Twig habe ich sehr schnell bekommen. Ich kann nun Komponenten einbinden und selbst Funktionen mithilfe von Makros programmieren. Das Dropdown ist ein Beispiel dafür.
 
 !!! example "Merksatz:"
 

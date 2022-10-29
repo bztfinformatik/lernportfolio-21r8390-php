@@ -30,7 +30,6 @@ Diese Webseite sollte somit das Problem lösen, dass
 -   Backend
     -   ELK-Stack
     -   Cypress
-    -   CSRF-Tokens
     -   XSS / SQL-Injection sicher
     -   Sendgrid für Mails / Benachrichtigungen
 -   Frontend

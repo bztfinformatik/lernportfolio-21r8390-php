@@ -20,7 +20,7 @@ Es ist essentiell, dass man die [Datentypen](../PHP/Appendix/Datentypen.md) eine
 
 Im Unterricht schauten wir uns eine Präsentation über die Datentypen an. Aus dieser erstellte ich die **Tabelle**. Im Internet sammelte ich **weiteres Wissen** um noch mehr Informationen zu den Datentypen zu erhalten. Datentypen waren nur eine **beiläufiges** Thema, weswegen es auch nur im Appendix auftaucht.
 
-Ich habe gelernt, dass PHP auch **Typisierung** erlaubt. Das ist für mich neu, da ich bisher nur den Typ angegeben habe, dieser jedoch nicht überprüft wurde. Ich werde in Zukunft Typisierung verwenden, da es mir hilft, Fehler zu vermeiden. Zudem ist es für ausenstehende Personen leichter zu verstehen, was die Funktionen machen und benötigen.
+Ich habe gelernt, dass PHP auch **Typisierung** erlaubt. Das ist für mich neu, da ich bisher nur den Typ angegeben habe, dieser jedoch nicht überprüft wurde. Ich werde in Zukunft Typisierung verwenden, da es mir hilft, Fehler zu vermeiden. Zudem ist es für aussenstehende Personen leichter zu verstehen, was die Funktionen machen und benötigen.
 
 !!! example "Merksatz:"
 
@@ -64,7 +64,7 @@ Bemerkt habe ich, dass Schleifen grundsätzlich in allen Programmiersprachen gle
 
 Letzte Woche schauten wir und die **HTTP-Parameter** an. Um den Umgang damit zu üben, schrieb ich mir ein [Formular](../PHP/Aufgaben/Formular.md) auf. Dabei verwendete ich die [GET- und POST-Parameter](../PHP/Aufgaben/HTTP-Parameter.md). Da bei Formularen auf Sicherheit geachtet werden muss erstellte ich eine Zusammenfassung von **Sicherheitslücken**. Diese sind jedoch noch in Arbeit und werden in den nächsten Wochen fertiggestellt. Wichtig war mir jedoch, dass `Cross-Site-Scripting` nicht über mein Formular möglich ist, was ich auch erfolgreich umsetzte.
 
-Bevor ich mit dem **Auftrag** begann, habe ich mir mögliche [Sicherheitsprobleme](../PHP/Appendix/Sicherheit.md) aufgeschrieben und mich darüber informiert. Sobald ich wusste auf was ich achten muss wendete ich mich dem Formular. Von Herr Inauen hatten wir ein **Beispiel** bekommen, welches man umsetzen kann. Ich entschied mich jedoch ein etwas ausführlicheres zu machen, welche die gleichen Eingabefelder verwendet.
+Bevor ich mit dem **Auftrag** begann, habe ich mir mögliche [Sicherheitsprobleme](../Appendix/Sicherheit.md) aufgeschrieben und mich darüber informiert. Sobald ich wusste auf was ich achten muss wendete ich mich dem Formular. Von Herr Inauen hatten wir ein **Beispiel** bekommen, welches man umsetzen kann. Ich entschied mich jedoch ein etwas ausführlicheres zu machen, welche die gleichen Eingabefelder verwendet.
 
 Letzte Woche habe ich bereits HTTP-Parameter angeschaut und gelernt wie man mit diesen umgeht. Aus diesem Grund sind keine unerwarteten Überraschungen aufgetaucht. Neu war mir die **Unterteilung** von Formularen mit HTML und PHP getrennt oder zusammen. Ich persönlich finde, dass zusammen schöner ist, da es eine Komponente bildet, welche **unabhängig** von anderen Komponenten ist. Formulare werden in einer Webapplikation ständig verwendet. Deswegen ist es wichtig, dass man diese richtig beherrscht.
 

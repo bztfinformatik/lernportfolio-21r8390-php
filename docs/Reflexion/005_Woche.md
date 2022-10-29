@@ -31,7 +31,7 @@ Andere Programmiersprachen wie Java oder C# haben auh unterschiedliche **Umgebun
 
 ## MVC - Design Pattern
 
-[Model View Component](../Appendix/DesignPatterns/MVC.md) ist ein **Design Pattern** was die Benutzeroberfläche und die Businesslogik unabhängig machen sollte. Es hilft bei der Wartbarkeit und wird sehr oft in der Webentwicklung verwendet. Im Unterricht schauten wir uns das Pattern an, um es später in unserem eigenen Projekt anzuwenden.
+[Model View Component](../LB1/Beschreibung/MVC.md) ist ein **Design Pattern** was die Benutzeroberfläche und die Businesslogik unabhängig machen sollte. Es hilft bei der Wartbarkeit und wird sehr oft in der Webentwicklung verwendet. Im Unterricht schauten wir uns das Pattern an, um es später in unserem eigenen Projekt anzuwenden.
 
 Wir Applikationsentwickler haben bereits Grundkenntnisse über MVC. Aus diesem Grund mussten wir einen **Vortrag** mit [Demo](https://github.com/bztfinformatik/lernportfolio-21r8390-php/tree/main/Aufgaben/004_MVC-Example) erstellen, mit welcher wir den Betriebsinformatikern das Design Pattern erklären. Meine Aufgabe war die Demo, da ich bereits einen Entwurf hatte.
 

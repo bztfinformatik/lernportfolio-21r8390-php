@@ -16,7 +16,7 @@ hide:
 
 ## SSR vs CSR
 
-PHP ist eine [Serverseitige](../Appendix/Rendering/Rendering.md) Programmiersprache. Um zu verstehen was dieser Satz **bedeutet**, mussten wir zuerst verstehen was Serverseitig bedeutet und was für Alternativen es gibt. Wir schauten uns die Begriffe **SSR** und **CSR** an und besprachen die Vor- und Nachteile. Damit wir uns mit dem Aufbau der beiden Begriffe genau auseinandersetzen mussten wir ein [Diagramm](../Appendix/Rendering/Rendering.md#diagramm) über CSR machen.
+PHP ist eine [Serverseitige](../LB1/Beschreibung/Rendering.md) Programmiersprache. Um zu verstehen was dieser Satz **bedeutet**, mussten wir zuerst verstehen was Serverseitig bedeutet und was für Alternativen es gibt. Wir schauten uns die Begriffe **SSR** und **CSR** an und besprachen die Vor- und Nachteile. Damit wir uns mit dem Aufbau der beiden Begriffe genau auseinandersetzen mussten wir ein [Diagramm](../LB1/Beschreibung/Rendering.md#diagramm) über CSR machen.
 
 Die Unterschiede besprachen wir zusammen in der Klasse und schrieben die Eigenschaften an die Wandtafel. Für **vertieftes Wissen** nahm ich mir die Webseite [Toptal](https://www.toptal.com/front-end/client-side-vs-server-side-pre-rendering) zur Hilfe. Dort wurde die Unterschiede nochmal genauer erklärt. Das **Diagramm** wurde von mir mit [Mermaid](https://jojozhuang.github.io/tutorial/mermaid-cheat-sheet/) erstellt, was eine Alternative zu PlantUML ist.
 
@@ -31,7 +31,7 @@ MkDocs unterstützt kein direktes verbauen von PlantUML als **Codeschnipsel**. F
 
 ## CSR Erweiterung
 
-Als Aufgabe mussten wir ein [CSR-Projekt](../Appendix/Rendering/Rendering.md#beispielprojekt) erstellen. Dieses sollte Daten aus einem Backend laden und in einer Liste darstellen. Über einen **Hinzufügen** Knopf können weitere Entitäten zur Liste hinzugefügt werden. Die Schwierigkeit bei der ganzen Aufgabe war, dass es über `Ajax` funktionieren sollte. Das heisst, dass die Daten über **JavaScript** geladen werden und nicht über PHP.
+Als Aufgabe mussten wir ein [CSR-Projekt](../LB1/Beschreibung/Rendering.md#beispielprojekt) erstellen. Dieses sollte Daten aus einem Backend laden und in einer Liste darstellen. Über einen **Hinzufügen** Knopf können weitere Entitäten zur Liste hinzugefügt werden. Die Schwierigkeit bei der ganzen Aufgabe war, dass es über `Ajax` funktionieren sollte. Das heisst, dass die Daten über **JavaScript** geladen werden und nicht über PHP.
 
 Um zu sehen wie Grundsätzlich ein CSR-Projekt aufgebaut ist schauten wir in der Klasse ein **Beispielprojekt** an. Dort wurden die Abfragen bereits mit [Ajax](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX) umgesetzt, es hatte jedoch nur statische Daten. Dazu mussten wir uns mit der Ajax-Funktion `$.ajax()` auseinandersetzen. Diese Funktion ist sehr mächtig und kann viele verschiedene **Parameter** haben. Für das Projekt nahm ich mein altes **M307 Projekt** und baute es, mit meinem neu gelernten Wissen aus diesem Modul, um. Nun sind alle Methoden dokumentiert und XSS sollte nicht mehr möglich sein. Die Daten werden in einer SQLite Datenbank gespeichert, damit sie beständig bleiben.
 

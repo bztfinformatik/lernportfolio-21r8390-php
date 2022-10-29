@@ -132,7 +132,7 @@ nav:
                 - Aufbau: "PHP/Framework/Aufbau.md"
                 - Hinzufügen: "PHP/Framework/Hinzufügen.md"
           - Tiwg:
-                - Übersicht: "PHP/Twig/Übersicht.md"
+                - Übersicht: "LB1/Beschreibung/Twig.md"
                 - Installation: "PHP/Twig/Installation.md"
                 - Design: "PHP/Twig/Design.md"
                 - Logik: "PHP/Twig/Logik.md"
@@ -142,23 +142,26 @@ nav:
     - LB1:
           - Übersicht: "LB1/Uebersicht.md"
           - "Concept Map": "LB1/ConceptMap.md"
+          - Beschreibung:
+                - "MVC": "LB1/Beschreibung/MVC.md"
+                - "Twig": "LB1/Beschreibung/Twig.md"
+                - "Rendering": "LB1/Beschreibung/Rendering.md"
           - Architekturkonzept:
                 - Konzept: "LB1/Architekturkonzept/Konzept.md"
-          - Anforderungen:
-                - Anforderungen: "LB1/Anforderungen/Anforderungen.md"
-                - "Use Cases": "LB1/Anforderungen/UseCases.md"
-                - Funktionale: "LB1/Anforderungen/Funktionale.md"
+          - Anforderung:
+                - Anforderungen: "LB1/Anforderung/Anforderungen.md"
+                - "Use Cases": "LB1/Anforderung/UseCases.md"
+                - Akteure: "LB1/Anforderung/Akteure.md"
+                - Funktionale: "LB1/Anforderung/Funktionale.md"
+                - Testszenario: "LB1/Anforderung/Testszenario.md"
     - Appendix:
           - "Journal Anforderungen": "Reflexion/000_Vorlage.md"
           - "GitHub Pages": "Appendix/GitHubPages/Einrichten.md"
+          - Sicherheit: "Appendix/Sicherheit.md"
           - Struktur: "Appendix/Struktur/Struktur.md"
-          - Rendering: "Appendix/Rendering/Rendering.md"
-          - "Design Patterns":
-                - "MVC-Pattern": "Appendix/DesignPatterns/MVC.md"
           - PHP:
                 - "PHP-Cheatsheet": "PHP/Appendix/Cheatsheet.md"
                 - "Do's and Don'ts": "PHP/Appendix/DosAndDonts.md"
                 - Datentypen: "PHP/Appendix/Datentypen.md"
                 - "Array Funktionen": "PHP/Appendix/ArrayFunktionen.md"
                 - Sortieren: "PHP/Appendix/Sortieren.md"
-                - Sicherheit: "PHP/Appendix/Sicherheit.md"

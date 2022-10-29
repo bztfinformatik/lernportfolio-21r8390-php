@@ -13,13 +13,14 @@ Das folgende Diagramm zeigt den **Ablauf** einer Client-Side-Rendering Anwendung
 
 ```mermaid
 graph LR
-
     A[Client] --> |URL| B{JavaScript Framework};
     B --> |Ajax Anfrage an Server| C[Webserver];
     C --> |JSON / XML / YAML| B;
     B --> |Daten verarbeiten| B;
     B --> |HTML generieren| A;
 ```
+
+<small style="text-align: center; display:block;">[Link zu PlantUML](https://www.plantuml.com/plantuml/svg/BSv12u9G30Vm-_iKmxjqBmYVHeHeGHRLSTQILxfYlgoFttfv6OFV_p-Mz1x5lxhMH5dhY7q4s8E5E9v3bEE0rLdSqyDIiAFtG-x1KvZ2VbkOz9yxKDsJ32G1CqLxmmzOlWes1CXG1JPPoF_QURLPmmIEPQ7pPCjmQxG5UcBGF4fDJlVHhDfgfus6cCIH4CzCGdpHzxy0)</small>
 
 ## Client Side Rendering
 

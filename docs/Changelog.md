@@ -31,17 +31,17 @@
 ## 4. Woche
 
 -   1\. Abgabe der Doku
--   [SSR vs CSR](Appendix/Rendering/Rendering.md)
+-   [SSR vs CSR](LB1/Beschreibung/Rendering.md)
 -   [Dateien](PHP/Aufgaben/Dateien.md)
 -   [Do and Donts](PHP/Appendix/DosAndDonts.md)
--   [CSR Projekt + Erweiterung](Appendix/Rendering/Rendering.md#beispielprojekt)
--   [CSR Projekt mit Dateien](Appendix/Rendering/Rendering.md#beispielprojekt)
+-   [CSR Projekt + Erweiterung](LB1/Beschreibung/Rendering.md#beispielprojekt)
+-   [CSR Projekt mit Dateien](LB1/Beschreibung/Rendering.md#beispielprojekt)
 -   [4. Woche in Journal](Reflexion/004_Woche.md)
 
 ## 5. Woche
 
 -   [OOP](PHP/OOP.md)
--   [MVC](Appendix/DesignPatterns/MVC.md)
+-   [MVC](LB1/Beschreibung/MVC.md)
 -   [Entwicklung vs Produktion](PHP/Installation.md)
 -   [Projekt](https://github.com/bztfinformatik/lernportfolio-21r8390-php/tree/main/Aufgaben/004_MVC-Example)
 -   [5. Woche in Journal](Reflexion/005_Woche.md)
@@ -57,7 +57,7 @@
 
 ## 7. Woche
 
--   [Twig Übersicht](PHP/Twig/Übersicht.md)
+-   [Twig Übersicht](LB1/Beschreibung/Twig.md)
 -   [Twig Installation](PHP/Twig/Installation.md)
 -   [Twig Design](PHP/Twig/Design.md)
 -   [Twig Logik](PHP/Twig/Logik.md)
