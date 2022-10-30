@@ -1,0 +1,32 @@
+@startuml "User Use-Cases"
+title "User Use-Cases"
+left to right direction
+skinparam packageStyle rectangle
+
+' Akteure
+actor Lehrling
+actor Admin
+
+' Diagramm
+rectangle "Use-Cases" {
+    (Dashboard anzeigen) as (U-0001) <<U-0001>>
+    (Profil bearbeiten) as (U-0002) <<U-0002>>
+    (Neue Vorlage) as (U-0003) <<U-0003>>
+    (Vorlage downloaden) as (U-0004) <<U-0004>>
+    (Statusänderung mitteilen) as (U-0005) <<U-0005>>
+}
+
+' Verbindungen    
+Lehrling --> (U-0001)
+(U-0001) <-- Admin
+
+Lehrling --> (U-0002)
+(U-0002) <-- Admin
+
+Lehrling --> (U-0003)
+
+Lehrling --> (U-0004)
+
+Lehrling --> (U-0005)
+(U-0005) <-- Admin
+@enduml

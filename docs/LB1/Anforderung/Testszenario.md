@@ -24,5 +24,7 @@ Flow bis zur Kasse.
 
 ## Testfälle
 
+Ein Testfall beschreibt eine elementare Funktionalität, welche getestet werden soll. Er hat eine Beschreibung und eine Voraussetzung. Die Voraussetzung ist eine Bedingung, die erfüllt sein muss, damit der Testfall ausgeführt werden kann. Die Schritte zum Ausführen werden auch mitgegeben, damit es zu keinen Missverständnissen kommt. Aus diesem Grund müssen diese Schritte exakt ausgeführt werden.
+
 -   Beschreiben konkret, welcher Button wie/wann/was auslösen soll oder eben nicht
 -   Testfälle sind Subformen von Testszenarios. Szenarien beziehen sich auf Anforderungen.

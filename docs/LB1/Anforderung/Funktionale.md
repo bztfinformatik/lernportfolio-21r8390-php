@@ -28,3 +28,21 @@ tags:
 -   Die Software muss vor Arzneimitteln warnen, für die eine Kontraindikation oder Wechselwirkung vorliegt.
 -   Das Formular muss die Eingaben XY abfangen
 -   Das Formular darf nur von XY bestätigt werden
+
+| 0001          | Funktionale Anforderung |
+| ------------- | ----------------------- |
+| Name          |                         |
+| Ziel          |                         |
+| Akteure       | (Link zu Akteure)       |
+| Trigger       |                         |
+| Anforderungen |                         |
+| Schritte      |                         |
+|               |                         |
+|               |                         |
+
+| 0001         | Übertragung       |
+| ------------ | ----------------- |
+| Daten        |                   |
+| Spezialfälle |                   |
+| Fehlerfälle  | (Link zu Akteure) |
+| Wertebereich |                   |

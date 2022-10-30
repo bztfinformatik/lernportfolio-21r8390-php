@@ -1,0 +1,20 @@
+@startuml "Admin Use-Cases"
+title "Admin Use-Cases"
+left to right direction
+skinparam packageStyle rectangle
+
+' Akteure
+actor Admin
+
+' Diagramm
+rectangle "Use-Cases" {
+    (Vorlage bestätigen) as (A-0001) <<A-0001>>
+    (Vorlage ablehnen) as (A-0002) <<A-0002>>
+    (Logs sehen & filtern) as (A-0003) <<A-0003>>
+}
+
+' Verbindungen    
+Admin --> (A-0001)
+Admin --> (A-0002)
+Admin --> (A-0003)
+@enduml
