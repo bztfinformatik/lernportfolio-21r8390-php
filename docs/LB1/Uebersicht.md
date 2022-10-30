@@ -23,8 +23,6 @@ Das Ziel von diesem Projekt ist, dass ein Geschäftsprozess digitalisiert wird. 
 -   Admin / Lehrer bestätigen
     -   Ablehnen mit Rückmeldung / Verbesserung
 -   Nach Bestätigung Download verfügbar
--   Mit anderen Nutzern teilen
-    -   Ohne Anmeldung frei Formular für wichtigste Werte
 -   Backend
     -   Elastic Stack
     -   Cypress

@@ -20,6 +20,7 @@ package Models <<Database>> {
         - salt : String
         - created_at : DateTime
         - profilePicture : Base64String
+        - verified : boolean
         - roles : json
     }
 
