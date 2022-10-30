@@ -7,14 +7,7 @@ hide:
 
 # Übersicht
 
-Zielsetzung:
-Sie bilden einen Geschäftsprozess (als Vorlage dient Ihr Formular) ab
-Mindestes zwei Akteure sollen beteiligt sein (z.Bsp. Erfasser und Bestätiger) - “Bewilligungsprozess”
-Das Formular soll eine genügend grosse Anzahl (5) verschiedene Eingabefelder haben
-
-## Motivation
-
-Auf die Idee, bin ich gekommen, da ich öfters neuer Projekte anfangen muss und das aufsetzen der Dokumentation meistens einen Tag benötigt. Dieses Projekt soll dieser Prozess beschleunigen und vereinfachen werden, damit ich mehr Zeit für die eigentliche Arbeit habe.
+Das Ziel von diesem Projekt ist, dass ein Geschäftsprozess digitalisiert wird. In der Schule und während der Arbeit schreibe ich vermehrt Dokumentationen. Diese mithilfe von [MkDocs](https://squidfunk.github.io/mkdocs-material/) auf zu setzen ist grundsätzlich nicht schwer, jedoch eine aufwändige Arbeit. Meist dauert es einen Tag, bis die Doku mit allen Sonderheiten konfiguriert ist. Dieses Projekt soll die Arbeit erleichtern und die Dokumentationen automatisieren, was den Prozess beschleunigt. In einem Formular kann ein Antrag für eine neue Dokumentation erstellt werden. Dieser wird dann von einem Administrator bestätigt, wenn alle Angaben stimmen. Die Dokumentation wird dann auf einem Webserver abgelegt und kann von jedem mit einem Link aufgerufen werden.
 
 ## Idee
 
@@ -33,7 +26,7 @@ Auf die Idee, bin ich gekommen, da ich öfters neuer Projekte anfangen muss und 
 -   Mit anderen Nutzern teilen
     -   Ohne Anmeldung frei Formular für wichtigste Werte
 -   Backend
-    -   ELK-Stack
+    -   Elastic Stack
     -   Cypress
         -   https://bztfinformatik.github.io/lb1_doku-21r8390/Erkl%C3%A4rungen/Testing/
     -   XSS / SQL-Injection sicher
@@ -41,3 +34,5 @@ Auf die Idee, bin ich gekommen, da ich öfters neuer Projekte anfangen muss und 
 -   Frontend
     -   TailwindCSS
     -   Twig
+
+File View nach: https://mudblazor.com/components/treeview#custom-tree
