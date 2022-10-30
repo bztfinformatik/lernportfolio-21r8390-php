@@ -138,6 +138,7 @@ nav:
           - Framework:
                 - Aufbau: "PHP/Framework/Aufbau.md"
                 - Hinzufügen: "PHP/Framework/Hinzufügen.md"
+                - Validation: "PHP/Framework/Validation.md"
           - Tiwg:
                 - Übersicht: "LB1/Beschreibung/Twig.md"
                 - Installation: "PHP/Twig/Installation.md"
