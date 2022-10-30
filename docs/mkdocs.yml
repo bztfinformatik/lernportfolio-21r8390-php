@@ -152,7 +152,9 @@ nav:
                 - "Twig": "LB1/Beschreibung/Twig.md"
                 - "Rendering": "LB1/Beschreibung/Rendering.md"
           - Architekturkonzept:
-                - Konzept: "LB1/Architekturkonzept/Konzept.md"
+                - Mockup: "LB1/Architekturkonzept/Mockup.md"
+                - MVC-Konzept: "LB1/Architekturkonzept/MVC-Konzept.md"
+                - Twig-Konzept: "LB1/Architekturkonzept/Twig-Konzept.md"
           - Anforderung:
                 - Anforderungen: "LB1/Anforderung/Anforderungen.md"
                 - "Use Cases": "LB1/Anforderung/UseCases.md"
