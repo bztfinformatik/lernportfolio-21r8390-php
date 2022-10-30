@@ -24,13 +24,17 @@ graph LR
 
 ## Client Side Rendering
 
-Clientseitiges Rendering ermöglicht es Entwicklern, ihre Websites mit **JavaScript** vollständig im Browser zu laden. Anstatt für jede URL eine eigene HTML-Seite zu haben, wird bei einer clientseitig gerenderten Website jede Route **dynamisch** direkt im Browser erstellt. Dieser Ansatz verbreitete sich, als die JS-Frameworks ihn leicht anwendbar machten. Wenn CSR von Hand gemacht wird, dann wird meistens [Ajax](https://www.w3schools.com/xml/ajax_intro.asp) verwendet.
+Clientseitiges Rendering ermöglicht es Entwicklern, ihre Websites mit **JavaScript** vollständig im Browser zu laden. Anstatt für jede URL eine eigene HTML-Seite zu haben, wird bei einer clientseitig gerenderten Website jede Route **dynamisch** direkt im Browser erstellt. Dieser Ansatz verbreitete sich, als die JS-Frameworks ihn leicht anwendbar machten. Wenn CSR von Hand gemacht wird, dann wird meistens [Ajax](https://www.w3schools.com/xml/ajax_intro.asp) verwendet. Dies ist eine Technik, die es ermöglicht, Daten von einem Server zu laden, ohne die Seite neu zu laden. Dies ist ein **Asynchroner** Vorgang, der die **Performance** verbessert. Die **Nachteile** sind, dass die Seite nicht von Suchmaschinen gescannt werden kann und die **Erstellung** der Seite dauert länger, da die Daten erst geladen werden müssen. Zudem wird JavaScript für das Laden benötigt, was gewisse Bots beim Indexieren nicht auslösen.
 
 ## Server Side Rendering
 
-Eine Webseite direkt auf dem Server mit **benutzerdefinierten** Daten auszufüllen, ermöglicht das serverseitige Rendering. Es ist in der Regel schneller, alle Anfragen innerhalb eines Servers zu stellen, als zusätzliche **Browser-zu-Server-Rundreisen** für sie zu machen. Dies war die Vorgehensweise der Entwickler vor dem clientseitigen Rendering.
+Eine Webseite direkt auf dem Server mit **benutzerdefinierten** Daten auszufüllen, ermöglicht das serverseitige Rendering. Das Layout und angezeigte HTML wird direkt gesteuert, sodass nur der benötigte Inhalt zum Browser kommt. Wenn eine Anfrage kommt, dann werden die Daten geladen. Danach wird anhand der Daten das HTML zusammengestellt. Felder wie **Titel** und **Beschreibung** werden mit den Daten gefüllt. Sobald dieser Vorgang beendet ist wird die Seite an den Browser gesendet. In der Regel sind einmalige Anfragen an den Server schneller, als zusätzliche **Browser-zu-Server-Rundreisen** für sie zu machen, was bei CSR der fall ist. Zudem sehen Suchmaschinen den Inhalt der Seite, was die **Indexierung** erleichtert. JavaScript kommt beim SSR nicht oder nur selten zum Einsatz, was für Bots eine **Vorteil** ist.
+
+Der Nachteil ist, dass man keine Infos über das **Verhalten** des Users hat. Dies ist ein Problem, wenn analysiert werden soll, wie die Seite genutzt wird. Ausserdem ist es schwierig, die **Navigation** zu steuern oder zu wissen welches Feld aktuell fokussiert ist. Da in einer Abfrage die Daten ändern können kann der Inhalt nicht beim Laden der Seite gecached werden. Dies führt zu einer **langsameren** Seite.
 
 ## Fazit
+
+Ein klarer Gewinner zwischen SSR und CSR gibt es nicht, da beide Vor- und Nachteile haben. Es sollte deswegen immer abgewogen werden, welche Anwendung für die jeweilige Situation am besten geeignet ist.
 
 -   Da CSR den Inhalt der Seite erst nach dem Laden anzeigt ist die `Time to First Byte` (TTFB) bei besser. Jedoch ist die `Time to First Meaningful Paint` (TTMFP) bei SSR besser, da der Inhalt der Seite schneller angezeigt wird.
 -   SEO ist bei SSR besser, da der HTML Code bereits vorher geladen wurde und somit auch von **Suchmaschinen** gescannt werden kann. Bei CSR wird der HTML Code erst nachgeladen und somit nicht von Suchmaschinen gescannt.
