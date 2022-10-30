@@ -120,6 +120,8 @@ nav:
           - "5. Woche": "Reflexion/005_Woche.md"
           - "6. Woche": "Reflexion/006_Woche.md"
           - "7. Woche": "Reflexion/007_Woche.md"
+          - "8. Woche": "Reflexion/008_Woche.md"
+          - "9. Woche": "Reflexion/009_Woche.md"
     - PHP:
           - Übersicht: "PHP/Start.md"
           - Installation: "PHP/Installation.md"
