@@ -7,7 +7,7 @@ hide:
 
 # 6. Woche <span style="float:right">22.09.2022</span>
 
-???+ tldr "Zusammenfassung"
+???+ abstract "Zusammenfassung"
 
     -   [Eigenes Framework](#framework)
     -   [Aufbau](#aufbau)

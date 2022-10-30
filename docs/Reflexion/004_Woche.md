@@ -7,7 +7,7 @@ hide:
 
 # 4. Woche <span style="float:right">08.09.2022</span>
 
-???+ tldr "Zusammenfassung"
+???+ abstract "Zusammenfassung"
 
     -   [SSR vs CSR](#ssr-vs-csr)
     -   [CSR Projekt](#csr-erweiterung)

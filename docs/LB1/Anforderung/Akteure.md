@@ -12,7 +12,7 @@ Akteure sind fiktive, aber realitätsnahe **Ausführer** eines [Use Case](UseCas
 
 Das [Ziel](https://www.ionos.de/digitalguide/online-marketing/web-analyse/personas/) eines Akteurs ist, dass der Nutzer im **Fokus** der Entwicklung steht. Statt mit einer abstrakten Vorstellung einer **Zielgruppe** zu arbeiten, entwickelt man anhand von Interviews und Analysen einen konkreten prototypischen Nutzer. Darauf entsteht ein Nutzerprofil, dass die Eigenschaften des Nutzers beschreibt und eine realistische Biografie enthält. Damit kommt man dem echten Kunden nahe, ohne ihn zu kennen. Ein Akteur hat klare Ziele, Anforderungen und Wünsche, welche im Vordergrund stehen.
 
-???+ tldr "TL;DR"
+???+ abstract "TL;DR"
 
     -   Abbildung verschiedener Interessen
     -   Fokus auf den Nutzer

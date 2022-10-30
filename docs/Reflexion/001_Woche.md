@@ -7,7 +7,7 @@ hide:
 
 # 1. Woche <span style="float:right">18.08.2022</span>
 
-???+ tldr "Zusammenfassung"
+???+ abstract "Zusammenfassung"
 
     -   [Dokumentation eingerichtet](#dokumentation-eingerichtet)
     -   [Docker angeschaut](#docker-angeschaut)

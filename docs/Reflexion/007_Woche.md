@@ -7,7 +7,7 @@ hide:
 
 # 7. Woche <span style="float:right">29.09.2022</span>
 
-???+ tldr "Zusammenfassung"
+???+ abstract "Zusammenfassung"
 
     -   [Twig Allgemein](#twig-allgemein)
     -   [Twig Design](#twig-auftrag-design)
@@ -41,7 +41,7 @@ Durch die Kombination der Information aus dem Unterricht und der praktischen Anw
     - Eine bestehende Dokumentation in eigene Worte zu übersetzen hilft beim Verstehen und schnelleren Navigation.
     - Dokumentationen sind nicht immer für das schnelle Nachlesen geeignet.
 
-Mir ist aufgefallen, dass manchmal **weniger Informationen** mehr ist. Wenn ich eine Dokumentation lese, möchte ich nicht alles verstehen, sondern nur das, was ich benötige. Wenn ich selbst etwas schreibe, dann neige ich dazu möglichst viele Informationen zur Verfügung zu stellen und auch auf **Sonderfälle** einzugehen. Meist ist aber ein [TLDR](https://www.urbandictionary.com/define.php?term=tl%3Bdr) besser.
+Mir ist aufgefallen, dass manchmal **weniger Informationen** mehr ist. Wenn ich eine Dokumentation lese, möchte ich nicht alles verstehen, sondern nur das, was ich benötige. Wenn ich selbst etwas schreibe, dann neige ich dazu möglichst viele Informationen zur Verfügung zu stellen und auch auf **Sonderfälle** einzugehen. Meist ist aber ein [abstract](https://www.urbandictionary.com/define.php?term=tl%3Bdr) besser.
 
 ## Twig-Auftrag (Logik)
 

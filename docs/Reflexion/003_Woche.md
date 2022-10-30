@@ -7,7 +7,7 @@ hide:
 
 # 3. Woche <span style="float:right">01.09.2022</span>
 
-???+ tldr "Zusammenfassung"
+???+ abstract "Zusammenfassung"
 
     -   [Datentypen](#datentypen)
     -   [Vergleiche](#vergleiche)

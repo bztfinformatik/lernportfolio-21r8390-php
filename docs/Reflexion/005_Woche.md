@@ -7,7 +7,7 @@ hide:
 
 # 5. Woche <span style="float:right">15.09.2022</span>
 
-???+ tldr "Zusammenfassung"
+???+ abstract "Zusammenfassung"
 
     -   [Entwicklung vs Produktion](#entwicklung-vs-produktion)
     -   [MVC - Design Pattern](#mvc-design-pattern)
