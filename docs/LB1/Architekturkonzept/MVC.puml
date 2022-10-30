@@ -1,0 +1,247 @@
+@startuml MVC-Konzept
+title "MVC-Konzept"
+hide empty members
+left to right direction
+skinparam groupInheritance 2
+skinparam pageMargin 50
+
+note left of Models
+    Getter & Setter wurden
+    zur Übersicht weggelassen 
+end note
+
+package Models <<Database>> {
+    class User {
+        - id : int
+        - name : String
+        - email : String
+        - wants_updates : boolean
+        - password : String
+        - salt : String
+        - created_at : DateTime
+        - profilePicture : Base64String
+        - roles : json
+    }
+
+    class Project {
+        - id : UUID
+        - owner : User
+        __ General __
+        - name : String
+        - description : String
+        - created_at : DateTime
+        - updated_at : DateTime
+        - from_date : DateTime
+        - to_date : DateTime
+        - docs_repo : String
+        - source_repo : String
+        - want_readme : boolean
+        - want_ignore : boolean
+        - want_css : boolean
+        - want_js : boolean
+        - want_pages : boolean
+        __ Appearance __
+        - color : Color
+        - font : Font
+        - want_darkmode : boolean
+        - want_copyrigth : boolean
+        - want_search : boolean
+        - want_tags : boolean
+        - footer_links : json
+        - logo : Base64String
+        __ Folder Structure __
+        - want_journal : boolean
+        - want_examples : boolean
+        - structure : StructureNode
+        __ Confirmation __
+        - confirmed : boolean
+        - confirmed_by : User
+        - confirmed_at : DateTime
+        - comment : String
+        - status : Status
+        - download_link : String
+    }
+
+    enum Color {
+        red
+        pink
+        purple
+        deep purple
+        indigo
+        blue
+        light blue
+        cyan
+        teal
+        green
+        light green
+        lime
+        yellow
+        amber
+        orange
+        deep orange
+        brown
+        grey
+        blue grey
+        black
+        white
+    }
+
+    enum Font {
+        robot
+        roboto mono
+        open sans
+        lato
+        montserrat
+        raleway
+        ubuntu
+    }
+
+    enum Status {
+        rejected
+        accepted
+        in progress
+    }
+
+    class StructureNode {
+        - id : UUID
+        - name : String
+        - childs : StructureNode[]
+        - type : FolderType
+    }
+
+    note bottom of StructureNode
+        Wird anhand einer 
+        Baumstruktur modelliert
+    end note
+
+    enum FolderType {
+        FOLDER
+        FILE
+    }
+}
+
+package Controllers {
+    class BaseController {
+        # twig : Twig_Environment
+        # logger : MonoLog
+        - initTwig()
+        - initLogger()
+        + loadModel(modelName : String) : Model
+        # notFound() : NotFound
+        # forbidden() : Forbidden
+        # redirect(url : String)
+    }
+
+    class UserController extends BaseController {
+        # userRepository : UserRepository
+
+        + login() : Login
+        + logout() : Welcome
+        + register() : Register
+        + profile() : Profile
+        + delete() : Welcome
+    }
+
+    class ProjectController extends BaseController {
+        # projectRepository : ProjectRepository
+        
+        + overview() : Overview
+        + create() : ProjectGeneral
+        + update() : ProjectGeneral
+        - nextSite(int current) : URL
+        - calcProgress(int site) : float
+        + delete(id : UUID)
+        + confirm() : ProjectConfirm
+        + download(id : UUID) : ZipFile
+        + kibana() : Kibana
+    }
+}
+
+package Repositories {
+    class BaseRepository {
+        # db : PDO
+        - initDB()
+    }
+
+    class UserRepository extends BaseRepository {
+        + get(id : int) : User
+        + getAll() : User[]
+        + create(user : User) : User
+        + update(user : User) : User
+        + delete(id : int) : boolean
+    }
+
+    class ProjectRepository extends BaseRepository {
+        + get(id : UUID) : Project
+        + getAll() : Project[]
+        + create(project : Project) : Project
+        + update(project : Project) : Project
+        + delete(id : UUID) : boolean
+    }
+}
+
+package Views <<Cloud>> {
+    package StartViews <<rectangle>> {
+        class Welcome << (V,orchid) >>
+        class Login << (V,orchid) >>
+        class Register << (V,orchid) >>
+    }
+
+    package ErrorViews <<rectangle>> {
+        class NotFound << (V,orchid) >>
+        class Forbidden << (V,orchid) >>
+    }
+
+    package UserViews <<rectangle>> {
+        class Profile << (V,orchid) >>
+        class Overview << (V,orchid) >>
+        class Kibana << (V,orchid) >>
+    }
+    
+    ' Project
+    package ProjectViews <<rectangle>> {
+        class ProjectGeneral << (V,orchid) >>
+        class ProjectAppearance << (V,orchid) >>
+        class ProjectStructure << (V,orchid) >>
+        class ProjectConfirm << (V,orchid) >>
+    }
+}
+
+' Verbindungen
+'' Models
+User "1" --* "*" Project : owns
+User "1" --o "*" Project : confirms
+Project "*" <-- "1" Color
+Project "*" <-- "1" Font
+Project "*" <-- "1" Status
+Project "1" --o "1" StructureNode
+StructureNode "*" --o "1" StructureNode
+StructureNode "*" <-- "1" FolderType
+
+'' Repositories
+ProjectRepository --> Project
+UserRepository --> User
+Repositories -[hidden]-> Views
+
+'' Controller
+Controllers -[hidden]-> Views
+
+BaseController --> NotFound
+BaseController --> Forbidden
+BaseController --> Welcome
+
+UserController --> UserRepository
+UserController --> Login
+UserController --> Welcome
+UserController --> Register
+UserController --> Profile
+
+ProjectController --> ProjectRepository
+ProjectController --> Overview
+ProjectController --> ProjectGeneral
+ProjectController --> ProjectAppearance
+ProjectController --> ProjectStructure
+ProjectController -[#red,thickness=1]-> ProjectConfirm : Admins only
+ProjectController -[#red,thickness=1]-> Kibana : Admins only
+
+@endl
