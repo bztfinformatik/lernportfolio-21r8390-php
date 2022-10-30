@@ -15,13 +15,6 @@ Die Daten, welche übertrag werden müssen **validiert** werden. Was für Valida
     -   Fehlerfälle
     -   Wertebereich
 
-| :fontawesome-solid-shield-halved: |     |
-| --------------------------------- | --- |
-| Datentyp                          |     |
-| Spezialfälle                      |     |
-| Fehlerfälle                       |     |
-| Wertebereich                      |     |
-
 ## User
 
 | :fontawesome-solid-shield-halved: | Id             |

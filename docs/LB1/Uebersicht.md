@@ -13,24 +13,23 @@ Das Ziel von diesem Projekt ist, dass ein Geschäftsprozess digitalisiert wird. 
 
 -   MkDocs über Website konfigurieren
     -   Konfiguration
-    -   Ordnerstruktur
-    -   Dateien
-        -   Mit / ohne Texte
+    -   [Ordnerstruktur](https://mudblazor.com/components/treeview#custom-tree)
+        -   Dateien
     -   Plugins
     -   Beispielseite (Alle möglichen MkDocs Features mit Beispielen)
+    -   Tags
+    -   Farben
+    -   Fonts
     -   GitRepo
     -   Name
 -   Admin / Lehrer bestätigen
     -   Ablehnen mit Rückmeldung / Verbesserung
 -   Nach Bestätigung Download verfügbar
 -   Backend
-    -   Elastic Stack
-    -   Cypress
-        -   https://bztfinformatik.github.io/lb1_doku-21r8390/Erkl%C3%A4rungen/Testing/
+    -   [Elastic Stack](elastic.co/elastic-stack/)
+    -   [Cypress](https://www.cypress.io/)
     -   XSS / SQL-Injection sicher
-    -   Sendgrid für Mails / Benachrichtigungen
+    -   [Sendgrid](https://sendgrid.com/) für Mails / Benachrichtigungen
 -   Frontend
-    -   TailwindCSS
-    -   Twig
-
-File View nach: https://mudblazor.com/components/treeview#custom-tree
+    -   [TailwindCSS](https://tailwindcss.com/)
+    -   [Twig](https://twig.symfony.com/)

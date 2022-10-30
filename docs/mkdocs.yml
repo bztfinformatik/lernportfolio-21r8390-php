@@ -156,7 +156,6 @@ nav:
                 - MVC-Konzept: "LB1/Architekturkonzept/MVC-Konzept.md"
                 - Twig-Konzept: "LB1/Architekturkonzept/Twig-Konzept.md"
           - Anforderung:
-                - Anforderungen: "LB1/Anforderung/Anforderungen.md"
                 - "Use Cases": "LB1/Anforderung/UseCases.md"
                 - Akteure: "LB1/Anforderung/Akteure.md"
                 - Funktionale: "LB1/Anforderung/Funktionale.md"
