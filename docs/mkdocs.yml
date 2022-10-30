@@ -161,6 +161,7 @@ nav:
                 - Akteure: "LB1/Anforderung/Akteure.md"
                 - Funktionale: "LB1/Anforderung/Funktionale.md"
                 - Testszenario: "LB1/Anforderung/Testszenario.md"
+                - Daten: "LB1/Anforderung/Daten.md"
     - Appendix:
           - "Journal Anforderungen": "Reflexion/000_Vorlage.md"
           - "GitHub Pages": "Appendix/GitHubPages/Einrichten.md"
