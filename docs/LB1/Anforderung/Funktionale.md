@@ -6,12 +6,6 @@ tags:
 
 # Funktionale Anforderungen
 
--   Beschreibung der Anforderungen
-    -   Ableitung auf use Cases
--   Testszenarios formulieren für jede Anforderung
-
-## Grundlegendes
-
 Funktionale Anforderungen sind die Anforderungen, deren Umsetzung direkt der Zweckbestimmung des Produkts dienen. Sie sind spezifisch für dieses Produkt. Gleich wie die [Use Cases](UseCases.md) haben sie **Nummern** und sind **Kategorien** zugeordnet. Sie sind eine Ableitung aus den Use Cases.
 
 ```text title="Beispiel"
