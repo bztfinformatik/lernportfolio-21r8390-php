@@ -65,3 +65,13 @@ HTTP Parameter werden in der URL übergeben. Sie werden mit einem `?` getrennt v
 | :material-chart-line: Zeichenlimit  | :material-close: 2048                     | :material-check-all: Unbegrenzt (Limit bei Server)              |
 | :octicons-typography-24: Zeichenart | :material-close: Nur ASCII                | :material-check-all: Alles erlaubt (Bilder, Audio, Binary, ...) |
 | :material-table: Abfrage            | :material-table-question: Daten anfordern | :material-table-edit: Daten modifizieren                        |
+
+## Redirects
+
+Ein [Redirect](https://www.hostinger.com/tutorials/php-redirect) ist ein HTTP-Header, der den Browser dazu auffordert, eine andere URL aufzurufen. Ein Redirect kann mit [`header()`](https://www.php.net/manual/en/function.header.php) gesendet werden. Der erste Parameter ist der HTTP-Statuscode. Der zweite Parameter ist die URL. Der Statuscode `301` ist permanent, `302` ist temporär. Der Browser speichert den Redirect und führt ihn bei einem erneuten Aufruf aus.
+
+```php
+<?php
+header("Location: https://neueUrl.dev", true, 301);
+exit();
+```

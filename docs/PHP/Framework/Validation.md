@@ -6,82 +6,73 @@ tags:
 
 # Validation
 
-Die Validation von Formularen ist ein wichtiger **Bestandteil** eines jeden Frameworks. In diesem Kapitel wird die Validation von unserem eigenen Framework vorgestellt. Die Validation passiert für jedes Formular einzeln und wird über HTTP-Methoden gesteuert.
+Die Validation von Formularen ist ein wichtiger **Bestandteil** eines jeden Frameworks. In diesem Kapitel wird die Validation von unserem eigenen Framework vorgestellt. Die Validation passiert für jedes Formular einzeln und wird über [HTTP-Methoden](../Aufgaben/HTTP-Parameter.md) gesteuert.
 
 ## Controller
 
-IM Controller wird **überprüft** ob das Formular angefragt wird oder validiert werden sollte. Wenn das Formular über `GET` angefragt wird, wird die View geladen und ein leeres Formular zurückgegeben. Wenn das Formular **validiert** werden soll, wird dies mit der HTTP-Methode `POST` gekennzeichnet. Die Validation passiert dann Serverseitig und die View wird erneut geladen. Wichtig ist, dass man alle [Wertebereiche](../../LB1/Anforderung/Daten.md) überprüft und mit Extremwerten testet.
+Im Controller wird **überprüft** ob das Formular angefragt wird oder validiert werden sollte. Wenn das Formular über `GET` angefragt wird, wird die View geladen und ein leeres Formular zurückgegeben. Wenn das Formular **validiert** werden soll, wird dies mit der HTTP-Methode `POST` gekennzeichnet. Die Validation passiert dann Serverseitig und die View wird erneut geladen. Wichtig ist, dass man alle [Wertebereiche](../../LB1/Anforderung/Daten.md) überprüft und mit Extremwerten testet.
 
 ```php
-public function add($pagename = 'Order - Add')
+<?php
+public function validierungBeispiel()
 {
-    $orderModel = $this->model('OrderModel');
-    $menueModel = $this->model('MenueModel');
-    $menueArray = $menueModel->getFakeMenueDataArray();
-
+    // Überprüfen ob das Formular angefragt wird oder validiert werden soll (1)
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        // Process Form -> weil Post-Aufruf
-        // Zuerst mal trimen und filtern auf gesunde Daten
-        // Since 8.0
+        // Formular in eine gesunde Form bringen (2)
         $username = trim(htmlspecialchars($_POST['username']));
         $comment = trim(htmlspecialchars($_POST['comment']));
-        $email = trim(
-            filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL)
-        );
-        $refmenue = trim(
-            filter_input(INPUT_POST, 'refmenue', FILTER_SANITIZE_NUMBER_INT)
-        );
+        $email = trim(filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL));
 
-        // Daten setzen
+        // Daten in Formular setzen
         $data = [
-            'username' => $username,       // Form-Feld-Daten
-            'username_err' => '',   // Feldermeldung für Attribute
-            'email' => $email,          // Form-Feld-Daten
-            'email_err' => '',      // Feldermeldung für Attribute
-            'refmenue' => $refmenue,       // Form-Feld-Daten
-            'refmenue_err' => '',   // Feldermeldung für Attribute
-            'comment' => $comment       // Form-Feld-Daten
+            'username' => $username,    // Form-Feld-Daten
+            'username_err' => '',       // Fehlermeldung das Feld
+            'comment' => $comment       // Hat keine Validierung
+            'email' => $email,
+            'email_err' => '',
         ];
 
-        // Gucken ob die Daten plausibel sind
-        // Da müsste man aber noch mehr machen
+        // Validierung (3)
         if (empty($data['username'])) {
-            $data['username_err'] = 'Bitte Name angeben';
+            // Fehlermeldung setzen
+            $data['username_err'] = 'Der Benutzername darf nicht leer sein';
         }
 
         if (empty($data['email'])) {
-            $data['email_err'] = 'Bitte Email angeben';
+            $data['email_err'] = 'Die E-Mail darf nicht leer sein';
+        }
+        else if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
+            // E-Mail Format überprüfen (4)
+            $data['email_err'] = 'Die E-Mail hat ein ungültiges Format';
         }
 
-        if (empty($data['refmenue'])) {
-            $data['refmenue_err'] = 'Bitte Menü auswählen';
-        }
-
-        // Keine Errors vorhanden
-        if (empty($data['username_err']) && empty($data['email_err']) && empty($data['refmenue_err'])) {
-            // Alles gut, keine Fehler vorhanden
-            // Späteres TODO: Auf DB schreiben
-            $orderModel->fakewriteData($data);
+        // Überprüfen, ob Fehlermeldungen vorhanden sind
+        if (empty($data['username_err']) && empty($data['email_err'])) {
+            // TODO: Hier müsste jetzt etwas mit den validen Daten passieren
         } else {
             // Fehler vorhanden - Fehler anzeigen
-            // View laden mit Fehlern
-            echo $this->twig->render('order/add.twig.html', ['title' => $pagename, 'urlroot' => URLROOT, 'data' => $data, 'menues' => $menueArray]);
+            echo $this->twig->render('seitenname.twig.html', ['data' => $data]);
         }
     } else {
-        // Init Form mit Default-Daten, weil Get-Aufruf
+        // Leeres Formular anzeigen
         $data = [
             'username' => '',       // Form-Feld-Daten
-            'username_err' => '',   // Feldermeldung für Attribute
-            'email' => '',          // Form-Feld-Daten
-            'email_err' => '',      // Feldermeldung für Attribute
-            'refmenue' => '',       // Form-Feld-Daten
-            'refmenue_err' => '',    // Feldermeldung für Attribute
-            'comment' => ''       // Form-Feld-Daten
+            'username_err' => '',   // Keine Fehlermeldung anzeigen
+            'comment' => ''
+            'email' => '',          //
+            'email_err' => '',
         ];
-        echo $this->twig->render('order/add.twig.html', ['title' => "Order - Add", 'urlroot' => URLROOT, 'data' => $data, 'menues' => $menueArray]);
+
+        // Fomular anzeigen
+        echo $this->twig->render('seitenname.twig.html', ['data' => $data]);
     }
 }
 ```
+
+1. Wenn das Formular über `GET` angefragt wird, wird die View geladen und ein leeres Formular zurückgegeben. Über `POST` wird die Validation gestartet und danach die Daten verarbeitet.
+2. Mithilfe von `htmlspecialchars` und `filter_input` werden die Daten in eine gesunde Form gebracht. Dies ist wichtig, um [XSS](../../Appendix/Sicherheit.md#xss)-Attacken zu verhindern.
+3. Um zu überprüfen, ob das Feld einen Wert hat kann `empty` verwendet werden. Wenn das Feld leer ist, wird eine Fehlermeldung gesetzt.
+4. Das richtige Format einer E-Mail kann mit `filter_var` überprüft werden.
 
 ## View
 
