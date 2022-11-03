@@ -62,3 +62,21 @@
 -   [Twig Design](PHP/Twig/Design.md)
 -   [Twig Logik](PHP/Twig/Logik.md)
 -   [7. Woche in Journal](Reflexion/007_Woche.md)
+
+## 8. Woche
+
+-   [LB Übersicht](LB1/Uebersicht.md)
+-   [Concept Map](LB1/ConceptMap.md)
+-   [MVC Konzept](LB1/Architekturkonzept/MVC-Konzept.md)
+-   [Twig Konzept](LB1/Architekturkonzept/Twig-Konzept.md)
+-   [Use-Cases](LB1/Anforderung/UseCases.md)
+-   [8. Woche in Journal](Reflexion/008_Woche.md)
+
+## 9. Woche
+
+-   [Validierung](PHP/Framework/Validation.md)
+-   [Mockup](LB1/Architekturkonzept/Mockup.md)
+-   [Anwendungsfälle](LB1/Anforderung/Funktionale.md)
+-   [Testszenarios](LB1/Anforderung/Testszenarios.md)
+-   [Daten Validierung](LB1/Anforderung/Daten.md)
+-   [9. Woche in Journal](Reflexion/009_Woche.md)
