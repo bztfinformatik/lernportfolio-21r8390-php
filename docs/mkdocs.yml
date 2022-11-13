@@ -102,7 +102,6 @@ plugins:
               "Inhalt.md": "Tags.md"
               "Journal.md": "Reflexion/001_Woche.md"
               "LB1.md": "LB1/Uebersicht.md"
-              "ConceptMap.md": "LB1/ConceptMap.md"
               "PHP/Twig/Uebersicht.md": "LB1/Beschreibung/Twig.md"
               "LB1/Beschreibung/SSR.md": "LB1/Beschreibung/Rendering.md"
               "LB1/Beschreibung/CSR.md": "LB1/Beschreibung/Rendering.md"
@@ -149,7 +148,6 @@ nav:
           - Aufgaben: "Docker/Aufgaben.md"
     - LB1:
           - Übersicht: "LB1/Uebersicht.md"
-          - "Concept Map": "LB1/ConceptMap.md"
           - Beschreibung:
                 - "MVC": "LB1/Beschreibung/MVC.md"
                 - "Twig": "LB1/Beschreibung/Twig.md"
@@ -164,6 +162,8 @@ nav:
                 - Funktionale: "LB1/Anforderung/Funktionale.md"
                 - Testszenario: "LB1/Anforderung/Testszenario.md"
                 - Daten: "LB1/Anforderung/Daten.md"
+    - LB2:
+          - "1. Concept Map": "LB2/01_ConceptMap.md"
     - Appendix:
           - "Journal Anforderungen": "Reflexion/000_Vorlage.md"
           - "GitHub Pages": "Appendix/GitHubPages/Einrichten.md"

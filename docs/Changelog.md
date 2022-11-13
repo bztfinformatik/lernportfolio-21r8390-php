@@ -66,7 +66,7 @@
 ## 8. Woche
 
 -   [LB Übersicht](LB1/Uebersicht.md)
--   [Concept Map](LB1/ConceptMap.md)
+-   [Concept Map](LB2/01_ConceptMap.md)
 -   [MVC Konzept](LB1/Architekturkonzept/MVC-Konzept.md)
 -   [Twig Konzept](LB1/Architekturkonzept/Twig-Konzept.md)
 -   [Use-Cases](LB1/Anforderung/UseCases.md)
@@ -77,6 +77,6 @@
 -   [Validierung](PHP/Framework/Validation.md)
 -   [Mockup](LB1/Architekturkonzept/Mockup.md)
 -   [Anwendungsfälle](LB1/Anforderung/Funktionale.md)
--   [Testszenarios](LB1/Anforderung/Testszenarios.md)
+-   [Testszenarios](LB1/Anforderung/Testszenario.md)
 -   [Daten Validierung](LB1/Anforderung/Daten.md)
 -   [9. Woche in Journal](Reflexion/009_Woche.md)

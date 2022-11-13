@@ -59,11 +59,6 @@ Die Software muss vor Passwörtern warnen, für die eine bekannte Kontraindikati
 | Beschreibung | Die Anmeldung darf nur mit gültigen Anmeldedaten erfolgen. |
 | Use-Case     | [S-0003](UseCases.md#s-0003)                               |
 
-| F-S-0009     | Anmelden                                                   |
-| ------------ | ---------------------------------------------------------- |
-| Beschreibung | Die Anmeldung darf nur mit gültigen Anmeldedaten erfolgen. |
-| Use-Case     | [S-0003](UseCases.md#s-0003)                               |
-
 | F-S-0010     | Passwort zurücksetzen                        |
 | ------------ | -------------------------------------------- |
 | Beschreibung | Der Benutzer kann sein Passwort zurücksetzen |
@@ -75,11 +70,6 @@ Die Software muss vor Passwörtern warnen, für die eine bekannte Kontraindikati
 | ------------ | ------------------------------------------------------------ |
 | Beschreibung | Die Vorlagen des Benutzers werden aus der Datenbank geladen. |
 | Use-Case     | [U-0001](UseCases.md#u-0001)                                 |
-
-| F-U-0002     | Profil bearbeiten                                            |
-| ------------ | ------------------------------------------------------------ |
-| Beschreibung | Das Formular überprüft, ob die Email bereits verwendet wird. |
-| Use-Case     | [U-0002](UseCases.md#u-0002)                                 |
 
 | F-U-0002     | Profil bearbeiten                                                    |
 | ------------ | -------------------------------------------------------------------- |
