@@ -35,11 +35,17 @@ Für mich war das **Session Handling** das erste Mal, dass ich mit PHP gearbeite
 
 ## Projekt
 
-Das Projekt braucht natürlich auch eine Seite, worüber eine Vorlage erstellt werden kann. Dies programmierte ich in dieser Woche.
+Das Projekt braucht natürlich auch eine Seite, worüber eine **Vorlage** erstellt werden kann. Dies programmierte ich in dieser Woche.
+
+Ich habe zuerst die einzelnen Abfragen mithilfe von **Mocks** simuliert und so die einzelnen Funktionen getestet. Danach habe ich die Funktionen in die Controller eingebaut.
+
+Ich habe gelernt wie man mehrere **Endpunkte** miteinander verbindet und sie so zugänglich für andere Methoden macht.
 
 !!! example "Merksatz:"
 
-    -  Mit dem Inhalt später anzufagen ist einfacher.
+    -  Zuerst sollten alle Hilf-Funktionen programmiert werden, bevor der Rest umgesetzt wird.
+
+Mir ist aufgefallen, dass ich die **Controller** nicht so gut getestet habe, wie ich es eigentlich wollte. Ich habe mich darauf konzentriert, dass die Funktionen funktionieren und nicht, dass sie auch richtig funktionieren. Im ganzen habe ich für die **Umsetzung** der Funktionen 3 Arbeitstage (`73h`) gebraucht.
 
 ## Regex
 

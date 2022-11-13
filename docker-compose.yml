@@ -8,4 +8,4 @@ services:
             - ./docs:/docs/docs
             - ./docs/mkdocs.yml:/docs/mkdocs.yml
         ports:
-            - "8000:8000"
+            - "9654:8000"
