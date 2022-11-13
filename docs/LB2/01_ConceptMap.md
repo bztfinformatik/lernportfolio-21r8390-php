@@ -1,6 +1,7 @@
 ---
 tags:
-    - LB1
+    - LB2
+    - Concept Map
 hide:
     - toc
 ---
