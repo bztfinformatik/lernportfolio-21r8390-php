@@ -8,11 +8,9 @@
 > Autor: Manuel Schumacher <br>
 > Modul: M133
 
-[Live Demo 🖨](https://edu.flimtix.dev/M133-Aufgaben)
-
 [Doku 📚](https://bztfinformatik.github.io/lernportfolio-21r8390-php/)
 
-[Source Code 📂](https://github.com/bztfinformatik/lb1-21r8390)
+[Source Code 📂](https://github.com/bztfinformatik/lb1-21r8390-php)
 
 ## How To:
 
@@ -30,3 +28,10 @@
 |  👷  | Automation    |
 |  📝  | Setting       |
 |  💥  | Hotfix        |
+
+## TODO:
+
+-   Email
+-   Datenbank
+-   Datei Viewer
+-   Test
