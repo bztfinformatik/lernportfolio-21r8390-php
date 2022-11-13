@@ -2,7 +2,7 @@
 
 /**
  * The core controller class which is extended by all other controllers.
- * 
+ *
  * It loads the models and the views.
  */
 class Controller

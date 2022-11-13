@@ -9,7 +9,7 @@
  * description -> Beschreibung
  * active -> steht das Menü aktuell zur Auswahl
  */
-class MenueModel extends BaseModel
+class MenueModel
 {
 
     // Alle Attribute des Models
@@ -19,7 +19,7 @@ class MenueModel extends BaseModel
     private $description;
     private $active;
 
-    
+
     /**
      * TestMethode die einfach nur Fake-Daten liefert, solange man noch keine DB hat
      *
@@ -35,5 +35,4 @@ class MenueModel extends BaseModel
 
         return $data;
     }
-
 }

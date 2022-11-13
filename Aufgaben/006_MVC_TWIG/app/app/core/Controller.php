@@ -38,9 +38,7 @@ class Controller
     } */
 
     private function loadTwig() {
-        // Load our autoloader
-        require_once '/var/composer/vendor/autoload.php';
-
+    
         // Specify our Twig templates location
         $loader = new Twig_Loader_Filesystem(__DIR__.'/../views');
 

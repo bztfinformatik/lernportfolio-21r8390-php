@@ -30,7 +30,7 @@ class App
     }
 
     /**
-     * Loads the controller from the URL 
+     * Loads the controller from the URL
      *
      * @param array $url The URL as an array
      * @return void

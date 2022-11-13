@@ -49,7 +49,7 @@ Das Schwierigste war für mich, dass es einen **Bewilligungsprozess** enthalten 
 
 ## Concept Map
 
-In der ersten Abgabe müssen wir ein [Concept Map](../LB1/ConceptMap.md) abgeben. Das ist ein **Mindmap** ähnliches Diagramm, welches Begriffe semantisch aufzeigt. Ich habe mir im Internet ein paar Beispiele angeschaut und versucht diese nachzubauen. Dieses versah ich dann mit **Links** zu den entsprechenden Kapiteln.
+In der ersten Abgabe müssen wir ein [Concept Map](../LB2/01_ConceptMap.md) abgeben. Das ist ein **Mindmap** ähnliches Diagramm, welches Begriffe semantisch aufzeigt. Ich habe mir im Internet ein paar Beispiele angeschaut und versucht diese nachzubauen. Dieses versah ich dann mit **Links** zu den entsprechenden Kapiteln.
 
 Im Unterricht haben wir **acht** verschiedene Begriffe besprochen, welche wir in unserem Diagramm verwenden müssen. Ich habe mir die Begriffe notiert und versucht diese zu verstehen. Die Begriffe waren teilweise sehr **komplex** und konnten nur schwer knapp beschrieben werden.
 
