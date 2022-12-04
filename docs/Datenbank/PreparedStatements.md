@@ -6,8 +6,6 @@ tags:
 
 # Prepared-Statements
 
-## Was sind Prepared-Statements?
-
 [Prepared-Statements](https://www.php.net/manual/en/pdo.prepared-statements.php) sind eine Möglichkeit, um [SQL-Injections](../Appendix/Sicherheit.md#sql-injection) zu verhindern. Sie werden verwendet, um SQL-Statements vorzubereiten und dann auszuführen. Dabei werden die Parametern **validiert** und **escaped**, bevor sie an die Datenbank gesendet werden. Diese Aufgabe übernimmt meist **PDO**.
 
 ## Was ist PDO?

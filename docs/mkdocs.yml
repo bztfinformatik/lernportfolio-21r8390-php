@@ -175,6 +175,7 @@ nav:
     - LB2:
           - "1. Concept Map": "LB2/01_ConceptMap.md"
           - "2. Concept Map": "LB2/02_ConceptMap.md"
+          - "3. Concept Map": "LB2/03_ConceptMap.md"
     - Appendix:
           - "Journal Anforderungen": "Reflexion/000_Vorlage.md"
           - "GitHub Pages": "Appendix/GitHubPages/Einrichten.md"
