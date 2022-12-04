@@ -145,9 +145,17 @@ nav:
                 - Installation: "PHP/Twig/Installation.md"
                 - Design: "PHP/Twig/Design.md"
                 - Logik: "PHP/Twig/Logik.md"
+          - "Sessions & Cookies":
+                - Sessions: "PHP/SessionCookie/Sessions.md"
+                - Cookies: "PHP/SessionCookie/Cookies.md"
     - Docker:
           - Übersicht: "Docker/Start.md"
           - Aufgaben: "Docker/Aufgaben.md"
+    - Datenbank:
+          - Übersicht: "Datenbank/Start.md"
+          - "Init-Scripts": "Datenbank/Initscripts.md"
+          - Adminer: "Datenbank/Adminer.md"
+          - "Prepared-Statements": "Datenbank/PreparedStatements.md"
     - LB1:
           - Übersicht: "LB1/Uebersicht.md"
           - Beschreibung:
