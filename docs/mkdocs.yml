@@ -190,3 +190,4 @@ nav:
                 - Datentypen: "PHP/Appendix/Datentypen.md"
                 - "Array Funktionen": "PHP/Appendix/ArrayFunktionen.md"
                 - Sortieren: "PHP/Appendix/Sortieren.md"
+                - Regex: "PHP/Appendix/Regex.md"
