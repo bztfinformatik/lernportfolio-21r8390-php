@@ -105,6 +105,8 @@ plugins:
               "PHP/Twig/Uebersicht.md": "LB1/Beschreibung/Twig.md"
               "LB1/Beschreibung/SSR.md": "LB1/Beschreibung/Rendering.md"
               "LB1/Beschreibung/CSR.md": "LB1/Beschreibung/Rendering.md"
+    - minify:
+          minify_html: true
 
 nav:
     - Startseite:

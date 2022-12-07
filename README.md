@@ -31,7 +31,16 @@
 
 ## TODO:
 
--   Email
--   Datenbank
--   Datei Viewer
+-   Tests
+
+## Nice to have or later:
+
+-   Repository Pattern
 -   Test
+    -   Cypress
+    -   TestDB Controller / Integration Test
+-   ELK Stack (Doku)
+    -   Logstash
+    -   Elasticsearch
+    -   Kibana
+-   Tailwind CSS (Doku)

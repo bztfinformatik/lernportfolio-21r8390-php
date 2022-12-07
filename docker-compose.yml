@@ -3,9 +3,9 @@ services:
     mkdocs:
         build: ./docker/docs
         container_name: mkdocs-m133
-        restart: always
+        restart: unless-stopped
         volumes:
             - ./docs:/docs/docs
             - ./docs/mkdocs.yml:/docs/mkdocs.yml
         ports:
-            - "9654:8000"
+            - "13554:8000"
