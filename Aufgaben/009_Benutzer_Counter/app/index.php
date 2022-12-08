@@ -1,6 +1,48 @@
 <?php
 // Start the session
 session_start();
+
+// Check if hasVisited is set in session and cookie
+if (!isset($_SESSION['hasVisited']) && !isset($_COOKIE['hasVisited'])) {
+    // Set hasVisited to true
+    $_SESSION['hasVisited'] = true;
+
+    // Save in cookie
+    setcookie('hasVisited', true, time() + 60 * 60 * 24 * 7);
+
+    // Get the current date and round it to 10 minutes
+    $time = round(time() / 600) * 600;
+
+    // Convert the time to a date
+    $time = date('Y-m-d H:i:s', $time);
+
+    // Check if the json file exists
+    if (!file_exists('data.json')) {
+        // Create the json file
+        file_put_contents('data.json', '{}');
+    }
+
+    // Get the json
+    $json = file_get_contents('data.json');
+
+    // Decode the json
+    $data = json_decode($json, true);
+
+    // Check if the time is already in the json
+    if (isset($data[$time])) {
+        // Add 1 to the time
+        $data[$time]++;
+    } else {
+        // Set the time to 1
+        $data[$time] = 1;
+    }
+
+    // Encode the json
+    $json = json_encode($data);
+
+    // Save the json
+    file_put_contents('data.json', $json);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -66,49 +108,6 @@ session_start();
 </head>
 
 <body>
-    <?php
-    // Check if hasVisited is set in session and cookie
-    if (!isset($_SESSION['hasVisited']) && !isset($_COOKIE['hasVisited'])) {
-        // Set hasVisited to true
-        $_SESSION['hasVisited'] = true;
-
-        // Save in cookie
-        setcookie('hasVisited', true, time() + 60 * 60 * 24 * 7);
-
-        // Get the current date and round it to 10 minutes
-        $time = round(time() / 600) * 600;
-
-        // Convert the time to a date
-        $time = date('Y-m-d H:i:s', $time);
-
-        // Check if the json file exists
-        if (!file_exists('data.json')) {
-            // Create the json file
-            file_put_contents('data.json', '{}');
-        }
-
-        // Get the json
-        $json = file_get_contents('data.json');
-
-        // Decode the json
-        $data = json_decode($json, true);
-
-        // Check if the time is already in the json
-        if (isset($data[$time])) {
-            // Add 1 to the time
-            $data[$time]++;
-        } else {
-            // Set the time to 1
-            $data[$time] = 1;
-        }
-
-        // Encode the json
-        $json = json_encode($data);
-
-        // Save the json
-        file_put_contents('data.json', $json);
-    }
-    ?>
 
     <body>
         <div id="chartContainer" style="height: 370px; width: 100%;"></div>
