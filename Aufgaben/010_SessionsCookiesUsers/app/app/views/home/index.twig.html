@@ -1,0 +1,39 @@
+{% extends "base/layout.twig.html" %}
+
+{% block content %}
+
+<!-- Wir überschreiben den Content-Block -->
+<h1 class="mt-5">Auslastung der Mensa am BZT Frauenfeld</h1>
+
+<table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Menu</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+    
+            {% for datarow in data %}
+            <tr>
+                <th scope="row">{{ datarow.id }}</th>
+                <td>{{ datarow.menueinfo }}</td>
+                <td><!-- Hier wird der Status auf der GUI einfach angezeigt -- Könnte man auch über eine DB-Tabelle lösen -->
+                    {% if datarow.status == 0 %}
+                        <p>Bestellt</p>
+                    {% elseif datarow.status == 1 %}
+                        <p>Abholbereit</p>
+                    {% elseif datarow.status == 2 %}
+                        <p>Abgeholt</p>
+                    {% else %}
+                        <p>Undefined</p>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+    
+        </tbody>
+    </table>
+
+{% endblock %}
