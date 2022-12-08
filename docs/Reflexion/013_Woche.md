@@ -3,6 +3,7 @@ tags:
     - Reflexion
 hide:
     - toc
+ᴴₒᴴₒᴴₒ: true
 ---
 
 # 13. Woche <span style="float:right">24.11.2022</span>

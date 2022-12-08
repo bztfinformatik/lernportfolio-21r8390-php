@@ -3,6 +3,7 @@ tags:
     - Reflexion
 hide:
     - toc
+ᴴₒᴴₒᴴₒ: true
 ---
 
 # 9. Woche <span style="float:right">27.10.2022</span>

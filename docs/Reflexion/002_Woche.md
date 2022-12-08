@@ -3,6 +3,7 @@ tags:
     - Reflexion
 hide:
     - toc
+ᴴₒᴴₒᴴₒ: true
 ---
 
 # 2. Woche <span style="float:right">25.08.2022</span>

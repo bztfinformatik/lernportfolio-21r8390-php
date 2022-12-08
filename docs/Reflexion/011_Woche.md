@@ -3,6 +3,7 @@ tags:
     - Reflexion
 hide:
     - toc
+ᴴₒᴴₒᴴₒ: true
 ---
 
 # 11. Woche <span style="float:right">10.11.2022</span>
