@@ -153,6 +153,7 @@ nav:
           - "Sessions & Cookies":
                 - Sessions: "PHP/SessionCookie/Sessions.md"
                 - Cookies: "PHP/SessionCookie/Cookies.md"
+                - Anwendung: "PHP/SessionCookie/Anwendung.md"
     - Docker:
           - Übersicht: "Docker/Start.md"
           - Aufgaben: "Docker/Aufgaben.md"
