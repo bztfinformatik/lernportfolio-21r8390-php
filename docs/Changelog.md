@@ -84,7 +84,53 @@
 ## 10. Woche
 
 -   [10. Woche in Journal](Reflexion/010_Woche.md)
+-   Struktur
+    -   Error Seiten
+    -   Landing Page
+    -   Klassen
+-   ELK-Stack
+-   Tailwind CSS
 
 ## 11. Woche
 
 -   [11. Woche in Journal](Reflexion/011_Woche.md)
+-   User Seiten
+    -   Sign In
+    -   Sign Up
+    -   Profile
+-   Projekt
+    -   Erstellen
+    -   Bearbeiten
+    -   Dashboard
+-   [Regex](PHP/Appendix/Regex.md)
+
+## 12. Woche
+
+-   [12. Woche in Journal](Reflexion/012_Woche.md)
+-   [Datenbank](Datenbank/PreparedStatements.md)
+-   Datei Viewer
+
+## 13. Woche
+
+-   [13. Woche in Journal](Reflexion/013_Woche.md)
+-   Services
+    -   Download
+    -   SendGrid
+
+## 14. Woche
+
+-   [14. Woche in Journal](Reflexion/014_Woche.md)
+-   [Sessions](PHP/SessionCookie/Sessions.md)
+-   [Cookies](PHP/SessionCookie/Cookies.md)
+
+## 15. Woche
+
+-   [15. Woche in Journal](Reflexion/015_Woche.md)
+-   [Benutzer Counter](PHP/SessionCookie/Anwendung.md)
+-   Login refactoring
+
+## 16. Woche
+
+-   [16. Woche in Journal](Reflexion/016_Woche.md)
+-   Redis
+-   Testfälle
