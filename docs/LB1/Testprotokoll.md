@@ -4,9 +4,9 @@ Ein Testfall beschreibt eine elementare **Funktionalität**, welche getestet wer
 
 Hier werden alle Testfälle, welche in diesem Projekt getestet werden müssen, festgehalten. Am Ende der Seite befindet sich ein [Protokoll](#testprotokoll) der Resultate.
 
-Ich habe versucht End-To-End-Tests zu schreiben, jedoch ist dies mit **Containern** schwieriger und viel aufwändiger als ich dachte. Aus diesem Grund wird dies nicht mehr Teil der Abgabe sein, jedoch werde ich es in den Ferien noch versuchen. Ich habe bereits ein paar Tests geschrieben, welche aber nicht funktionieren.
+Ich habe versucht [End-To-End-Tests](https://codeception.com/) zu schreiben, jedoch ist dies mit **Containern** schwieriger und viel aufwändiger als ich dachte. Aus diesem Grund wird dies nicht mehr Teil der Abgabe sein, jedoch werde ich es in den Ferien noch versuchen. Ich habe bereits ein paar Tests geschrieben, welche aber nicht funktionieren.
 
-## Allgemeine Testfälle
+## Alle Testfälle
 
 ### Routing
 
@@ -271,6 +271,17 @@ Ich habe versucht End-To-End-Tests zu schreiben, jedoch ist dies mit **Container
 |                     | Dashboard öffnen                     |
 | Erwartetes Ergebnis | Projekt wird angezeigt               |
 
+| ID/Bezeichnung      | PA-009                              |
+| ------------------- | ----------------------------------- |
+| Beschreibung        | Weiter mit Validierungsfehler       |
+| Testvoraussetzung   | Angemeldet                          |
+| Testschritte        | Projekt anlegen (PA-001)            |
+|                     | Feld mit zu vielen Zeichen befüllen |
+|                     | Weiter drücken                      |
+| Erwartetes Ergebnis | Validierungsfehler werden angezeigt |
+|                     | Benutzer bleibt auf gleicher Seite  |
+|                     | Daten werden nicht gespeichert      |
+
 ### Projekt bearbeiten
 
 | ID/Bezeichnung      | PB-001                  |
@@ -293,6 +304,17 @@ Ich habe versucht End-To-End-Tests zu schreiben, jedoch ist dies mit **Container
 |                     | Titel ändern                     |
 |                     | Speichern                        |
 | Erwartetes Ergebnis | Projekt hat Status `in progress` |
+
+| ID/Bezeichnung      | PB-003                                  |
+| ------------------- | --------------------------------------- |
+| Beschreibung        | Schritt zurück machen                   |
+| Testvoraussetzung   | Angemeldet                              |
+| Testschritte        | Projekt bearbeiten                      |
+|                     | Weiter klicken                          |
+|                     | Zurück klicken                          |
+| Erwartetes Ergebnis | Letzter Schritt wird angezeigt          |
+|                     | Wird bei letzter Seite ausgeblendet     |
+|                     | Daten sind von beiden Seiten eingegeben |
 
 ### Projekt löschen
 
@@ -432,8 +454,102 @@ Ich habe versucht End-To-End-Tests zu schreiben, jedoch ist dies mit **Container
 
 ## Testprotokoll
 
-###
+### Routing
+
+| ID    | Status | Testdatum  | Tester        | Bemerkung                                |
+| ----- | :----: | ---------- | ------------- | ---------------------------------------- |
+| R-001 |   ✔️   | 23.12.2022 | M. Schumacher | Repositories eventuell trotzdem erstellt |
+| R-002 |   ✔️   | 23.12.2022 | M. Schumacher | Repositories eventuell trotzdem erstellt |
+| R-003 |   ✔️   | 23.12.2022 | M. Schumacher |                                          |
+| R-004 |   ✔️   | 23.12.2022 | M. Schumacher | Es wird kein Fehlercode angezeigt        |
+| R-005 |   ✔️   | 23.12.2022 | M. Schumacher |                                          |
+| R-006 |   ✔️   | 23.12.2022 | M. Schumacher |                                          |
+
+### Sign Up
+
+| ID     | Status | Testdatum  | Tester        | Bemerkung                                |
+| ------ | :----: | ---------- | ------------- | ---------------------------------------- |
+| SU-001 |   ✔️   | 23.12.2022 | M. Schumacher |                                          |
+| SU-002 |   ✔️   | 23.12.2022 | M. Schumacher | Bild mithilfe von JavaScript umgewandelt |
+| SU-003 |   ✔️   | 23.12.2022 | M. Schumacher |                                          |
+| SU-004 |   ✔️   | 23.12.2022 | M. Schumacher |                                          |
+| SU-005 |   ✔️   | 23.12.2022 | M. Schumacher |                                          |
+| SU-006 |   ✔️   | 23.12.2022 | M. Schumacher | Salt musste gekürzt werden               |
+
+### Sign In
+
+| ID     | Status | Testdatum  | Tester        | Bemerkung                         |
+| ------ | :----: | ---------- | ------------- | --------------------------------- |
+| SI-001 |   ✔️   | 23.12.2022 | M. Schumacher |                                   |
+| SI-002 |   ✔️   | 23.12.2022 | M. Schumacher |                                   |
+| SI-003 |   ✔️   | 23.12.2022 | M. Schumacher |                                   |
+| SI-004 |   ✔️   | 23.12.2022 | M. Schumacher | Account mit Email muss existieren |
+
+### Profil bearbeiten
 
 | ID    | Status | Testdatum  | Tester        | Bemerkung |
 | ----- | :----: | ---------- | ------------- | --------- |
-| A-001 |   ✔️   | 23.12.2022 | M. Schumacher |           |
+| P-001 |   ✔️   | 23.12.2022 | M. Schumacher |           |
+| P-002 |   ✔️   | 23.12.2022 | M. Schumacher |           |
+
+### Projekt anlegen
+
+| ID     | Status | Testdatum  | Tester        | Bemerkung                                                                    |
+| ------ | :----: | ---------- | ------------- | ---------------------------------------------------------------------------- |
+| PA-001 |   ✔️   | 23.12.2022 | M. Schumacher |                                                                              |
+| PA-002 |   ✔️   | 23.12.2022 | M. Schumacher |                                                                              |
+| PA-003 |   ✔️   | 23.12.2022 | M. Schumacher |                                                                              |
+| PA-004 |   ✔️   | 23.12.2022 | M. Schumacher |                                                                              |
+| PA-005 |   ✔️   | 23.12.2022 | M. Schumacher | Datei Viewer wurde mithilfe von [jsTree](https://www.jstree.com/) realisiert |
+| PA-006 |   ✔️   | 23.12.2022 | M. Schumacher |                                                                              |
+| PA-007 |   ✔️   | 23.12.2022 | M. Schumacher |                                                                              |
+| PA-008 |   ✔️   | 23.12.2022 | M. Schumacher |                                                                              |
+| PA-009 |   ✔️   | 23.12.2022 | M. Schumacher |                                                                              |
+
+### Projekt bearbeiten
+
+| ID     | Status | Testdatum  | Tester        | Bemerkung |
+| ------ | :----: | ---------- | ------------- | --------- |
+| PB-001 |   ✔️   | 23.12.2022 | M. Schumacher |           |
+| PB-002 |   ✔️   | 23.12.2022 | M. Schumacher |           |
+| PB-003 |   ✔️   | 23.12.2022 | M. Schumacher |           |
+
+### Projekt löschen
+
+| ID     | Status | Testdatum  | Tester        | Bemerkung |
+| ------ | :----: | ---------- | ------------- | --------- |
+| PL-001 |   ✔️   | 23.12.2022 | M. Schumacher |           |
+| PL-002 |   ✔️   | 23.12.2022 | M. Schumacher |           |
+| PL-003 |   ✔️   | 23.12.2022 | M. Schumacher |           |
+
+### Bestätigen
+
+| ID    | Status | Testdatum  | Tester        | Bemerkung                       |
+| ----- | :----: | ---------- | ------------- | ------------------------------- |
+| B-001 |   ✔️   | 23.12.2022 | M. Schumacher | Kommentar muss angegeben werden |
+| B-002 |   ✔️   | 23.12.2022 | M. Schumacher | Kommentar muss angegeben werden |
+| B-003 |   ✔️   | 23.12.2022 | M. Schumacher |                                 |
+| B-004 |   ✔️   | 23.12.2022 | M. Schumacher |                                 |
+
+### Dashboard
+
+| ID    | Status | Testdatum  | Tester        | Bemerkung                                                                             |
+| ----- | :----: | ---------- | ------------- | ------------------------------------------------------------------------------------- |
+| D-001 |   ✔️   | 23.12.2022 | M. Schumacher | Wenn die Verbindung unterbrochen wird, dann kann das ZIP nicht richtig geladen werden |
+| D-002 |   ✔️   | 23.12.2022 | M. Schumacher |                                                                                       |
+| D-003 |   ✔️   | 23.12.2022 | M. Schumacher |                                                                                       |
+| D-004 |   ✔️   | 23.12.2022 | M. Schumacher |                                                                                       |
+
+### Admin Dashboard
+
+| ID    | Status | Testdatum  | Tester        | Bemerkung                                           |
+| ----- | :----: | ---------- | ------------- | --------------------------------------------------- |
+| AD-01 |   ✔️   | 23.12.2022 | M. Schumacher | Kibana auf einer externer URL / Container angezeigt |
+| AD-02 |   ✔️   | 23.12.2022 | M. Schumacher |                                                     |
+
+### Allgemeines
+
+| ID    | Status | Testdatum  | Tester        | Bemerkung                                                          |
+| ----- | :----: | ---------- | ------------- | ------------------------------------------------------------------ |
+| A-001 |   ✔️   | 23.12.2022 | M. Schumacher | Logs werden mit dem aktuellen Datum in `Logstash\Logs` gespeichert |
+| A-002 |   ✔️   | 23.12.2022 | M. Schumacher |                                                                    |
