@@ -181,6 +181,7 @@ nav:
                 - Funktionale: "LB1/Anforderung/Funktionale.md"
                 - Testszenario: "LB1/Anforderung/Testszenario.md"
                 - Daten: "LB1/Anforderung/Daten.md"
+          - Testprotokoll: "LB1/Testprotokoll.md"
     - LB2:
           - "1. Concept Map": "LB2/01_ConceptMap.md"
           - "2. Concept Map": "LB2/02_ConceptMap.md"
