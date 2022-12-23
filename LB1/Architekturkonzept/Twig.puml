@@ -1,0 +1,139 @@
+@startuml Twig-Konzept
+title "Twig-Konzept"
+hide empty members
+skinparam groupInheritance 2
+skinparam pageMargin 250
+
+note as Info
+    **HTML-Block** kann überschrieben werden
+    **Properties** können befüllt werden
+end note
+
+package "Base" {
+    class Main << (V,Sienna) >> implements CoreJS {
+        - javaScript : CoreJS
+    }
+    class CoreJS << (V,Sienna) >>
+    class NavBar << (V,Sienna) >> {
+        + linksBlock : HTML-Block
+    }
+}
+
+package "Layouts" {
+    class BaseLayout << (V,MediumSlateBlue) >> extends Main implements NavBar {
+        - navBar : NavBar
+        + content : HTML-Block
+    }
+
+    class SplitImageLayout << (V,MediumSlateBlue) >> extends BaseLayout implements Form {
+        + form : Form
+        + image : HTML-Block
+    }
+
+    class ContentLayout << (V,MediumSlateBlue) >> extends BaseLayout implements Form, ProgressBar {
+        + progressBar : ProgressBar
+        + project : Project
+        + form : Form
+    }
+}
+
+package "Components" {
+    class Button << (M,MediumSeaGreen) >> {
+        + text : String
+        + onClick : Function
+    }
+    class ButtonGroup << (M,MediumSeaGreen) >> implements Button {
+        + buttons : List<Button>
+    }
+
+    class Form << (M,MediumSeaGreen) >> implements Input, Button {
+        + fields : List<Input>
+        + submit : Button
+    }
+
+    class Error << (M,MediumSeaGreen) >> {
+        + message : String
+        + visible : boolean
+    }
+
+    class Input << (M,MediumSeaGreen) >> implements Error {
+        + label : String
+        + onChange : Function
+        + value : HTML-Block
+        + error : Error
+        + readonly : boolean
+    }
+
+    package Inputs <<rectangle>> {
+        class Text << (M,MediumSeaGreen) >> extends Input {
+            + value : String
+        }
+        class Password << (M,MediumSeaGreen) >> extends Text {
+            - isVisible : boolean
+        }
+        class URL << (M,MediumSeaGreen) >> extends Text
+        class Email << (M,MediumSeaGreen) >> extends Text
+        class Checkbox << (M,MediumSeaGreen) >> extends Text 
+        class DatePicker << (M,MediumSeaGreen) >> extends Text {
+            + value : Date
+        }
+        class Dropdown << (M,MediumSeaGreen) >> extends Text {
+            + value : List<String>
+        }
+    }
+
+    class Upload << (M,MediumSeaGreen) >> extends Input {
+        + value : File
+    }
+
+    class ProgressBar << (M,MediumSeaGreen) >> {
+        + value : Integer
+        + isValid : boolean
+    }
+
+    class ProjectView << (M,MediumSeaGreen) >> implements Button {
+        + project : Project
+        + options : List<Button>
+    }
+}
+
+package "Helpers" {
+    class AdminOnly << (M,MediumSeaGreen) >> {
+        + user : User
+        - isVisible : boolean
+    }
+}
+
+package "Pages" {
+    class Welcome << (V,orchid) >> implements BaseLayout
+
+    class NotFound << (V,orchid) >> implements BaseLayout
+    
+    class Forbidden << (V,orchid) >> implements BaseLayout
+
+    class Kibana << (V,orchid) >> implements BaseLayout,  AdminOnly {
+        - adminOnly : AdminOnly
+    }
+
+    class Login << (V,orchid) >> implements SplitImageLayout
+    
+    class Register << (V,orchid) >> implements SplitImageLayout
+    
+    class Profile << (V,orchid) >> implements SplitImageLayout
+    
+    class Overview << (V,orchid) >> implements BaseLayout, ProjectView {
+        - projects : List<ProjectView>
+    }
+    
+    class ProjectGeneral << (V,orchid) >> implements ContentLayout 
+    
+    class ProjectAppearance << (V,orchid) >> implements ContentLayout 
+    
+    class ProjectStructure << (V,orchid) >> implements ContentLayout 
+    
+    class ProjectConfirm << (V,orchid) >> implements ContentLayout, AdminOnly {
+        - adminOnly : AdminOnly
+    }
+}
+
+@enduml

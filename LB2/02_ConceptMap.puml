@@ -1,0 +1,68 @@
+@startuml
+title "Concept Map"
+skinparam backgroundcolor transparent
+
+' Begriffe
+([[https://bztfinformatik.github.io/lernportfolio-21r8390-php/PHP/Twig/Design/#if-else if-Funktion bei Twig]]) as (if)
+([[https://bztfinformatik.github.io/lb1_doku-21r8390/Erkl%C3%A4rungen/Testing/#was-ist-mocking Mocking von Daten]]) as (mocking)
+([[https://bztfinformatik.github.io/lernportfolio-21r8390-php/PHP/Twig/Installation/#twig-laden Rendern von View]]) as (rendern)
+([[https://bztfinformatik.github.io/lernportfolio-21r8390-php/PHP/Aufgaben/HTTP-Parameter/#get-und-post empty-Funktion]]) as (empty)
+([[https://bztfinformatik.github.io/lernportfolio-21r8390-php/PHP/Framework/Validation/ sanitizen von Daten]]) as (sanitizen)
+
+' Beziehungen
+note left of if
+    Überprüft ob ein Element angezeigt werden soll
+    Müssen immer geöffnet und geschlossen werden: 
+    {% if true %} {% endif %}
+end note
+
+note bottom of mocking
+    Mocking ist das Verfahren, bei dem die Daten, 
+    die von einem Objekt zurückgegeben werden, simuliert werden.
+end note
+
+note right of rendern
+    Beim Rendern werden die Daten in das HTML-Template 
+    eingefügt und dementsprechend Berechnungen gemacht.
+    Das Ergebnis wird dann an den Client zurückgegeben.
+end note
+
+note bottom of empty
+    Überprüft ob eine Zeichenkette leer ist.
+    Wird z.B. bei der Überprüfung von Variablen verwendet.
+end note
+
+note left of sanitizen
+    Sanitizing ist das Aufbereiten und Entfernen von unerwünschten
+    Daten, damit beim Verarbeiten keine Fehler auftreten.
+end note
+
+' Zusammenhänge
+note as Twig
+    [[https://bztfinformatik.github.io/lernportfolio-21r8390-php/LB1/Beschreibung/Twig/ Twig]]: 
+    Template-Engine für PHP zur Erstellung von HTML-Code
+end note
+
+note as Anfragen
+    [[https://bztfinformatik.github.io/lernportfolio-21r8390-php/PHP/Aufgaben/HTTP-Parameter/#get-und-post Anfragen]]: 
+    Anfragen an den Server, um Daten zu erhalten oder zu senden
+end note
+
+' Gruppierungen
+(if) .. Twig
+(rendern) .. Twig
+
+(mocking) .. Anfragen
+(empty) .. Anfragen
+(sanitizen) .. Anfragen
+
+' Zusammenhänge
+(if) --> (empty) : "überprüft"
+
+(rendern) --> (if) : "überprüft"
+(rendern) --> (mocking) : "lädt Testdaten"
+(rendern) <--> (sanitizen) : "Abfrage abhandeln"
+
+(sanitizen) --> (empty) : "validiert"
+
+@enduml

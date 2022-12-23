@@ -1,0 +1,22 @@
+@startuml "Start Use-Cases"
+title "Start Use-Cases"
+left to right direction
+skinparam packageStyle rectangle
+
+' Akteure
+actor Lehrling
+
+' Diagramm
+rectangle "Use-Cases" {
+    (Registrieren) as (S-0001) <<S-0001>>
+    (Email verifizieren) as (S-0002) <<S-0002>>
+    (Anmelden) as (S-0003) <<S-0003>>
+    (Passwort zurücksetzen) as (S-0004) <<S-0004>>
+}
+
+' Verbindungen    
+Lehrling --> (S-0001)
+Lehrling --> (S-0002)
+Lehrling --> (S-0003)
+Lehrling --> (S-0004)
+@enduml

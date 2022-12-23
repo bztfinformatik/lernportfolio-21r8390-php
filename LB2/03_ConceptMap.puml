@@ -1,0 +1,96 @@
+@startuml
+title "Concept Map"
+skinparam backgroundcolor transparent
+
+' Begriffe
+(mysql &#40;alte Extension&#41;) as (mysql)
+([[https://www.w3schools.com/php/php_mysql_connect.asp mysqli &#40;improved Extension&#41;]]) as (mysqli)
+([[https://bztfinformatik.github.io/lernportfolio-21r8390-php/Datenbank/PreparedStatements/#was-ist-pdo PDO]]) as (pdo)
+([[https://www.postgresql.org/ PostgreSQL]]) as (postgresql)
+([[https://bztfinformatik.github.io/lernportfolio-21r8390-php/Datenbank/Start/#maria-db MySQL]]) as (mysqldb)
+([[https://bztfinformatik.github.io/lernportfolio-21r8390-php/Datenbank/PreparedStatements/ Prepared-Statement]]) as (prep)
+([[https://bztfinformatik.github.io/lernportfolio-21r8390-php/Appendix/Sicherheit/#sql-injection SQL-Injection]]) as (sqlinjection)
+
+' Beziehungen
+note top of (mysql)
+    Ist eine <font color="red">veraltet</font> Extension für PHP
+    um mit MySQL zu kommunizieren.
+end note
+
+note right of (mysqli)
+    Ist eine <font color="orange">verbesserte</font> Extension für PHP
+    um mit MySQL zu kommunizieren.
+end note
+
+note bottom of (pdo)
+    Ist die <font color="green">empfohlene</font> Datenverbindung für PHP
+    um mit allen möglichen relationalen
+    Datenbanken zu verwalten.
+end note
+
+note left of (postgresql)
+    Open-Source Datenbank, welche viele
+    verschiedene Sprachen unterstützt.
+end note
+
+note left of (mysqldb)
+    Datenbank mit dem Fokus auf
+    Performance, Sicherheit und
+    Verfügbarkeit.
+end note
+
+note bottom of (prep)
+    Validiert & escaped SQL-Statements vor, 
+    um auf der Datenbank ausgeführt zu werden.
+end note
+
+note bottom of (sqlinjection)
+    Ist eine Sicherheitslücke in den 
+    Abfragen, welche es ermöglicht
+    bösartige SQL-Statements auszuführen.
+end note
+
+' Zusammenhänge
+note as Abstraktionsschicht
+    **Abstraktionsschicht für Datenbanken:**
+    * Übernimmt die Kommunikation mit der Datenbank
+    * Validiert & Escaped die Daten
+end note
+
+note as Sicherheit
+    **Sicherheit:**
+    Verhindert SQL-Injection
+end note
+
+note as Datenbank
+    **Datenbank:**
+    Speichert die Daten der Anwendung
+end note
+
+' Gruppierungen
+(mysql) ..> (Abstraktionsschicht)
+(mysqli) ..> (Abstraktionsschicht)
+(pdo) ..> (Abstraktionsschicht)
+
+(prep) ..> (Sicherheit)
+(sqlinjection) ..> (Sicherheit)
+
+(postgresql) ..> (Datenbank)
+(mysqldb) ..> (Datenbank)
+
+' Zusammenhänge
+(mysql) <-- (mysqli) : löst ab
+(mysqli) <-- (pdo) : löst ab
+
+(pdo) --> (prep) : Verwendet
+(mysqli) --> (prep) : Verwendet
+
+(prep) --> (sqlinjection) : Verhindert
+
+(pdo) --> (postgresql) : Verbindet mit
+(pdo) --> (mysqldb) : Verbindet mit
+(mysql) --> (mysqldb) : Verbindet mit
+(mysqli) --> (mysqldb) : Verbindet mit
+
+(mysqldb) <--> (postgresql) : relational / ähnlich
+@enduml

@@ -1,0 +1,69 @@
+@startuml "Klassendiagramm"
+title Klassendiagramm
+hide empty members
+skinparam monochrome true
+
+package "Core" {
+    class App {
+        # controller : string = "home"
+        # method : string = "index"
+        # params : array = []
+
+        + __construct()
+        - loadController(array $url) : void
+        - loadMethod(array $url) : void
+        - loadParams() : array
+    }
+
+    class Controller {
+        # loadModel(string $model) : void
+        # loadView(string $view, array $data = []) : void
+    }
+}
+
+package "Controllers" {
+    class Home extends Controller {
+        + index($name = '') : void
+        + calc($zahl1 = 1, $zahl2 = 1) : void
+    }
+
+    class CarCompany extends Controller {
+        + index() : void
+        + test() : void
+    }
+}
+
+package "Models" <<Database>> {
+    class Car {
+        + brand : string
+        + model : string
+        + color : string
+        + description : string
+        + year : int
+        + price : float
+    }
+
+    class User {
+        + name : string
+    }
+}
+
+package "Views" <<Cloud>> {
+    class calc << (V,#2596be) >>
+    class index << (V,#2596be) >>
+    class "car-company" << (V,#2596be) >>
+}
+
+' Verbindungen
+App --> Controller
+
+' Controller - Model
+Home --> User
+"CarCompany" --> Car
+
+' Controller - View
+Home --> index
+Home --> calc
+"CarCompany" --> "car-company"
+
+@enduml

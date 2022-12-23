@@ -1,0 +1,73 @@
+@startuml
+title "Concept Map"
+skinparam backgroundcolor transparent
+
+' Begriffe
+([[https://bztfinformatik.github.io/lernportfolio-21r8390-php/PHP/SessionCookie/Sessions/ Sessions]]) as (ses)
+([[https://bztfinformatik.github.io/lernportfolio-21r8390-php/PHP/SessionCookie/Cookies/ Cookies]]) as (cok)
+([[https://bztfinformatik.github.io/lernportfolio-21r8390-php/PHP/SessionCookie/Sessions/#wie-verwalte-ich-daten-in-einer-session $_SESSION]]) as (varses)
+([[https://bztfinformatik.github.io/lernportfolio-21r8390-php/PHP/SessionCookie/Cookies/#wie-kann-ich-cookies-auslesen $_COOKIE]]) as (varcok)
+([[https://bztfinformatik.github.io/lernportfolio-21r8390-php/PHP/SessionCookie/Sessions/#wie-erstelle-ich-eine-session session_helper.php]]) as (helper)
+(Authorisierung &#40;Routen schützen&#41;) as (auth)
+(JSON &#40;in Datenbank&#41;) as (json)
+
+' Beziehungen
+note left of (ses)
+    Eine Session speichert Daten 
+    über mehrere Anfragen auf dem Server
+    <i>kann nicht eingesehen werden</i>
+end note
+
+note right of (cok)
+    Ein Cookie speichert Benutzerinformationen 
+    über eine Lebenszeit auf dem Client
+    <i>kann eingesehen werden</i>
+end note
+
+note top of (varses)
+    Variable für das verwalten der Session
+end note
+
+note top of (varcok)
+    Variable für das verwalten der Cookies
+end note
+
+note top of (helper)
+    Hilfsklasse für das starten der Session
+end note
+
+note right of (auth)
+    Schützt Controllers vor unerlaubten Zugriffen
+end note
+
+note right of (json)
+    JSON ist ein Datentyp der in der Datenbank gespeichert wird
+end note
+
+' Zusammenhänge
+note as Superglobal
+    <b>Superglobal</b> ist eine Variable die in 
+    allen Funktionen und Klassen verfügbar ist
+end note
+
+note as Speichern
+    <b>Speichert</b> Daten über mehrere Anfragen 
+end note
+
+' Gruppierungen
+varses ..> Superglobal
+varcok ..> Superglobal
+
+ses ..> Speichern
+cok ..> Speichern
+
+' Zusammenhänge
+(varses) -down-> (ses) : Verwaltet
+(varcok) -down-> (cok) : Verwaltet
+
+(auth) -up-> (ses) : Verwendet
+(auth) -up-> (cok) : Verwendet
+(auth) -down-> (json) : Speichert Rollen
+
+(helper) -down-> (ses) : Startet
+@enduml
